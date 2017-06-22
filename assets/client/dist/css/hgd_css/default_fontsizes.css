@@ -1,0 +1,41 @@
+.number_style {
+	font-family: Montserrat;
+	border: none;
+}
+@media only screen and (max-width: 1800px) { /* screen size until 1200px */
+		    body {
+		        font-size: 2.2em; /* 1.5x default size */
+		    }
+		}
+		@media only screen and (max-width: 1300px) { /* screen size until 1200px */
+		    body {
+		        font-size: 2.0em; /* 1.5x default size */
+		    }
+		}
+	    @media only screen and (max-width: 1000px) { /* screen size until 500px */
+		    body {
+		        font-size: 1.6em; /* 0.8x default size */
+	        }
+	    }
+	    @media only screen and (max-width: 800px) { /* screen size until 500px */
+		    body {
+		        font-size: 1.4em; /* 0.8x default size */
+	        }
+	    }
+	    @media only screen and (max-width: 600px) { /* screen size until 500px */
+		    body {
+		        font-size: 0.8em; /* 0.8x default size */
+	        }
+	    }
+	    @media only screen and (max-width: 400px) { /* screen size until 500px */
+		    body {
+		        font-size: 0.6em; /* 0.8x default size */
+	        }
+	    }
+.image_responsive{
+	width: 100%;
+	height: auto;
+}
+.small_font{
+	font-size: 0.8em;
+}

@@ -13,3 +13,6 @@
     {
         return base_url('assets/admin/plugins/'.$url);
     }
+    function clientcss_url($url){
+        return base_url('assets/client/dist/css'.$url);
+    }
