@@ -1,0 +1,415 @@
+/******** Học Gì Đây theme *******/
+/* Author: Nguyễn Đức Việt Vương */
+
+/******** General Settings *******/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/******** Contact row CSS ********/
+
+.hgd-heading-highlight {
+  font-size: 100%;
+}
+
+.hgd-heading-highlight-2 {
+  font-size: 90%;
+}
+
+/* Sticky - applied to both contact row and slider row */
+.sticky {
+  position: sticky;
+  background-color: white;
+  z-index: 2;
+}
+/* End sticky */
+
+#contact {
+  top: 0;
+  margin-bottom: 8pt;
+}
+
+.yeucaugiaovien-text {
+  font-size: 112.5%;
+  font-weight: bold;
+}
+
+.yeucaugiaovien-text:before {
+  content: '>> ';
+}
+
+.yeucaugiaovien-text:after {
+  content: ' <<';
+}
+
+/********** Header CSS ***********/
+.hgd-header {
+  position: relative;
+  margin-top: 14pt;
+}
+
+/******* Default logo CSS ********/
+.logo-xs {
+  width: 90px;
+  margin: auto;
+  display: block;
+}
+
+.logo-md {
+  width: 322px;
+  display: none;
+}
+/* End logo CSS */
+
+.header-background {
+  width: 99%;
+  height: auto;
+  z-index: -1;
+  margin: 0 auto;
+}
+
+/******* Slider filer CSS ********/
+.slider-filter {
+  padding: 16pt;
+  top: 50pt;
+}
+
+.slider-container {
+  width: 60%;
+}
+
+.slider-info {
+  padding-top: 13pt;
+}
+
+.slider-amount {
+  width: 20%;
+  font-weight: bold;
+}
+
+/********* Profile list CSS ********/
+/********* General Info CSS ********/
+#unit-price {
+  display: block;
+}
+
+#rating {
+  display: none;
+}
+
+/* Profile box CSS */
+.hgd-profile {
+  border-width: 0;
+  border-style: solid;
+  border-color: grey;
+  min-height: 180px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hgd-profile-info {
+  border-right: 1px solid grey;
+  min-height: 180px;
+}
+
+.unit-price {
+  font-size: 130%;
+  margin-top: 15pt;
+}
+.hgd-profile-avatar {
+  width: 120px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.rating-star-box {
+  text-align: center;
+  margin-top: 20pt;
+}
+
+.fa-star, .fa-star-o {
+  color: #f87311;
+  font-size: 150%;
+}
+
+.num-of-rates {
+  font-size: 150%;
+}
+
+@media screen and (max-width: 480px) {
+  .fa-star, .fa-star-o {
+    font-size: 100%;
+  }
+  .num-of-rates {
+    font-size: 100%;
+  }
+}
+.num-of-rates::before {
+  content: ' (';
+}
+
+.num-of-rates::after {
+  content: ')';
+}
+
+.hgd-read-more {
+  border: none;
+  background-color: #f87311;
+  cursor: pointer;
+  padding: 78px 0;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 991px) {
+  .hgd-read-more {
+    padding: 0.875em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hgd-read-more {
+    padding: 0.75em;
+  }
+  .read-more {
+    font-size: 1em;
+  }
+
+}
+
+.read-more {
+  font-size: 1.25em;
+
+}
+
+.hgd-read-more:hover {
+  background-color: orange;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/******* Profile Detail CSS *******/
+.hgd-profile-detail {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.wrapper {
+  position: relative;
+  height: 0;
+}
+
+.wrapper-iframe {
+  padding-top: 56.25%;
+}
+
+.wrapper-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrapper-video {
+  width: 100%;
+  height: 100%;
+}
+
+.busy {
+  background-color: #f87311;
+}
+
+.legend {
+  display: inline-block;
+  width: 25pt;
+  height: 18pt;
+  background-color: #f87311;
+}
+
+/******** Modal box CSS ********/
+.t-heading {
+  font-size: 130%;
+  font-weight: bold;
+  margin-top: 12pt;
+  margin-bottom: 12pt;
+}
+
+.sign-up {
+  margin-top: 18pt;
+  margin-bottom: 25pt;
+}
+
+.btn-sign-up {
+  border-color: #f87311;
+  background-color: #f87311;
+  box-shadow: 3px 2px 2px grey;
+}
+
+.btn-sign-up:hover {
+  background-color: orange;
+  border-color: orange;
+}
+
+
+/****** Scaling for responsive ******/
+@media screen and (min-width: 320px) {
+/*   .hgd-heading-highlight {
+    font-size: 78%;
+  } */
+/*   .hgd-heading-highlight a {
+    font-size: 66%;
+  } */
+  .header-text {
+    top: 5%;
+  }
+  #h1 {
+    font-size: 171%;
+  }
+  #h3 {
+    font-size: 114%;
+    font-style: italic;
+    line-height: 140%;
+  }
+  .slider-filter {
+    top: 66.4pt;
+  }
+  .slider-amount {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 361px) {
+/*   .slider-filter {
+    top: 51.4pt;
+  } */
+}
+
+@media screen and (min-width: 375px) {
+/*   .slider-filter {
+    top: 57.4pt;
+  } */
+}
+
+@media screen and (min-width: 425px) {
+  .header-text {
+    top: 10%;
+  }
+  .slider-amount {
+    width: 38%;
+  }
+}
+
+@media screen and (min-width: 453px) {
+/*   .slider-filter {
+    top: 51.4pt;
+  } */
+}
+
+@media screen and (min-width: 468px) {
+/*   .slider-filter {
+    top: 42.4pt;
+  } */
+}
+
+@media screen and (min-width: 768px) {
+  .header-text {
+    top: 19%;
+  }
+  .hgd-header {
+    margin-top: 18pt;
+    margin-bottom: 20pt;
+  }
+  .hgd-heading-highlight {
+    font-size: 170%;
+  }
+  .hgd-heading-highlight-2 {
+    font-size: 140%;
+  }
+  #h1 {
+    font-size: 171%;
+  }
+  #h3 {
+    font-size: 114%;
+  }
+  #unit-price {
+    display: none;
+  }
+  #rating {
+    display: block;
+  }
+  .logo-xs {
+    display: none;
+  }
+  .logo-md {
+    display: block;
+  }
+
+/*   .slider-filter {
+    top: 69.3pt;
+  } */
+  .slider-amount {
+    width: 20%;
+  }  
+}
+
+@media screen and (min-width: 805px) {
+/*   .slider-filter {
+    top: 50.2pt;
+  } */
+}
+
+@media screen and (min-width: 863px) {
+/*   .slider-filter {
+    top: 48.4pt;
+  } */
+}
+
+@media screen and (min-width: 1024px) {
+  .header-text {
+    top: 26%;
+  }
+  #h1 {
+    font-size: 200%;
+  }
+  #h3{
+    font-size: 166.67%;
+  }
+/*   .slider-filter {
+    top: 48.3pt;
+  } */
+}
+
+@media screen and (min-width: 1366px) {
+/*   .header-text {
+    top: 33%;
+  } */
+  #h1 {
+    font-size: 36px;
+  }
+  #h3{
+    font-size: 24px;
+  }
+
+}
+
+@media screen and (min-width: 1920px) {
+
+  #h1 {
+    font-size: 45px;
+  }
+  #h3 {
+    font-size: 30px;
+  }
+}
+.checkbox {
+  color: #000;
+  font-size: 62.5%;
+  line-height: 2.0em;
+  text-align: center;
+}

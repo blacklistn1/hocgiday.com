@@ -18,6 +18,13 @@ class Home extends CI_Controller
 		$data['more_inf'] = $this->lang->line('more_inf');
 		$data['are_you_teach'] = $this->lang->line('are_you_teach');
 		$this->load->helper('url');
-		$this->load->view('home', $data);
+		$this->load->view('client/home', $data);
+	}
+
+	public function subject($sub = '',$city = '')
+	{
+		if (!$sub && !$city) {
+			redirect('/');
+		}
 	}
 }
