@@ -8,23 +8,9 @@ class Home extends CI_Controller
 		parent::__construct();
 	}
 	
-	public function index($lang = '')
+	public function index()
 	{
-		$this->lang->load('content', $lang=='' ? 'vietnamese' : $lang);
-		$data['sign_in'] = $this->lang->line('sign_in');
-		$data['register'] = $this->lang->line('register');
-		$data['dashboard'] = $this->lang->line('dashboard');
-		$data['search_for_teacher'] = $this->lang->line('search_for_teacher');
-		$data['more_inf'] = $this->lang->line('more_inf');
-		$data['are_you_teach'] = $this->lang->line('are_you_teach');
-		$this->load->helper('url');
+		$data['title'] = 'Học Gì Đây? | Tìm giáo viên nhạc dễ hơn hẳn';
 		$this->load->view('client/home', $data);
-	}
-
-	public function subject($sub = '',$city = '')
-	{
-		if (!$sub && !$city) {
-			redirect('/');
-		}
 	}
 }

@@ -19,9 +19,10 @@ class Guitar extends CI_Controller {
 		{
 			redirect('/');
 		}
-		elseif ($city == 'hanoi')
+		else
 		{
-			$where = array('citytag' => 'hanoi');
+			$city = preg_replace('/-/','',$city);
+			$where = array('citytag' => $city);
 			$data['title'] = 'Tìm giáo viên Guitar tại nhà hoặc tại lớp';
 			$data['result'] = $this->m_guitar->read_data($where);
 			$this->load->view('client/guitar_hanoi', $data);

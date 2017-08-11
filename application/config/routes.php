@@ -54,5 +54,5 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['guitar/ha-noi'] = 'guitar/city/hanoi';
-$route['piano/ha-noi'] = 'piano/city/hanoi';
+$route['guitar/(:any)'] = 'guitar/city/$1';
+$route['piano/(:any)'] = 'piano/city/$1';

@@ -1,0 +1,166 @@
+ul{
+	li{
+		list-style-type: none;
+	}
+}
+a{
+	text-decoration: none;
+    color: black;
+}
+p{
+    font-size: 16px;
+}
+a:hover{
+    text-decoration: none;
+    color: #f87311;
+}
+@media only screen and (max-width:991px){
+
+    #header{
+        .line2{
+            
+            .navbar{
+                padding: 0 5px !important;
+                a{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .collapse{
+                    ul.navbar-right{
+                        li:first-child{
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .frame{
+        padding: 40px 15px ;
+    }
+    .frame0{
+        padding: 0 15px ;
+    }
+}
+@media only screen and (max-width:768px){
+    footer{
+        h3{
+            font-size: 19px;
+        }
+    }
+    .items20{
+        width: 25%;
+    }
+    #header{
+        .line1{
+            padding: 0 10px !important;
+            padding-top: 3px !important;
+        }
+        .navbar-toggle{
+            margin-top: 11px;
+            margin-bottom: 0;
+            margin-right: 0;
+        }
+        .navbar{
+            .navbar-collapse{
+                padding-left: 0;
+            }
+        }
+    }
+    .items50{
+        width: 100%;
+    }
+    .items25{
+        width: 30%;
+    }
+    #body{
+        #options{
+            #instruments{
+                .items30{
+                    .insider{
+                        .content{
+                            a{
+                                p{
+                                    font-size: 40px ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #myInstrument{
+        .insider{
+            h1{
+                margin-top: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width:600px){
+    
+}
+
+@media only screen and (max-width:480px){
+    h3{
+        font-size: 19px;
+    }
+    footer{
+        .items30{
+            padding-bottom: 30px;
+        }
+    }
+    .items20{
+        width: 100%;padding-bottom: 20px;
+    }
+    h1{
+        font-size: 28px !important;
+    }
+    #myInstrument{
+        .insider{
+            padding: 0 15px;
+        }
+        
+    }
+    h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .instrument{
+        font-size: 14px !important;
+    }
+    
+    #body{
+        #reviews{
+            .box{
+                padding-top: 0;
+            }
+        }
+        #banner{
+            .insider{
+                h1{
+                    font-size: 20px !important;
+                }
+                
+            }
+        }
+    }
+    #count{
+        img{
+            width: 100%;
+            padding: 0 15px;
+        }
+    }
+    .items25{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+}
+@media only screen and (max-width:360px){
+    h1{
+        font-size: 25px !important;
+    }
+    
+}
+@media only screen and (max-width:320px){}

@@ -9,14 +9,17 @@
 	<link rel="icon" type="image/x-icon" href="<?php echo imgsrc('x-icon.jpg') ?>">
 
 	<!-- Google Tag Manager -->
-<!-- 	<script>
+	<script>
 		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-5SQR968');
 	</script>
- -->	<!-- End Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 
 	<!-- Font Awesome CDN -->
 	<script src="https://use.fontawesome.com/d5eddf6cb3.js"></script>
@@ -27,14 +30,11 @@
 	<!-- JQuery UI -->
 	<link rel="stylesheet" type="text/css" href="<?php echo clientjs('jquery-ui.smoothness/jquery-ui.css') ?>">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-
 	<!-- MY style -->
 	<link rel="stylesheet" type="text/css" href="<?php echo clientcss('style.css') ?>">
 
 	<!-- Hotjar Tracking Code for https://hocgiday.com -->
-<!-- 	<script>
+	<script>
 		(function(h,o,t,j,a,r){
 			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
 			h._hjSettings={hjid:569211,hjsv:5};
@@ -44,10 +44,10 @@
 			a.appendChild(r);
 		})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
- -->
+
 
 	<!-- Google Analytics tracking code -->
-<!-- 	<script>
+	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -57,14 +57,14 @@
 		ga('send', 'pageview');
 
 	</script>
- -->
+
 </head>
 <body onresize ="fixResponsive()">
 
 <!-- Google Tag Manager (noscript) -->
-<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SQR968"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SQR968"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
- --><!-- End Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->
 
 <div class="container-fluid sticky" id="contact">
 	<div class="row">
@@ -91,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 </div>
 
-<!-- Slider filter -->
+<!-- Slider filter
 <div class="container-fluid slider-filter sticky">
 	<div class="row">
 		<div class="slider-container center-block" id="price-slider"></div>
@@ -173,8 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<h4>Học vấn</h4>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">	
 						<p><?php echo $rec->hoc_van ?></p>
-					</div>
-					
+					</div>					
 				</div>
 				<div class="row">
 					<h4>Video</h4>

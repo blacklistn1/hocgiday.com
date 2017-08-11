@@ -25,3 +25,19 @@
     {
         return base_url('assets/img/'.$url);
     }
+    function themecss($url)
+    {
+        return base_url('assets/theme/css/'.$url);
+    }
+    function themejs($url)
+    {
+        return base_url('assets/theme/js/'.$url);
+    }
+    function themevender($url)
+    {
+        return base_url('assets/theme/vender/'.$url);
+    }
+    function themeimg($url)
+    {
+        return base_url('assets/theme/images/'.$url);
+    }
