@@ -247,31 +247,34 @@
 					<h3 class="modal-title" id="tName"></h3> 
 				</div>
 				<div class="modal-body">
-					<form action="sendmail.php" method="POST" role="form">
+					<form action="<?php echo base_url() ?>piano/ha-noi" method="POST" role="form">
 						<div class="form-group">
 							<input type="text" name="fullname" class="form-control mailing-info" placeholder="Tên đầy đủ của bạn" required="required">
+							<p><?php echo form_error('fullname') ?></p>
 						</div>
 						<div class="form-group">
 							<input type="text" name="tel" class="form-control mailing-info" placeholder="Số điện thoại" required="required">
+							<p><?php echo form_error('tel') ?></p>
 						</div>
 						<div class="form-group">
-								<label>Bạn muốn học tại: </label>
-								<label class="checkbox-inline"><input type="checkbox" name="learn-at[]" class="" checked="checked" value="Tại nhà"> Tại nhà</label>
-								<label class="checkbox-inline"><input type="checkbox" name="learn-at[]" class="" checked="checked" value="Tại lớp"> Tại lớp</label>
+							<label>Bạn muốn học tại: </label>
+							<label class="checkbox-inline"><input type="checkbox" name="learn-at[]" class="" checked="checked" value="Tại nhà"> Tại nhà</label>
+							<label class="checkbox-inline"><input type="checkbox" name="learn-at[]" class="" checked="checked" value="Tại lớp"> Tại lớp</label>
+							<p><?php echo form_error('learn-at[]') ?></p>
 						</div>
 						<div class="form-group">
-								<label>Vào thời gian: </label><br>
-								<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T2"> T2</label>
-								<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T3"> T3</label>
-								<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T4"> T4</label>
-								<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T5"> T5</label>
-								<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T6"> T6</label>
-								<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T7"> T7</label>
-								<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="CN"> CN</label>
+							<label>Vào thời gian: </label><br>
+							<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T2"> T2</label>
+							<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T3"> T3</label>
+							<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T4"> T4</label>
+							<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T5"> T5</label>
+							<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T6"> T6</label>
+							<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T7"> T7</label>
+							<label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="CN"> CN</label>
 						</div>
 						<div class="form-group">
 							<input type="hidden" name="teacher" id="chosen-teacher" class="form-control">
-							<input type="hidden" name="subject" value="guitar">
+							<input type="hidden" name="subject" value="piano">
 							<input type="hidden" name="city" value="Hà Nội">
 						</div>
 						<div class="modal-footer">

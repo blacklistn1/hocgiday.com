@@ -107,7 +107,7 @@
 					<img src="<?php echo themeimg('thumb/Guitar-01.jpg') ?>" alt="" class="full-width">
 					<div class="insider">
 						<div class="content">
-							<a href=""><p>GUITAR</p></a>
+							<a href="<?php echo base_url('guitar/ha-noi') ?>"><p>GUITAR</p></a>
 						</div>
 					</div>
 				</div>
@@ -115,7 +115,7 @@
 					<img src="<?php echo themeimg('thumb/Piano-01.jpg') ?>" alt="" class="full-width">
 					<div class="insider">
 						<div class="content">
-							<a href=""><p>PIANO</p></a>
+							<a href="<?php echo base_url('piano/ha-noi') ?>"><p>PIANO</p></a>
 						</div>
 					</div>
 				</div>
@@ -123,7 +123,7 @@
 					<img src="<?php echo themeimg('thumb/Guitar-01.jpg') ?>" alt="" class="full-width">
 					<div class="insider">
 						<div class="content">
-							<a href=""><p>THANH NHẠC</p></a>
+							<p>THANH NHẠC</p>
 						</div>
 					</div>
 				</div>
