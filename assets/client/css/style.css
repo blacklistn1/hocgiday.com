@@ -256,6 +256,50 @@ h1, h2, h3, h4, h5, h6 {
   border-color: orange;
 }
 
+/* Also applied for all error messages */
+.error {
+  font-size: 110%;
+  color: red;
+}
+
+/******* Yeucaugiaovien CSS ********/
+
+.reg-box {
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 7px;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  background-color: #eee;
+}
+
+.reg-form {
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+}
+
+.optional {
+  border-top: 1pt solid #888;
+}
+
+#price-slider-reg {
+  width: 80%;
+}
+
+.slider-amount-reg {
+  font-weight: bold;
+  width: 50%;
+}
+
+.btn-reg {
+  background-color: #f87311;
+}
+
+#reg-amount {
+  width: 100pt;
+}
+
+/****** /.Yeucaugiaovien CSS *******/
 
 /****** Scaling for responsive ******/
 @media screen and (min-width: 320px) {
@@ -407,9 +451,4 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
   }
 }
-.checkbox {
-  color: #000;
-  font-size: 62.5%;
-  line-height: 2.0em;
-  text-align: center;
-}
+

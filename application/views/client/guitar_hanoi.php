@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="học guitar, học chơi guitar, học guitar căn bản, học đánh đàn guitar, học guitar đệm hát, học guitar cơ bản, học đàn guitar, học guitar tại Hà Nội, học chơi guitar tại Hà Nội, học guitar căn bản tại Hà Nội, học đánh đàn guitar tại Hà Nội, học guitar đệm hát tại Hà Nội, học guitar cơ bản tại Hà Nội, học đàn guitar tại Hà Nội">
+  	<meta name="description" content="Dễ Dàng Lựa Chọn Học Guitar Với 30+ Giáo Viên Tốt Nhất Sống Quanh Bạn Tại Hà Nội">
 	<title><?php echo $title ?> | Học Gì Đây?</title>
 	<link rel="icon" type="image/x-icon" href="<?php echo imgsrc('x-icon.jpg') ?>">
 
@@ -86,8 +88,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="container-fluid hgd-header">
 	<div class="text-center hgd-header">
-		<h1 id="h1">BẠN MUỐN HỌC GUITAR?</h1>
-		<h3 id="h3">LỰA CHỌN GIỮA HÀNG CHỤC GIÁO VIÊN GUITAR TẠI HÀ NỘI</h3>
+		<h1 id="h1">HỌC GUITAR DỄ HƠN HẲN TẠI HÀ NỘI</h1>
+		<h2 id="h3">LỰA CHỌN HỌC GUITAR VỚI HÀNG CHỤC GIÁO VIÊN TỐT NHẤT HÀ NỘI</h2>
 	</div>
 </div>
 
@@ -113,7 +115,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="row hgd-profile ">
 			<div class="d-flex align-self-stretch profile-column">
 				<div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 hgd-profile-info hgd-avatar">
-					<img class="img-circle img-responsive center-block hgd-profile-avatar" src="<?php echo $rec->avatar ?>" alt="<?php echo $rec->nametag ?>">
+					<img class="img-circle img-responsive center-block hgd-profile-avatar" src="<?php echo base_url('assets/img/teachers/guitar/'.$rec->avatar) ?>" alt="<?php echo $rec->nametag ?>">
 				</div>
 			</div>
 			<div class="d-flex align-self-stretch profile-column">
@@ -252,7 +254,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 						<div class="form-group">
 							<input type="text" name="tel" class="form-control mailing-info" placeholder="Số điện thoại" required="required">
-							<p><?php echo form_error('tel') ?></p>
+							<?php echo form_error('tel') ?>
 						</div>
 						<div class="form-group">
 							<label>Bạn muốn học tại: </label>
@@ -290,7 +292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 						<div>
 							<a href="#" class="p-read-more" title="">&gt;&gt;&gt;Chưa tự tin về lựa chọn của mình?</a>
-							<p class="p-read-more-content">Chúng tôi muốn bạn tự tin về quyết định của mình. Bạn có thể yêu cầu chúng tôi lập một danh sách các giáo viên phù hợp với yêu cầu của bạn và gửi riêng cho bạn vào Email <a href="http://hocgiday.vn/yeu-cau-giao-vien.php" title="">tại đây</a>. Hoàn toàn miễn phí.</p>
+							<p class="p-read-more-content">Chúng tôi muốn bạn tự tin về quyết định của mình. Bạn có thể yêu cầu chúng tôi lập một danh sách các giáo viên phù hợp với yêu cầu của bạn và gửi riêng cho bạn vào Email <a href="<?php echo base_url() ?>yeucaugiaovien" title="">tại đây</a>. Hoàn toàn miễn phí.</p>
 						</div>
 					</form>
 				</div>

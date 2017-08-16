@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="học piano, học đánh piano, học đàn piano, học đánh đàn piano, học piano cơ bản, học piano tại Hà Nội, học đánh piano tại Hà Nội, học đàn piano tại Hà Nội, học đánh đàn piano tại Hà Nội, học piano cơ bản tại Hà Nội">
+  	<meta name="description" content="Dễ Dàng Lựa Chọn Học Guitar Với 30+ Giáo Viên Tốt Nhất Sống Quanh Bạn Tại Hà Nội">
 	<title><?php echo $title ?> | Học Gì Đây?</title>
 	<link rel="icon" type="image/x-icon" href="<?php echo imgsrc('x-icon.jpg') ?>">
 
@@ -87,8 +89,8 @@
 
 <div class="container-fluid hgd-header">
 	<div class="text-center hgd-header">
-		<h1 id="h1">BẠN MUỐN HỌC PIANO?</h1>
-		<h3 id="h3">LỰA CHỌN GIỮA HÀNG CHỤC GIÁO VIÊN PIANO TẠI HÀ NỘI</h3>
+		<h1 id="h1">HỌC PIANO DỄ HƠN HẲN TẠI HÀ NỘI</h1>
+		<h2 id="h3">LỰA CHỌN HỌC PIANO VỚI HÀNG CHỤC GIÁO VIÊN TỐT NHẤT HÀ NỘI</h2>
 	</div>
 </div>
 
@@ -114,7 +116,7 @@
 		<div class="row hgd-profile ">
 			<div class="d-flex align-self-stretch profile-column">
 				<div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 hgd-profile-info hgd-avatar">
-					<img class="img-circle img-responsive center-block hgd-profile-avatar" src="<?php echo $rec->avatar ?>" alt="<?php echo $rec->nametag ?>">
+					<img class="img-circle img-responsive center-block hgd-profile-avatar" src="<?php echo base_url('assets/img/teachers/piano/hoc_piano_voi_'.$rec->nametag.'.jpg') ?>" alt="<?php echo $rec->nametag ?>">
 				</div>
 			</div>
 			<div class="d-flex align-self-stretch profile-column">
@@ -292,7 +294,7 @@
 						</div>
 						<div>
 							<a href="#" class="p-read-more" title="">&gt;&gt;&gt;Chưa tự tin về lựa chọn của mình?</a>
-							<p class="p-read-more-content">Chúng tôi muốn bạn tự tin về quyết định của mình. Bạn có thể yêu cầu chúng tôi lập một danh sách các giáo viên phù hợp với yêu cầu của bạn và gửi riêng cho bạn vào Email <a href="http://hocgiday.vn/yeu-cau-giao-vien.php" title="">tại đây</a>. Hoàn toàn miễn phí.</p>
+							<p class="p-read-more-content">Chúng tôi muốn bạn tự tin về quyết định của mình. Bạn có thể yêu cầu chúng tôi lập một danh sách các giáo viên phù hợp với yêu cầu của bạn và gửi riêng cho bạn vào Email <a href="<?php echo base_url() ?>yeucaugiaovien" title="">tại đây</a>. Hoàn toàn miễn phí.</p>
 						</div>
 					</form>
 				</div>
