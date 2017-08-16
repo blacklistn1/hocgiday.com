@@ -14,13 +14,50 @@ a:hover{
     text-decoration: none;
     color: #f87311;
 }
+@media only screen and (max-width:1440px){
+    
+    #options{
+        .items30{
+            width: 27%;
+        }
+    }
+    
+}
+@media only screen and (max-width:1024px){
+    #options{
+        .items30{
+            width: 30%;
+        }
+    }
+    #footer{
+        .frame{
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+    .frame0{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+}
 @media only screen and (max-width:991px){
 
     #header{
+        .navbar-toggle{
+            margin-top: 11px;
+            margin-bottom: 0;
+            margin-right: 0;
+        }
         .line2{
-            
+            padding: 10px;
+            padding-top: 0;
             .navbar{
+                
                 padding: 0 5px !important;
+                .navbar-collapse{
+                    padding: 0;
+                }
                 a{
                     font-size: 16px;
                     line-height: 24px;
@@ -28,21 +65,35 @@ a:hover{
                 .collapse{
                     ul.navbar-right{
                         li:first-child{
-                            padding-left: 20px;
+                            padding-left: 15px;
                         }
                     }
+                }
+                .collapse.in{
+                    overflow-y: inherit !important;
                 }
             }
         }
     }
     .frame{
-        padding: 40px 15px ;
+        padding: 40px 15px  !important;
     }
     .frame0{
         padding: 0 15px ;
     }
 }
 @media only screen and (max-width:768px){
+    .search{
+        display: none;
+    }
+    #header{
+        .line2{
+            .navbar-form {
+                display: inherit !important;
+                border: none;
+            }
+        }
+    }
     footer{
         h3{
             font-size: 19px;
@@ -52,18 +103,11 @@ a:hover{
         width: 25%;
     }
     #header{
-        .line1{
-            padding: 0 10px !important;
-            padding-top: 3px !important;
-        }
-        .navbar-toggle{
-            margin-top: 11px;
-            margin-bottom: 0;
-            margin-right: 0;
-        }
+        
         .navbar{
             .navbar-collapse{
                 padding-left: 0;
+                border-top: 0;
             }
         }
     }
@@ -129,6 +173,7 @@ a:hover{
     }
     .instrument{
         font-size: 14px !important;
+        padding: 7px 18px !important;
     }
     
     #body{
@@ -140,7 +185,7 @@ a:hover{
         #banner{
             .insider{
                 h1{
-                    font-size: 20px !important;
+                    font-size: 22px !important;
                 }
                 
             }
@@ -156,11 +201,47 @@ a:hover{
         width: 100%;
         padding-bottom: 15px;
     }
+    
+    #options{
+        #instruments{
+            .items30{
+                width: 100%;
+            }
+        }
+    }
 }
+
+@media only screen and (max-width:425px){
+    #body{
+        #banner{
+            .background{
+                .big{
+                    display: none;
+                }
+                .small{
+                    display: inherit;
+
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:360px){
     h1{
         font-size: 25px !important;
     }
+    .phone{
+        a{
+            font-size: 14px !important;
+        }
+    }
     
 }
-@media only screen and (max-width:320px){}
+@media only screen and (max-width:320px){
+    #contact{
+        h4{
+            font-size: 17px !important;
+        }
+    }
+}

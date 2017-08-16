@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,6 +64,7 @@ body {
   font-weight: 600;
   font-size: 19px;
   line-height: 34px;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 #header .line2 .navbar .navbar-header a.navbar-brand {
@@ -80,14 +82,19 @@ body {
   -webkit-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
   transform: translateY(-2px);
+  height: 34px;
+}
+
+#header .line2 .navbar .collapse .navbar-form {
+  display: none;
 }
 
 #header .line2 .navbar .collapse ul.navbar-right li.dropdown li:first-child {
-  padding-left: 19px !important;
+  padding-left: 15px !important;
 }
 
 #header .line2 .navbar .collapse ul.navbar-right li {
-  padding: 15px 19px;
+  padding: 15px;
 }
 
 #header .line2 .navbar .collapse ul.navbar-right li a {
@@ -120,10 +127,14 @@ body {
   font-size: 16px !important;
 }
 
+#header .line3 .phone a {
+  font-size: 20px;
+}
+
 #header .line3 .logo {
-  -webkit-transform: translateX(33px);
-  -ms-transform: translateX(33px);
-  transform: translateX(33px);
+  -webkit-transform: translate(17px, -3.5px);
+  -ms-transform: translate(17px, -3.5px);
+  transform: translate(17px, -3.5px);
 }
 
 #header .line3 .logo img {
@@ -132,6 +143,10 @@ body {
 
 #body #banner {
   position: relative;
+}
+
+#body #banner .background .small {
+  display: none;
 }
 
 #body #banner .insider {
@@ -152,9 +167,9 @@ body {
   border: 1px solid white;
   color: white;
   background: #f87311;
-  padding: 7px 15px;
+  padding: 10px 25px;
   letter-spacing: 2px;
-  border-radius: 10px;
+  border-radius: 13px;
   font-size: 20px;
   margin-bottom: 2%;
 }
@@ -243,11 +258,11 @@ body {
   font-size: 50px;
 }
 
-#body #options #instruments .items30 .insider:hover {
+#body #options #instruments .items30 .insider:hover, #body #options #instruments .items30 .insider:active {
   background: rgba(0, 0, 0, 0.37);
 }
 
-#body #options #instruments .items30 .insider:hover .content {
+#body #options #instruments .items30 .insider:hover .content, #body #options #instruments .items30 .insider:active .content {
   opacity: 1;
 }
 
@@ -272,6 +287,7 @@ body {
 
 #body #steps .box .steps p {
   padding: 0 12%;
+  font-weight: 600;
 }
 
 #body #steps .box .steps .picture {

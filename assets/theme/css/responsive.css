@@ -12,33 +12,57 @@ a:hover {
   text-decoration: none;
   color: #f87311; }
 
-@media only screen and (max-width: 991px) {
-  #header .line2 .navbar {
-    padding: 0 5px !important; }
-    #header .line2 .navbar a {
-      font-size: 16px;
-      line-height: 24px; }
-    #header .line2 .navbar .collapse ul.navbar-right li:first-child {
-      padding-left: 20px; }
-  .frame {
-    padding: 40px 15px; }
-  .frame0 {
-    padding: 0 15px; } }
+@media only screen and (max-width: 1440px) {
+  #options .items30 {
+    width: 27%; } }
 
-@media only screen and (max-width: 768px) {
-  footer h3 {
-    font-size: 19px; }
-  .items20 {
-    width: 25%; }
-  #header .line1 {
-    padding: 0 10px !important;
-    padding-top: 3px !important; }
+@media only screen and (max-width: 1024px) {
+  #options .items30 {
+    width: 30%; }
+  #footer .frame {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .frame0 {
+    padding-left: 60px;
+    padding-right: 60px; } }
+
+@media only screen and (max-width: 991px) {
   #header .navbar-toggle {
     margin-top: 11px;
     margin-bottom: 0;
     margin-right: 0; }
+  #header .line2 {
+    padding: 10px;
+    padding-top: 0; }
+    #header .line2 .navbar {
+      padding: 0 5px !important; }
+      #header .line2 .navbar .navbar-collapse {
+        padding: 0; }
+      #header .line2 .navbar a {
+        font-size: 16px;
+        line-height: 24px; }
+      #header .line2 .navbar .collapse ul.navbar-right li:first-child {
+        padding-left: 15px; }
+      #header .line2 .navbar .collapse.in {
+        overflow-y: inherit !important; }
+  .frame {
+    padding: 40px 15px  !important; }
+  .frame0 {
+    padding: 0 15px; } }
+
+@media only screen and (max-width: 768px) {
+  .search {
+    display: none; }
+  #header .line2 .navbar-form {
+    display: inherit !important;
+    border: none; }
+  footer h3 {
+    font-size: 19px; }
+  .items20 {
+    width: 25%; }
   #header .navbar .navbar-collapse {
-    padding-left: 0; }
+    padding-left: 0;
+    border-top: 0; }
   .items50 {
     width: 100%; }
   .items25 {
@@ -64,18 +88,33 @@ a:hover {
     font-size: 32px;
     line-height: 40px; }
   .instrument {
-    font-size: 14px !important; }
+    font-size: 14px !important;
+    padding: 7px 18px !important; }
   #body #reviews .box {
     padding-top: 0; }
   #body #banner .insider h1 {
-    font-size: 20px !important; }
+    font-size: 22px !important; }
   #count img {
     width: 100%;
     padding: 0 15px; }
   .items25 {
     width: 100%;
-    padding-bottom: 15px; } }
+    padding-bottom: 15px; }
+  #options #instruments .items30 {
+    width: 100%; } }
+
+@media only screen and (max-width: 425px) {
+  #body #banner .background .big {
+    display: none; }
+  #body #banner .background .small {
+    display: inherit; } }
 
 @media only screen and (max-width: 360px) {
   h1 {
-    font-size: 25px !important; } }
+    font-size: 25px !important; }
+  .phone a {
+    font-size: 14px !important; } }
+
+@media only screen and (max-width: 320px) {
+  #contact h4 {
+    font-size: 17px !important; } }

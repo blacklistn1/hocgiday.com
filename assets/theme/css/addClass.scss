@@ -10,10 +10,10 @@
     margin-top: 50px;
 }
 .frame{
-    padding: 40px 80px;  
+    padding: 40px 60px;  
 }
 .frame0{
-    padding: 0 80px;
+    padding: 0 60px;
 }
 .items50{
     width: 50%;
@@ -52,13 +52,34 @@
     transform: translateY(0px) !important;
     opacity: 1 !important;
 }
-@media only screen and (max-width:991px){}
-@media only screen and (max-width:768px){
-    .search{
-        input[type=text]{
-            padding: 8px 20px 8px 40px !important;
+@media only screen and (max-width:1920px){
+    .frame0{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    #footer{
+        .frame{
+            padding-left: 200px;
+            padding-right: 200px;
         }
     }
+}
+@media only screen and (max-width:1440px){
+    .frame0{
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    #footer{
+        .frame{
+            padding-left: 130px;
+            padding-right: 130px;
+        }
+    }
+
+}
+@media only screen and (max-width:991px){}
+@media only screen and (max-width:768px){
+    
     #body{
         #banner{
             .insider{
@@ -189,4 +210,3 @@
 @media only screen and (max-width:360px){
     
 }
-@media only screen and (max-width:320px){}
