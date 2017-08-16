@@ -24,10 +24,10 @@
     <div id="header">
         <div class="line1 layout frame0">
         <div class="phone">
-            <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 0944852366</a>
+            <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
         </div>
         <div class="log">
-            <span><a href="">Bạn là giáo viên?</a></span>
+            <span style="text-decoration: underline;"><a href="">Bạn là giáo viên?</a></span>
         </div>
     </div>
         <div class="line2">
@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <div class="items30 wow fadeInDown" data-wow-offset="100">
-                    <img src="<?php echo themeimg('thumb/Guitar-01.jpg') ?>" alt="" class="full-width">
+                    <img src="<?php echo themeimg('thumb/Thanh%20nhac-01.jpg') ?>" alt="" class="full-width">
                     <div class="insider">
                         <div class="content">
                             <a href=""><p>THANH NHẠC</p></a>
