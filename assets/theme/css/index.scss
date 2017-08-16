@@ -417,4 +417,10 @@ footer{
     color: white;
     background: #23323f;
     font-weight: 300;
+    a {
+        color: white;
+        &:hover {
+            color: #f87311;
+        }
+    }
 }

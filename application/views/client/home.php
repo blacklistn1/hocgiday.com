@@ -77,7 +77,7 @@
     </div>
         <div class="line3 layout frame0 scroll">
         <div class="phone">
-            <a href=""><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 0944852366</a>
+            <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
         </div>
         <div class="logo">
             <a href=""><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>
@@ -116,7 +116,7 @@
                     <img src="<?php echo themeimg('thumb/Guitar-01.jpg') ?>" alt="" class="full-width">
                     <div class="insider">
                         <div class="content">
-                            <a href=""><p>GUITAR</p></a>
+                            <a href="<?php echo base_url() ?>guitar/ha-noi/"><p>GUITAR</p></a>
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                     <img src="<?php echo themeimg('thumb/Piano-01.jpg') ?>" alt="" class="full-width">
                     <div class="insider">
                         <div class="content">
-                            <a href=""><p>PIANO</p></a>
+                            <a href="<?php echo base_url() ?>piano/ha-noi/"><p>PIANO</p></a>
                         </div>
                     </div>
                 </div>
@@ -204,14 +204,14 @@
                         <span class="fa fa-star" aria-hidden="true"></span>
                     </div>
                     <div class="content">
-                        <p>Đánh giá bởi <b class="name">Quang Ngọc</b></p>
-                        <span class="reviews">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ab, ullam consectetur quibusdam </span><span class="more">Xem thêm</span>
+                        <p>Đánh giá bởi <b class="name">Hạnh Liên</b></p>
+                        <span class="reviews">"Con tôi rất thích thầy Tùng vì thầy rất nhẹ nhàng và kiên nhẫn, giảng dạy rất từ tốn và dễ hiểu. Tôi nghĩ thầy là một giáo viên tốt và khá là tin tưởng khi làm việc với thầy." </span><span class="more">Xem thêm</span>
                     </div>
                     <div class="students layout">
-                        <img src="<?php echo themeimg('icons/icon1.png') ?>" alt="" class="full">
+                        <img src="<?php echo imgsrc('teachers/piano/hoc_piano_voi_trantung.jpg') ?>" alt="" class="full">
                         <div class="info">
-                            <h4>Địa chỉ</h4>
-                            <h4><b>Tên giáo viên</b></h4>
+                            <h4> phố Triều Khúc, Hà Nội</h4>
+                            <h4><b>Thầy Trần Văn Tùng</b></h4>
                         </div>
                     </div>
                 </div>
@@ -225,14 +225,14 @@
                         <span class="fa fa-star" aria-hidden="true"></span>
                     </div>
                     <div class="content">
-                        <p>Đánh giá bởi <b class="name">Quang Ngọc</b></p>
-                        <span class="reviews">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nobis tempora facilis earum </span><span class="more">Xem thêm</span>
+                        <p>Đánh giá bởi <b class="name">Kiều Như</b></p>
+                        <span class="reviews">"Thầy Vũ Hoàng thực sự là một trong những người tử tế nhất mình từng gặp. Thầy giáo vượt qua sự mong đợi của mình, và mình thật sự rất buồn khi phải thôi học thầy (do một số lý do cá nhân), dù  vẫn tin chắc rằng mình sẽ học thầy nữa. Thầy Hoàng vừa là một giáo viên tuyệt vời, vừa là một người bạn của mình, và mình thực sự tin rằng phương pháp giảng dạy của thầy sẽ cải thiện được đáng kể tất cả những ai mong muốn phát triển khả năng guitar của mình. Cảm ơn nhé, Hoàng, và hẹn gặp lại ở lần tới!"</span><span class="more">Xem thêm</span>
                     </div>
                     <div class="students layout">
-                        <img src="<?php echo themeimg('icons/icon1.png') ?>" alt="" class="full">
+                        <img src="<?php echo imgsrc('teachers/guitar/hoc_guitar_voi_vuhoang.jpg') ?>" alt="" class="full">
                         <div class="info">
-                            <h4>Địa chỉ</h4>
-                            <h4><b>Tên giáo viên</b></h4>
+                            <h4>phố Thái Hà, Hà Nội</h4>
+                            <h4><b>Vũ Hoàng</b></h4>
                         </div>
                     </div>
                 </div>
@@ -246,14 +246,14 @@
                         <span class="fa fa-star" aria-hidden="true"></span>
                     </div>
                     <div class="content">
-                        <p>Đánh giá bởi <b class="name">Quang Ngọc</b></p>
-                        <span class="reviews">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi non, officia quo culpa </span><span  class="more">Xem thêm</span>
+                        <p>Đánh giá bởi <b class="name">Tuấn Nguyễn</b></p>
+                        <span class="reviews">"Mình học chị Hương cả xướng âm và piano. Chị Hương dạy rất nhiệt tình và bài bản. Đặc biệt mình không thấy chị giấu bài, cắt thời lượng dạy hay bôi khối lượng dạy dài ra để kéo thêm số buổi như một số giáo viên khác.Nhìn chung chị Hương là giáo viên mà học sinh có thể tin tưởng nếu muốn theo đuổi âm nhạc, nhất là piano hay organ."</span><span  class="more">Xem thêm</span>
                     </div>
                     <div class="students layout">
-                        <img src="<?php echo themeimg('icons/icon1.png') ?>" alt="" class="full">
+                        <img src="<?php echo imgsrc('teachers/piano/hoc_piano_voi_lehuong.jpg') ?>" alt="" class="full">
                         <div class="info">
-                            <h4>Địa chỉ</h4>
-                            <h4><b>Tên giáo viên</b></h4>
+                            <h4>phố Nguyễn Khuyến, Hà Nội</h4>
+                            <h4><b>Lê Thị Hương</b></h4>
                         </div>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
         
         <div id="contact" class="frame0 layout">
             <div class="left"><h3><b>CÒN THẮC MẮC?</b> <i class="fa fa-hand-o-right" aria-hidden="true"></i></h3></div>
-            <div class="right"><h4><i class="fa fa-phone" aria-hidden="true"></i> Gọi cho chúng tôi tại 094.485.23.66</h4></div>
+            <div class="right"><h4><i class="fa fa-phone" aria-hidden="true"></i> Gọi cho chúng tôi tại <a href="tel:+84944852366">094 485 23 66</a></h4></div>
         </div>
         
     </div>
@@ -305,19 +305,13 @@
                 <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
                 <div id="social" class="layout">
                     <div class="social facebook">
-                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/hocgiday/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </div>
                     <div class="social youtube">
-                        <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="social linkdein">
-                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/channel/UCzOtVvQZ4dLakqa-Y0lLHwg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                     </div>
                     <div class="social google">
-                        <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="social twitter">
-                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://plus.google.com/u/1/b/110506048934264272362/?hl=vi"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -326,6 +320,7 @@
     </div>
     
     <div id="copyright" class="text-center">
+       <a href="https://www.hocgiday.com/dieu-khoan-su-dung/">Điều khoản sử dụng</a><br>
         2017 Copyright Học gì đây? All rights reversed
     </div>
     
