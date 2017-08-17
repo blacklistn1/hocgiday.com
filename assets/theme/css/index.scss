@@ -27,21 +27,27 @@ $orange : #f87311;
             font-weight: 600;
             font-size: 19px;
             line-height: 34px;
+            a{
+                color: white !important;
+            }
         }
     }
         .line1{
             padding-top: 3px;
             background: white;
             overflow: hidden;
-        a{
-            font-weight: 500;
-            font-size: 16px;
-        }
-        .log{
-            padding-top:3px;
-            span{
-                padding-left: 10px;
+            a{
+                font-weight: 500;
+                font-size: 16px;
             }
+            .log{
+                padding-top:3px;
+                span{
+                    padding-left: 10px;
+                    a{
+                        text-decoration: underline;
+                    }
+                }
         }
     }//.line1
         .line2{
@@ -58,6 +64,7 @@ $orange : #f87311;
                 line-height: 34px;
                 font-family: 'Montserrat', sans-serif !important;
             }
+            
             .navbar-header{
                 a.navbar-brand{
                     padding-left: 0;
@@ -290,7 +297,6 @@ $orange : #f87311;
                 padding-bottom: 30px;
                 span{
                     color: #ffdd17;
-                    font-size: 28px;
                 }
             }
             .content{
@@ -300,7 +306,6 @@ $orange : #f87311;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    
                 }
                 .more{
                     color: $orange;
@@ -311,15 +316,18 @@ $orange : #f87311;
                 padding-top: 40px;
                 justify-content: flex-start;
                 img{
-                    width: 60px;
-                    height: 60px;
-                    border-radius: 50%;
+                    width: 25%;
+                    border-radius: 100%;
                     overflow: hidden;
                     background: gray;
                     margin-right: 10px;
                 }
                 .info{
                     align-self: center;
+                    width: 70%;
+                    h4{
+                        font-family: 'Open Sans', sans-serif !important;
+                    }
                 }
             }
         }    
@@ -395,6 +403,7 @@ footer{
         font-size: 17px;
     }
     #social{
+        justify-content: flex-start;
         .social{
             width: 40px;
             height: 40px;
@@ -402,6 +411,7 @@ footer{
             border-radius: 50%;
             border: 2px double black;
             text-align: center;
+            margin-right: 30px;
             a{
                 color: white;
                 line-height: 36px;
@@ -413,6 +423,7 @@ footer{
         }
     }//#social
 }//footer
+
 #copyright{
     color: white;
     background: #23323f;

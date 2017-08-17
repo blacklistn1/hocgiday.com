@@ -29,6 +29,9 @@
 .items25 {
   width: 25%; }
 
+.items65 {
+  width: 65.166667%; }
+
 .items20 {
   width: 20%; }
 
@@ -66,12 +69,18 @@
   .frame0 {
     padding-left: 200px;
     padding-right: 200px; }
+  .frame {
+    padding-left: 200px;
+    padding-right: 200px; }
   #footer .frame {
     padding-left: 200px;
     padding-right: 200px; } }
 
 @media only screen and (max-width: 1440px) {
   .frame0 {
+    padding-left: 130px;
+    padding-right: 130px; }
+  .frame {
     padding-left: 130px;
     padding-right: 130px; }
   #footer .frame {
@@ -83,8 +92,6 @@
     font-size: 40px; } }
 
 @media only screen and (max-width: 600px) {
-  #header .line3 .logo {
-    display: none; }
   .line3Appear {
     padding-bottom: 5px !important;
     padding-top: 5px !important; }
@@ -115,36 +122,15 @@
     -ms-flex-pack: distribute;
     justify-content: space-around; }
     #reviews .box .items20 {
-      width: 80%; }
-  #myInstrument {
-    height: 300px; }
-    #myInstrument .background {
-      overflow: hidden; }
-      #myInstrument .background img {
-        height: 300px;
-        width: auto; } }
+      width: 80%; } }
 
 @media only screen and (max-width: 480px) {
-  #myInstrument .insider h1 {
-    font-size: 30px;
-    line-height: 35px; }
-  #myInstrument .insider p {
-    padding-bottom: 10px !important;
-    padding-top: 10px !important; }
-  #banner {
-    position: relative;
-    height: 200px !important; }
-    #banner .background {
-      overflow: hidden; }
-      #banner .background img {
-        height: 200px;
-        width: auto; }
+  .items25 {
+    w: 100%; }
+  .items65 {
+    width: 100%; }
   .items30 {
     width: 100%; }
-  #footer footer .items30 {
-    border-bottom: 1px solid #f87311; }
-  #footer footer .items30:last-child {
-    border: none; }
   #instruments {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;

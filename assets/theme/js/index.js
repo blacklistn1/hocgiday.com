@@ -11,7 +11,7 @@ $(window).scroll(function() {
 });
 
 //CLICK SCROLL
-locate= $('#options').offset().top -99;
+locate= $('#options').offset().top - 114;
 $('.instrument').click(function(){
 	$('body').animate({scrollTop: locate}, 500);
 });
@@ -21,10 +21,3 @@ $('.instrument').click(function(){
 new WOW().init();
 
 
-
-//more button
-$('.more').click(function  () {
-	$(this).css('display', 'none');
-	bo = $(this).parent();
-	bo.find('.reviews').css('white-space', 'normal');
-});

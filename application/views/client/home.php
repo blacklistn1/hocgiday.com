@@ -27,7 +27,7 @@
             <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
         </div>
         <div class="log">
-            <span style="text-decoration: underline;"><a href="">Bạn là giáo viên?</a></span>
+            <span><a href=""><b>Bạn là giáo viên?</b></a></span>
         </div>
     </div>
         <div class="line2">
@@ -67,7 +67,7 @@
                         </ul>
                     </li>
                     <li><a href="#">BÀI VIẾT</a></li>
-                    <li class="request"><span href="#">YÊU CẦU GIÁO VIÊN</span></li>
+                    <li class="request"><span><a href="<?php echo base_url() ?>yeucaugiaovien" title="">YÊU CẦU GIÁO VIÊN</a></span></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
@@ -83,7 +83,7 @@
             <a href=""><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>
         </div>
         <div class="request">
-            <span href="#">YÊU CẦU GIÁO VIÊN</span>
+            <span><a href="<?php echo base_url() ?>yeucaugiaovien">YÊU CẦU GIÁO VIÊN</a></span>
         </div>
     </div>
     </div><!--#MENU-->

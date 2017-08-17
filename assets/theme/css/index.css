@@ -29,6 +29,10 @@ body {
   line-height: 34px;
 }
 
+#header .request span a {
+  color: white !important;
+}
+
 #header .line1 {
   padding-top: 3px;
   background: white;
@@ -46,6 +50,10 @@ body {
 
 #header .line1 .log span {
   padding-left: 10px;
+}
+
+#header .line1 .log span a {
+  text-decoration: underline;
 }
 
 #header .line2 {
@@ -341,7 +349,6 @@ body {
 
 #body #reviews .box .stars span {
   color: #ffdd17;
-  font-size: 28px;
 }
 
 #body #reviews .box .content span {
@@ -367,9 +374,8 @@ body {
 }
 
 #body #reviews .box .students img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 25%;
+  border-radius: 100%;
   overflow: hidden;
   background: gray;
   margin-right: 10px;
@@ -379,6 +385,11 @@ body {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  width: 70%;
+}
+
+#body #reviews .box .students .info h4 {
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 #body #count {
@@ -478,6 +489,13 @@ footer button {
   font-size: 17px;
 }
 
+footer #social {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
 footer #social .social {
   width: 40px;
   height: 40px;
@@ -485,6 +503,7 @@ footer #social .social {
   border-radius: 50%;
   border: 2px double black;
   text-align: center;
+  margin-right: 30px;
 }
 
 footer #social .social a {

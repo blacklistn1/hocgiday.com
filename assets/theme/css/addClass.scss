@@ -21,6 +21,9 @@
 .items25{
     width: 25%;
 }
+.items65{
+    width: 65.166667%;
+}
 .items20{
     width: 20%;
 }
@@ -57,6 +60,10 @@
         padding-left: 200px;
         padding-right: 200px;
     }
+    .frame{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
     #footer{
         .frame{
             padding-left: 200px;
@@ -66,6 +73,10 @@
 }
 @media only screen and (max-width:1440px){
     .frame0{
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    .frame{
         padding-left: 130px;
         padding-right: 130px;
     }
@@ -91,13 +102,6 @@
     }
 }
 @media only screen and (max-width:600px){
-    #header{
-        .line3{
-            .logo{
-                display: none;
-            }
-        }
-    }
     .line3Appear{
         padding-bottom: 5px !important;
         padding-top: 5px !important;
@@ -145,56 +149,18 @@
             }
         }
     }
-    #myInstrument{
-        height: 300px;
-        .background{
-            overflow: hidden;
-            img{
-                
-                height: 300px;
-                width: auto;
-            }
-        }
-    }
+
 }
 @media only screen and (max-width:480px){
-    #myInstrument{
-    
-        .insider{
-            h1{
-                font-size: 30px;
-                line-height: 35px;
-            }
-            p{
-                padding-bottom: 10px !important;
-                padding-top: 10px !important;
-            }
-        }
+    .items25{
+        w: 100%;
     }
-    #banner{
-        position: relative;
-        height: 200px !important;
-        .background{
-            overflow: hidden;
-            img{
-                height: 200px;
-                width: auto;
-            }
-        }
-        
-    }
-    .items30{
+    .items65{
         width: 100%;
     }
-    #footer{
-        footer{
-            .items30{
-                border-bottom: 1px solid #f87311;
-            }
-            .items30:last-child{
-                border: none;
-            }
-        }
+
+    .items30{
+        width: 100%;
     }
     #instruments{
         justify-content: space-around;

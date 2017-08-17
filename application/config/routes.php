@@ -56,3 +56,4 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['guitar/(:any)'] = 'guitar/city/$1';
 $route['piano/(:any)'] = 'piano/city/$1';
+$route['dieu-khoan-su-dung'] = 'home/terms';

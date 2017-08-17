@@ -72,7 +72,43 @@ a:hover {
   #myInstrument .insider h1 {
     margin-top: 0; } }
 
+@media only screen and (max-width: 600px) {
+  #myInstrument {
+    height: 300px; }
+    #myInstrument .background {
+      overflow: hidden; }
+      #myInstrument .background img {
+        height: 300px;
+        width: auto; }
+  #header .line3 .logo {
+    display: none; } }
+
 @media only screen and (max-width: 480px) {
+  #footer footer .items30 {
+    border-bottom: 1px solid #f87311; }
+  #footer footer .items30:last-child {
+    border: none; }
+  #instruments {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    #instruments .items30 {
+      width: 100%;
+      margin-bottom: 20px; }
+  #myInstrument .insider h1 {
+    font-size: 30px;
+    line-height: 35px; }
+  #myInstrument .insider p {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important; }
+  #banner {
+    position: relative;
+    height: 200px !important; }
+    #banner .background {
+      overflow: hidden; }
+      #banner .background img {
+        height: 200px;
+        width: auto; }
   h3 {
     font-size: 19px; }
   footer .items30 {
