@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="<?php echo themecss('addClass.css') ?>" media="screen" >
 	<link rel="stylesheet" href="<?php echo themecss('responsive.css') ?>" media="screen" >
 	<link rel="stylesheet" href="<?php echo themevender('animate.css') ?>" media="screen" >
+    <link rel="stylesheet" href="<?php echo themevender('swiper.min.css')?>" media="screen" >
     <title><?php echo $title ?></title>
 </head>
 
@@ -147,21 +148,21 @@
                     <h2><b>Bước 1: Tìm kiếm giáo viên</b></h2>
                     <p>Tìm kiếm giáo viên theo các yếu tố quan trọng với bạn: địa điểm. trình độ, đánh giá...</p>
                     <div class="picture">
-                        <img src="<?php echo themeimg('thumb/Guitar-01.jpg') ?>" alt="" class="full-width">
+                        <img src="<?php echo imgsrc('home/Cac%20buoc%20hoc%20nhac-01.png') ?>" alt="" class="full-width">
                     </div>
                 </div>
                 <div class="steps items25  wow fadeInUp"data-wow-offset="100">
                     <h2><b>Bước 2: Lựa chọn giáo viên</b></h2>
-                    <p>Xem trang cá nhân của từng giáo viên để chọn giáo viên phù hợp với bạn nhất.</p>
+                    <p>Xem thông tin chi tiết của từng giáo viên để tự tin học với giáo viên bạn thích nhất.</p>
                     <div class="picture">
-                        <img src="<?php echo themeimg('thumb/Guitar-01.jpg') ?>" alt="" class="full-width">
+                        <img src="<?php echo imgsrc('home/Cac%20buoc%20hoc%20nhac-02.png') ?>" alt="" class="full-width">
                     </div>
                 </div>
                 <div class="steps items25  wow fadeInUp"data-wow-offset="100">
                     <h2><b>Bước 3: Đặt lịch học</b></h2>
-                    <p>Xem trang cá nhân của từng giáo viên để chọn giáo viên phù hợp với bạn nhất.</p>
+                    <p>Dễ dàng thanh toán học phí và đặt lịch học tại lớp của giáo viên dạy nhạc cụ bạn thích nhất.</p>
                     <div class="picture">
-                        <img src="<?php echo themeimg('thumb/Guitar-01.jpg') ?>" alt="" class="full-width">
+                        <img src="<?php echo imgsrc('home/Cac%20buoc%20hoc%20nhac-03.png') ?>" alt="" class="full-width">
                     </div>
                 </div>
             </div>
@@ -210,8 +211,8 @@
                     <div class="students layout">
                         <img src="<?php echo imgsrc('teachers/piano/hoc_piano_voi_trantung.jpg') ?>" alt="" class="full">
                         <div class="info">
-                            <h4> phố Triều Khúc, Hà Nội</h4>
-                            <h4><b>Thầy Trần Văn Tùng</b></h4>
+                            <h4>phố Triều Khúc, Hà Nội</h4>
+                            <h4><b>Trần Văn Tùng</b></h4>
                         </div>
                     </div>
                 </div>
@@ -328,13 +329,13 @@
     
     
     <!--Vender-->
-    <script src="<?php echo themevender('jquery-3.2.0.min.js') ?>"></script>
-    <script src="<?php echo themevender('bootstrap.min.js') ?>"></script>
-    <script src="<?php echo themevender('wow.min.js') ?>"></script>
-    
-    
+    <script src="<?php echo themevender('')?>jquery-3.2.0.min.js"></script>
+    <script src="<?php echo themevender('')?>bootstrap.min.js"></script>
+    <script src="<?php echo themevender('')?>wow.min.js"></script>
+    <script src="<?php echo themevender('')?>swiper.min.js"></script>
     <!-- Javascipt -->
-    <script src="<?php echo themejs('index.js') ?>"></script>
+    <script src="<?php echo themejs('')?>function.js"></script>
+    <script src="<?php echo themejs('')?>pagination.js"></script>
 </body>
 </html>
 
