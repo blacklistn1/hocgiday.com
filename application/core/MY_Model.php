@@ -46,11 +46,11 @@ class MY_Model extends CI_Model {
 	}
 
 	// Read data in specific columns
-	public function read_data_col($field = '')
+	public function read_data_col($field = '*')
 	{
-		if (!$field or $field = '*')
+		if ($field == '*')
 		{
-			$this->select_all_data();
+			$this->read_all_data();
 		}
 		else
 		{
@@ -65,45 +65,28 @@ class MY_Model extends CI_Model {
 		}
 	}
 
-	// Read conditional data
-	public function read_data($where = array(), $field = '')
+	// Read data with matched conditions (and filters)
+	public function read_data($field = '*', $where = array(1=>1), $cond = FALSE)
 	{
-		if (!$where)
+		if ($cond)
 		{
-			if (!$field or $field = '*')
-			{
-				$this->db->select_all_data();
-			}
-			else
-			{
-				$this->select_data_col($field);
-			}
+			$this->add_filter($cond);
+		}
+		$this->db->where($where)
+				->select($field);
+		if ($result = $this->db->get($this->table))
+		{
+			return $result->result();
 		}
 		else
 		{
-			if (!$field) {
-				$field = '*';
-			}
-			$this->db->where($where)
-					->select($field);
-			if ($result = $this->db->get($this->table))
-			{
-				return $result->result();
-			}
-			else
-			{
-				return NULL;
-			}
+			return NULL;
 		}
 	}
 
 	// Read a row
-	public function read_row($where = array(), $field = '')
+	public function read_row($field = '*', $where = array())
 	{
-		if (!$field)
-		{
-			$field = '*';
-		}
 		$this->db->where($where)
 				->select($field);
 		if ($row = $this->db->get($this->table))
@@ -119,7 +102,10 @@ class MY_Model extends CI_Model {
 	// Update data
 	public function update($data = array(), $where = array())
 	{
-		$this->db->where($where);
+		if ($where)
+		{
+			$this->db->where($where);
+		}
 		if ($this->db->update($this->table, $data))
 		{
 			return TRUE;
@@ -154,6 +140,55 @@ class MY_Model extends CI_Model {
 			else
 			{
 				return FALSE;
+			}
+		}
+	}
+	// End of CRUD
+	
+	// Count all rows
+	public function count_all()
+	{
+		return $this->db->count_all($this->table);
+	}
+
+	// Produce processed query w/o result
+	// Used for various outputs
+	public function run_query($field = '', $where = array(1=>1), $cond = FALSE)
+	{
+		if ($cond)
+		{
+			$this->add_filter($cond);
+		}
+		$this->db->where($where)
+				->select($field);
+		$result = $this->db->get($this->table);
+	}
+	
+	
+	// Add filters to the query
+	// type of $arg varies on $portion
+	public function add_filter($cond = array())
+	{
+		foreach ($cond as $portion => $arg)
+		{
+			if ($portion == 'order_by') // $arg MUST be string
+			{
+				$this->db->order_by($arg);
+			}
+			if ($portion == 'limit')
+			{
+				if (gettype($arg) == 'array')
+				{
+					$this->db->limit($arg[0], $arg[1]);
+				}
+				elseif (gettype($arg) == 'integer')
+				{
+					$this->db->limit($arg);
+				}
+			}
+			if ($portion == 'group_by') // $arg MUST be string
+			{
+				$this->db->group_by($arg);
 			}
 		}
 	}

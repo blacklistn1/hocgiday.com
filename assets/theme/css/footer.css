@@ -1,0 +1,45 @@
+footer {
+  background: #2c3f4f;
+  color: white; }
+  footer a {
+    color: white;
+    display: block;
+    font-size: 16px;
+    font-weight: 400; }
+  footer button {
+    width: 100%;
+    border-radius: 0;
+    background: #f87311;
+    border: none;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 17px; }
+  footer #social {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    footer #social .social {
+      width: 40px;
+      height: 40px;
+      background: black;
+      border-radius: 50%;
+      border: 2px double black;
+      text-align: center;
+      margin-right: 30px; }
+      footer #social .social a {
+        color: white;
+        line-height: 36px;
+        width: 36px;
+        height: 36px;
+        border: 2px solid #2c3f4f;
+        border-radius: 50%; }
+
+#copyright {
+  color: white;
+  background: #23323f;
+  font-weight: 300; }
+  #copyright a {
+    color: white; }
+    #copyright a:hover {
+      color: #f87311; }

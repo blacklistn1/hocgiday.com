@@ -22,7 +22,7 @@ if ($(window).innerWidth()<=360) {
         spaceBetween: 30,
         autoplay: 7000,
     });
-}else if($(window).innerWidth() >360 && $(window).innerWidth() <=480){
+}else if($(window).innerWidth() >360 && $(window).innerWidth() <=600){
     var swiper = new Swiper('#document .swiper-container', {
         nextButton: '#document .swiper-button-next',
         prevButton: '#document .swiper-button-prev',
@@ -55,3 +55,26 @@ $(window).scroll(function() {
 		$('#header .line3').removeClass('line3Appear');
 	}
 });
+
+
+
+//toggle input checkbox
+$('.input_class_checkbox').each(function(){
+    $(this).hide().after('<div class="class_checkbox" />');
+
+});
+
+$('#circle .class_checkbox').on('click',function(){
+    $('#circle .class_checkbox').removeClass('checked');
+    $(this).addClass('checked').prev().prop('checked',$(this).is('.checked'));
+});
+$('#square .class_checkbox').on('click',function(){
+    $(this).toggleClass('checked').prev().prop('checked',$(this).is('.checked'));
+});
+
+
+
+
+//RANGE INPUT
+
+$("#range_01").ionRangeSlider();

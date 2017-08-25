@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="học guitar, học chơi guitar, học guitar căn bản, học đánh đàn guitar, học guitar đệm hát, học guitar cơ bản, học đàn guitar, học guitar tại Hà Nội, học chơi guitar tại Hà Nội, học guitar căn bản tại Hà Nội, học đánh đàn guitar tại Hà Nội, học guitar đệm hát tại Hà Nội, học guitar cơ bản tại Hà Nội, học đàn guitar tại Hà Nội">
-  	<meta name="description" content="Dễ Dàng Lựa Chọn Học Guitar Với 30+ Giáo Viên Tốt Nhất Sống Quanh Bạn Tại Hà Nội">
+  	<meta name="description" content="Học Guitar Dễ Dàng Với 30+ Giáo Viên Tốt Nhất Sống Quanh Bạn Tại Hà Nội">
 	<title><?php echo $title ?> | Học Gì Đây?</title>
 	<link rel="icon" type="image/x-icon" href="<?php echo imgsrc('x-icon.jpg') ?>">
 

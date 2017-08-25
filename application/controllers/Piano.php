@@ -45,8 +45,9 @@ class Piano extends CI_Controller {
 			{
 				$city = preg_replace('/-/','',$city);
 				$where = array('citytag' => $city);
+				$cond['order_by'] = 'vi_tri ASC';
 				$data['title'] = 'Tìm giáo viên Piano tại nhà hoặc tại lớp';
-				$data['result'] = $this->m_piano->read_data($where);
+				$data['result'] = $this->m_piano->read_data('*',$where, $cond);
 				$this->load->view('client/piano_hanoi', $data);
 			}
 			else

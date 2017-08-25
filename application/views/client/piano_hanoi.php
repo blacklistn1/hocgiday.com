@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="học piano, học đánh piano, học đàn piano, học đánh đàn piano, học piano cơ bản, học piano tại Hà Nội, học đánh piano tại Hà Nội, học đàn piano tại Hà Nội, học đánh đàn piano tại Hà Nội, học piano cơ bản tại Hà Nội">
-  	<meta name="description" content="Dễ Dàng Lựa Chọn Học Guitar Với 30+ Giáo Viên Tốt Nhất Sống Quanh Bạn Tại Hà Nội">
+  	<meta name="description" content="Học Piano Dễ Dàng Với 30+ Giáo Viên Tốt Nhất Sống Quanh Bạn Tại Hà Nội">
 	<title><?php echo $title ?> | Học Gì Đây?</title>
 	<link rel="icon" type="image/x-icon" href="<?php echo imgsrc('x-icon.jpg') ?>">
 

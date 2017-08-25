@@ -71,9 +71,6 @@
     padding-right: 200px; }
   .frame {
     padding-left: 200px;
-    padding-right: 200px; }
-  #footer .frame {
-    padding-left: 200px;
     padding-right: 200px; } }
 
 @media only screen and (max-width: 1440px) {
@@ -81,9 +78,6 @@
     padding-left: 130px;
     padding-right: 130px; }
   .frame {
-    padding-left: 130px;
-    padding-right: 130px; }
-  #footer .frame {
     padding-left: 130px;
     padding-right: 130px; } }
 

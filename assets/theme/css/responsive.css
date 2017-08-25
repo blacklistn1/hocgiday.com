@@ -46,7 +46,7 @@ a:hover {
       #header .line2 .navbar .collapse.in {
         overflow-y: inherit !important; }
   .frame {
-    padding: 40px 15px  !important; }
+    padding: 40px 15px; }
   .frame0 {
     padding: 0 15px; } }
 

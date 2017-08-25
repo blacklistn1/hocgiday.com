@@ -3,6 +3,7 @@
 <head>
 
     <meta charset="utf-8" lang="vi" http-equiv="content-type">
+    <meta name="description" content="Học Guitar, Học Piano Dễ Dàng Với 60+ Giáo Viên Sống Quanh Bạn Tại Hà Nội">
     <link rel="stylesheet" href="<?php echo themevender('normalize.min.css') ?>" media="screen" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="<?php echo themeimg('logo.png') ?>">
@@ -14,10 +15,14 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Monteserrat:500,700" rel="stylesheet">
     
     <link rel="stylesheet" href="<?php echo themecss('index.css') ?>" media="screen" >
+    <link rel="stylesheet" href="<?php echo themecss('footer.css') ?>" media="screen" >
+    <link rel="stylesheet" href="<?php echo themecss('header.css') ?>" media="screen" >
+    <link rel="stylesheet" href="<?php echo themecss('style.css') ?>" media="screen" >
     <link rel="stylesheet" href="<?php echo themecss('addClass.css') ?>" media="screen" >
 	<link rel="stylesheet" href="<?php echo themecss('responsive.css') ?>" media="screen" >
 	<link rel="stylesheet" href="<?php echo themevender('animate.css') ?>" media="screen" >
     <link rel="stylesheet" href="<?php echo themevender('swiper.min.css')?>" media="screen" >
+    <link rel="stylesheet" href="<?php echo themevender('ion.rangeSlider.css')?>" media="screen" >
     <title><?php echo $title ?></title>
 </head>
 
@@ -41,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="<?php echo themeimg('logo%20full.png') ?>" class="logo" alt=""></a>
+                <a class="navbar-brand" href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo%20full.png') ?>" class="logo" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,7 +63,7 @@
                     </div>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">TRANG CHỦ</a></li>
+                    <li><a href="<?php echo base_url() ?>">TRANG CHỦ</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -67,7 +72,7 @@
                             <li><a href="#">Sài Gòn</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">BÀI VIẾT</a></li>
+                    <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
                     <li class="request"><span><a href="<?php echo base_url() ?>yeucaugiaovien" title="">YÊU CẦU GIÁO VIÊN</a></span></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -81,10 +86,10 @@
             <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
         </div>
         <div class="logo">
-            <a href=""><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>
+            <a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>
         </div>
         <div class="request">
-            <span><a href="<?php echo base_url() ?>yeucaugiaovien">YÊU CẦU GIÁO VIÊN</a></span>
+            <span><a href="<?php echo base_url() ?>yeucaugiaovien"><b>YÊU CẦU GIÁO VIÊN</b></a></span>
         </div>
     </div>
     </div><!--#MENU-->
@@ -334,8 +339,8 @@
     <script src="<?php echo themevender('')?>wow.min.js"></script>
     <script src="<?php echo themevender('')?>swiper.min.js"></script>
     <!-- Javascipt -->
+    <script src="<?php echo themejs('')?>index.js"></script>
     <script src="<?php echo themejs('')?>function.js"></script>
-    <script src="<?php echo themejs('')?>pagination.js"></script>
 </body>
 </html>
 
