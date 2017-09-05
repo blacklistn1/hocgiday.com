@@ -51,8 +51,7 @@ class Baiviet extends CI_Controller {
     $hot = array('hot' => '1');
     $cond['limit'] = 3;
     $field_hot = 'thumbnail, thumbnail_alt, ten_bai_viet, slug, so_luong_comments, ngay_dang, mo_ta_ngan';
-    $this->m_news->add_filter($cond);
-    $hot_news = $this->m_news->read_data($field_hot, $hot);
+    $hot_news = $this->m_news->read_data($field_hot, $hot, $cond);
     return $hot_news;
   }
 

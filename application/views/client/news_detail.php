@@ -1,4 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed') ?>
+<?php 
+$tags = array();
+$tags = explode(', ', $rec->tags);
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -102,6 +106,13 @@
                     <img src="<?php echo imgsrc($rec->thumbnail)?>" alt="<?php echo $rec->thumbnail_alt ?>" class="full-width">
                 </div>
                 <?php echo $rec->noi_dung ?>
+                <div id="tags">
+                    <ul>
+                    <?php for ($i = 0; $i < count($tags); $i++) {?>
+                        <li><div class="dot"></div><a href="" title=""><?php echo $tags[$i] ?></a></li>
+                    <?php } ?>
+                    </ul>
+                </div>
             </div>
             <div class="catogory">
                 <h2><b>CHUYÊN MỤC CÁC BÀI VIẾT</b></h2>

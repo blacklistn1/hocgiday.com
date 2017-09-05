@@ -54,8 +54,10 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['guitar/(:any)'] = 'guitar/city/$1';
-$route['piano/(:any)'] = 'piano/city/$1';
+$route['guitar/(:any)'] = 'guitar/city/$1/1';
+$route['guitar/(:any)/(:num)'] = 'guitar/city/$1/$2';
+$route['piano/(:any)'] = 'piano/city/$1/1';
+$route['piano/(:any)/(:num)'] = 'piano/city/$1/$2';
 $route['dieu-khoan-su-dung'] = 'home/terms';
 $route['bai-viet'] = 'baiviet';
 $route['bai-viet/(:any)'] = 'baiviet/news_detail/$1';

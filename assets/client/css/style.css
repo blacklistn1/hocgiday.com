@@ -7,7 +7,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -199,6 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 .hgd-profile-detail {
   border-top: 3px solid black;
   border-bottom: 3px solid black;
+  padding-top: 10px;
 }
 
 .wrapper {

@@ -25,6 +25,10 @@
     {
         return base_url('assets/img/'.$url);
     }
+    function fontawesome()
+    {
+        return base_url('assets/client/font-awesome/css/font-awesome.min.css');
+    }
     function themecss($url)
     {
         return base_url('assets/theme/css/'.$url);

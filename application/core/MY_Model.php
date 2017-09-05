@@ -153,7 +153,7 @@ class MY_Model extends CI_Model {
 
 	// Produce processed query w/o result
 	// Used for various outputs
-	public function run_query($field = '', $where = array(1=>1), $cond = FALSE)
+	public function run_query($field = '*', $where = array(1=>1), $cond = FALSE)
 	{
 		if ($cond)
 		{
@@ -161,7 +161,7 @@ class MY_Model extends CI_Model {
 		}
 		$this->db->where($where)
 				->select($field);
-		$result = $this->db->get($this->table);
+		return $this->db->get($this->table);
 	}
 	
 	
@@ -175,7 +175,7 @@ class MY_Model extends CI_Model {
 			{
 				$this->db->order_by($arg);
 			}
-			if ($portion == 'limit')
+			if ($portion == 'limit') // $arg type varies on $portion
 			{
 				if (gettype($arg) == 'array')
 				{

@@ -21,16 +21,26 @@
 	<!-- End Google Tag Manager -->
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Monteserrat:500,700" rel="stylesheet">
 
 	<!-- Font Awesome CDN -->
-	<script src="https://use.fontawesome.com/d5eddf6cb3.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo fontawesome() ?>">
 
 	<!-- Bootstrap CSS -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- JQuery UI -->
 	<link rel="stylesheet" type="text/css" href="<?php echo clientjs('jquery-ui.smoothness/jquery-ui.css') ?>">
+
+	<link rel="stylesheet" href="<?php echo themecss('index.css') ?>" media="screen" >
+	<link rel="stylesheet" href="<?php echo themecss('footer.css') ?>" media="screen" >
+	<link rel="stylesheet" href="<?php echo themecss('header.css') ?>" media="screen" >
+	<link rel="stylesheet" href="<?php echo themecss('style.css') ?>" media="screen" >
+	<link rel="stylesheet" href="<?php echo themecss('addClass.css') ?>" media="screen" >
+	<link rel="stylesheet" href="<?php echo themecss('responsive.css') ?>" media="screen" >
+	<link rel="stylesheet" href="<?php echo themevender('animate.css') ?>" media="screen" >
+	<link rel="stylesheet" href="<?php echo themevender('swiper.min.css')?>" media="screen" >
+	<link rel="stylesheet" href="<?php echo themevender('ion.rangeSlider.css')?>" media="screen" >
 
 	<!-- MY style -->
 	<link rel="stylesheet" type="text/css" href="<?php echo clientcss('style.css') ?>">
@@ -69,41 +79,65 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
-<div class="container-fluid sticky" id="contact">
-	<div class="row">
-		<div class="col-xs-12 col-md-10 col-md-offset-1 contact">
-			<i class="fa fa-phone fa-2x"></i>&nbsp;&nbsp;&nbsp;
-			<span class="hgd-heading-highlight">Giải đáp thắc mắc: <a href="tel:0944852366">094 485 23 66</a></span>
-		</div>
+<div id="header">
+    <div class="line1 layout frame0">
+        <div class="phone">
+            <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
+        </div>
+        <div class="log">
+            <span><a href=""><b>Bạn là giáo viên?</b></a></span>
+        </div>
 	</div>
-</div>
+    <div class="line2">
+        <nav class="navbar navbar-default frame0" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo%20full.png') ?>" class="logo" alt=""></a>
+            </div>
 
-<div class="container">
-	<div class="row">
-		<img src="<?php echo imgsrc('Logo-Mobile.jpg') ?>" alt="hocgiday.vn" class="logo-xs">
-		<img src="<?php echo imgsrc('Logo-Tablet-Desktop.jpg') ?>" alt="hocgiday.vn" class="logo-md">
-	</div>
-	<div class="row">
-	</div>
-</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="<?php echo base_url() ?>">TRANG CHỦ</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hà Nội</a></li>
+                            <li><a href="#">Đà Nẵng</a></li>
+                            <li><a href="#">Sài Gòn</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
+                    <li class="request"><a href="<?php echo base_url() ?>yeucaugiaovien" title=""><span><b>YÊU CẦU GIÁO VIÊN</b></span></a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
 
-<div class="container-fluid hgd-header">
-	<div class="text-center hgd-header">
-		<h1 id="h1">HỌC PIANO DỄ HƠN HẲN TẠI HÀ NỘI</h1>
-		<h2 id="h3">LỰA CHỌN HỌC PIANO VỚI HÀNG CHỤC GIÁO VIÊN TỐT NHẤT HÀ NỘI</h2>
-	</div>
-</div>
+    <div class="line3 layout frame0 scroll">
+        <div class="phone">
+            <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
+        </div>
+        <div class="logo">
+            <a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>
+        </div>
+        <div class="request">
+            <a href="<?php echo base_url() ?>yeucaugiaovien"><span><b>YÊU CẦU GIÁO VIÊN</b></span></a>
+        </div>
+    </div>
+</div><!--#MENU-->
 
-<!-- Slider filter -->
-<div class="container-fluid slider-filter sticky">
-	<div class="row">
-		<div class="slider-container center-block" id="price-slider"></div>
-	</div>
-	<div class="row text-center slider-info">
-		<label for="price">Khoảng học phí: </label>
-		<input id="amount" type="text" name="price" value="" disabled="disabled" class="slider-amount"> đồng/h
-	</div>
-</div>
 
 <!-- Profile List -->
 <div class="container hgd-container">
@@ -239,6 +273,30 @@
 	</div> <!-- End Profile row --> 
 	<?php } ?>
 
+	<!-- Basic pagination -->
+	<?php if ($total_pages > 1): ?>
+	<ul class="pagination pagination-lg">
+	<?php if ($cur_page > 1): ?>
+		<li><a href="<?php echo base_url('piano/ha-noi/1') ?>" title="">&lt;&lt;</a></li>
+		<li><a href="<?php echo base_url('piano/ha-noi/'.($cur_page-1)) ?>" title="">&lt;</a></li>
+	<?php endif; ?>
+
+	<?php for ($i = $min_page; $i <= $max_page; $i++) {?>
+		<?php if ($i == $cur_page) {?>
+		<li class="active"><a href="<?php echo base_url('piano/ha-noi/'.$i) ?>"><?php echo $i ?></a></li>
+		<?php } else { ?>
+		<li><a href="<?php echo base_url('piano/ha-noi/'.$i) ?>"><?php echo $i ?></a></li>
+		<?php } ?>
+	<?php } ?>
+
+	<?php if ($cur_page < $total_pages): ?>
+		<li><a href="<?php echo base_url('piano/ha-noi/'.($cur_page+1)) ?>">&gt;</a></li>
+		<li><a href="<?php echo base_url('piano/ha-noi/'.$total_pages) ?>">&gt;&gt;</a></li>
+	<?php endif; ?>
+	</ul>
+	<?php endif; ?>
+	<!-- End basic pagination -->
+
 <div class="container">
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" role="dialog">
@@ -305,16 +363,59 @@
 
 </div> <!-- End Profile list -->
 
-<!-- jQuery -->
-<script
-	src="https://code.jquery.com/jquery-3.2.1.js"
-	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-	crossorigin="anonymous">
-</script>
+<div id="footer">
+    <footer class="frame layout">
+        <div class="items30">
+            <h3>HƯỚNG DẪN</h3>
+            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn học sinh </a>
+            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn phụ huynh </a>
+            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn giáo viên </a>
+        </div>
+        <div class="items30">
+            <h3>Tìm hiểu thêm</h3>
+            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Về chúng tôi</a>
+            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Bài viết</a>
+            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Câu hỏi thường gặp</a>
+        </div>
+        <div class="items30">
+            <h3>GIẢNG DẠY CÙNG CHÚNG TÔI</h3>
+            <p>Để lại thông tin để chúng tôi giúp bạn</p>
+            <button class="text-center">DÀNH CHO GIÁO VIÊN</button>
+            <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+            <div id="social" class="layout">
+                <div class="social facebook">
+                    <a href="https://www.facebook.com/hocgiday/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div class="social youtube">
+                    <a href="https://www.youtube.com/channel/UCzOtVvQZ4dLakqa-Y0lLHwg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </div>
+                <div class="social google">
+                    <a href="https://plus.google.com/u/1/b/110506048934264272362/?hl=vi"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer><!--FOOTER-->
+</div>
+
+<div id="copyright" class="text-center">
+   <a href="https://www.hocgiday.com/dieu-khoan-su-dung/">Điều khoản sử dụng</a><br>
+    2017 Copyright Học gì đây? All rights reversed
+</div>
+
+
+<script src="<?php echo themevender('')?>jquery-3.2.0.min.js"></script>
 <!-- JQuery UI -->
 <script src="<?php echo clientjs('jquery-ui.smoothness/jquery-ui.js') ?>" type="text/javascript" charset="utf-8"></script>	
 <!-- Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--Vender-->
+<script src="<?php echo themevender('')?>wow.min.js"></script>
+<script src="<?php echo themevender('')?>swiper.min.js"></script>
+<!-- Javascipt -->
+<script src="<?php echo themejs('')?>index.js"></script>
+<script src="<?php echo themejs('')?>function.js"></script>
 
 <!-- MY script -->
 <script src="<?php echo clientjs('app.js') ?>" type="text/javascript" charset="utf-8"></script>
