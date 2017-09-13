@@ -12,7 +12,7 @@
     <meta charset="utf-8" lang="vi" http-equiv="content-type">
     <meta name="description" content="Học Guitar, Học Piano Dễ Dàng Với 60+ Giáo Viên Sống Quanh Bạn Tại Hà Nội">
     <link rel="stylesheet" href="<?php echo themevender('normalize.min.css') ?>" media="screen" >
-    <link rel="alternate" hreflang="vn" href="https://hocgiday.vn/" />
+    <link rel="alternate" hreflang="vi" href="https://hocgiday.vn/" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="<?php echo themeimg('logo.png') ?>">
 
@@ -60,10 +60,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-<!--
-                    <li class="active"><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
--->
                 </ul>
                 <form class="navbar-form navbar-left" role="search">
                     <div class="form-group">
@@ -75,9 +71,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Hà Nội</a></li>
-                            <li><a href="#">Đà Nẵng</a></li>
-                            <li><a href="#">Sài Gòn</a></li>
+                            <li><a href="<?php echo base_url() ?>guitar/ha-noi">Guitar</a></li>
+                            <li><a href="<?php echo base_url() ?>piano/ha-noi">Piano</a></li>
                         </ul>
                     </li>
                     <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
@@ -110,11 +105,11 @@
             </div>
             <div class="insider text-center">
                 <h1>TÌM GIÁO VIÊN NHẠC DỄ HƠN HẲN</h1>
-                <div class="search">
+<!--                 <div class="search">
                     <form>
                       <input type="text" name="search" placeholder="Search..">
                     </form>
-                </div>
+                </div> -->
                 <button class="instrument"><b>CHỌN NHẠC CỤ</b></button>
                 
                 <div class="symbol">
@@ -129,6 +124,7 @@
                 <div class="items30 wow fadeInDown" data-wow-offset="100">
                     <img src="<?php echo themeimg('thumb/Guitar-01.jpg') ?>" alt="hoc-guitar" class="full-width">
                     <div class="insider">
+                        <a href="<?php echo base_url() ?>guitar/ha-noi" class="link"></a>
                         <div class="content">
                             <a href="<?php echo base_url() ?>guitar/ha-noi/"><p>GUITAR</p></a>
                         </div>
@@ -137,6 +133,7 @@
                 <div class="items30 wow fadeInDown" data-wow-offset="100">
                     <img src="<?php echo themeimg('thumb/Piano-01.jpg') ?>" alt="hoc-piano" class="full-width">
                     <div class="insider">
+                        <a href="<?php echo base_url() ?>piano/ha-noi" class="link"></a>
                         <div class="content">
                             <a href="<?php echo base_url() ?>piano/ha-noi/"><p>PIANO</p></a>
                         </div>
@@ -145,8 +142,9 @@
                 <div class="items30 wow fadeInDown" data-wow-offset="100">
                     <img src="<?php echo themeimg('thumb/Thanh%20nhac-01.jpg') ?>" alt="hoc-thanh-nhac" class="full-width">
                     <div class="insider">
+                        <a href="<?php echo base_url() ?>thanhnhac/ha-noi/" class="link"></a>
                         <div class="content">
-                            <a href=""><p>THANH NHẠC</p></a>
+                            <a href="<?php echo base_url() ?>thanhnhac/ha-noi/"><p>THANH NHẠC</p></a>
                         </div>
                     </div>
                 </div>
@@ -302,14 +300,14 @@
         <footer class="frame layout">
             <div class="items30">
                 <h3>HƯỚNG DẪN</h3>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn học sinh </a>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn phụ huynh </a>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn giáo viên </a>
+                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn học viên </a>
+                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn phụ huynh </a>
+                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn giáo viên </a>
             </div>
             <div class="items30">
-                <h3>Tìm hiểu thêm</h3>
+                <h3>TÌM HIỂU THÊM</h3>
                 <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Về chúng tôi</a>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Bài viết</a>
+                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Bài viết</a>
                 <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Câu hỏi thường gặp</a>
             </div>
             <div class="items30">

@@ -190,9 +190,10 @@
 					</ul>
 				</div>
 			</div>
-	   </div>
+	    </div>
 	   
-	   <div id="document" class="frame text-center">
+	    <?php if (isset($docs)) {?>
+	    <div id="document" class="frame text-center">
 		   <h1><b>BẮT ĐẦU VỚI NHỮNG TÀI LIỆU MIỄN PHÍ SAU</b></h1>
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
@@ -256,8 +257,8 @@
 			<!-- Add Arrows -->
 			<div class="swiper-button-next"></div>
 			<div class="swiper-button-prev"></div>
-	   </div><!--DOCUMENT-->
-	   
+	    </div><!--DOCUMENT-->
+	    <?php } ?>
 		
 	</div><!--#BODY-->
 	

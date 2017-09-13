@@ -15,7 +15,6 @@ $orange : #f87311;
 
 
 
-
    
 #body{
     #banner{
@@ -93,6 +92,14 @@ $orange : #f87311;
                     color: white;
                     padding: 10px;
                     transition: all 1s;
+                    a.link{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        transition: all 0 !important;
+                    }
                     .content{
                         opacity: 0;
                         width: 100%;

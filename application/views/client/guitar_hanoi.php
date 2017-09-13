@@ -9,6 +9,8 @@
   	<meta name="description" content="Học Guitar Dễ Dàng Với 30+ Giáo Viên Tốt Nhất Sống Quanh Bạn Tại Hà Nội">
 	<title><?php echo $title ?> | Học Gì Đây?</title>
 	<link rel="icon" type="image/x-icon" href="<?php echo imgsrc('x-icon.jpg') ?>">
+	<link rel="alternate" hreflang="vi" href="https://hocgiday.vn/guitar/hanoi" />
+
 
 	<!-- Google Tag Manager -->
 	<script>
@@ -136,6 +138,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 </div><!--#MENU-->
+
+<div class="container-fluid hgd-header">
+	<div class="text-center hgd-header">
+		<h1 id="h1">BẠN MUỐN HỌC GUITAR?</h1>
+		<h3 id="h3">LỰA CHỌN GIỮA HÀNG CHỤC GIÁO VIÊN GUITAR TẠI HÀ NỘI</h3>
+	</div>
+</div>
 
 <!-- Profile List -->
 <div class="container hgd-container">

@@ -43,7 +43,14 @@ class Baiviet extends CI_Controller {
 
   public function news_category($slug = '')
   {
-    
+    if (!$slug)
+    {
+      redirect('/');
+    }
+    else
+    {
+      
+    }
   }
 
   function hot_news()

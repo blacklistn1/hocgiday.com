@@ -101,6 +101,17 @@ body {
   transition: all 1s;
 }
 
+#body #options #instruments .items30 .insider a.link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0 !important;
+  -o-transition: all 0 !important;
+  transition: all 0 !important;
+}
+
 #body #options #instruments .items30 .insider .content {
   opacity: 0;
   width: 100%;

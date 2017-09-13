@@ -5,25 +5,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="học piano, học đánh piano, học đàn piano, học đánh đàn piano, học piano cơ bản, học piano tại Hà Nội, học đánh piano tại Hà Nội, học đàn piano tại Hà Nội, học đánh đàn piano tại Hà Nội, học piano cơ bản tại Hà Nội">
-  	<meta name="description" content="Học Piano Dễ Dàng Với 30+ Giáo Viên Tốt Nhất Sống Quanh Bạn Tại Hà Nội">
-    <link rel="alternate" hreflang="vi" href="https://hocgiday.vn/piano/hanoi" />
-
 	<title><?php echo $title ?> | Học Gì Đây?</title>
 	<link rel="icon" type="image/x-icon" href="<?php echo imgsrc('x-icon.jpg') ?>">
-
-	<!-- Google Tag Manager -->
-	<script>
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-KHS4KLP');
-	</script>
-	<!-- End Google Tag Manager -->
+	<link rel="alternate" hreflang="vi" href="<?php echo base_url() ?>thanhnhac/hanoi" />
 
 	<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Monteserrat:500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Monteserrat:500,700" rel="stylesheet">
 
 	<!-- Font Awesome CDN -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -47,39 +34,8 @@
 	<!-- MY style -->
 	<link rel="stylesheet" type="text/css" href="<?php echo clientcss('style.css') ?>">
 
-	<style type="text/css" media="screen">
-
-	</style>
-	<!-- Hotjar Tracking Code for www.hocgiday.com/ -->
-	<script>
-		(function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:569211,hjsv:5};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-			a.appendChild(r);
-		})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-	</script>
-
-
-	<!-- Google Analytics Tracking Code for Piano -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-85357957-2', 'auto');
-		ga('send', 'pageview');
-	</script>
-		
 </head>
 <body onresize ="fixResponsive()">
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHS4KLP"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
 
 <div id="header">
     <div class="line1 layout frame0">
@@ -142,8 +98,8 @@
 
 <div class="container-fluid hgd-header">
 	<div class="text-center hgd-header">
-		<h1 id="h1">BẠN MUỐN HỌC PIANO?</h1>
-		<h3 id="h3">LỰA CHỌN GIỮA HÀNG CHỤC GIÁO VIÊN PIANO TẠI HÀ NỘI</h3>
+		<h1 id="h1">BẠN MUỐN HỌC THANH NHẠC?</h1>
+		<h3 id="h3">LỰA CHỌN GIỮA HÀNG CHỤC GIÁO VIÊN THANH NHẠC TẠI HÀ NỘI</h3>
 	</div>
 </div>
 
@@ -158,7 +114,7 @@
 		<div class="row hgd-profile ">
 			<div class="d-flex align-self-stretch profile-column">
 				<div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 hgd-profile-info hgd-avatar">
-					<img class="img-circle img-responsive center-block hgd-profile-avatar" src="<?php echo base_url('assets/img/teachers/piano/hoc_piano_voi_'.$rec->nametag.'.jpg') ?>" alt="<?php echo $rec->nametag ?>">
+					<img class="img-circle img-responsive center-block hgd-profile-avatar" src="<?php echo $rec->avatar ?>" alt="<?php echo $rec->nametag ?>">
 				</div>
 			</div>
 			<div class="d-flex align-self-stretch profile-column">
@@ -218,8 +174,7 @@
 					<h4>Học vấn</h4>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">	
 						<p><?php echo $rec->hoc_van ?></p>
-					</div>
-					
+					</div>					
 				</div>
 				<div class="row">
 					<h4>Video</h4>
@@ -285,21 +240,21 @@
 	<?php if ($total_pages > 1): ?>
 	<ul class="pagination pagination-lg">
 	<?php if ($cur_page > 1): ?>
-		<li><a href="<?php echo base_url('piano/ha-noi/1') ?>" title="">&lt;&lt;</a></li>
-		<li><a href="<?php echo base_url('piano/ha-noi/'.($cur_page-1)) ?>" title="">&lt;</a></li>
+		<li><a href="<?php echo base_url('thanhnhac/ha-noi/1') ?>" title="">&lt;&lt;</a></li>
+		<li><a href="<?php echo base_url('thanhnhac/ha-noi/'.($cur_page-1)) ?>" title="">&lt;</a></li>
 	<?php endif; ?>
 
 	<?php for ($i = $min_page; $i <= $max_page; $i++) {?>
 		<?php if ($i == $cur_page) {?>
-		<li class="active"><a href="<?php echo base_url('piano/ha-noi/'.$i) ?>"><?php echo $i ?></a></li>
+		<li class="active"><a href="<?php echo base_url('thanhnhac/ha-noi/'.$i) ?>"><?php echo $i ?></a></li>
 		<?php } else { ?>
-		<li><a href="<?php echo base_url('piano/ha-noi/'.$i) ?>"><?php echo $i ?></a></li>
+		<li><a href="<?php echo base_url('thanhnhac/ha-noi/'.$i) ?>"><?php echo $i ?></a></li>
 		<?php } ?>
 	<?php } ?>
 
 	<?php if ($cur_page < $total_pages): ?>
-		<li><a href="<?php echo base_url('piano/ha-noi/'.($cur_page+1)) ?>">&gt;</a></li>
-		<li><a href="<?php echo base_url('piano/ha-noi/'.$total_pages) ?>">&gt;&gt;</a></li>
+		<li><a href="<?php echo base_url('thanhnhac/ha-noi/'.($cur_page+1)) ?>">&gt;</a></li>
+		<li><a href="<?php echo base_url('thanhnhac/ha-noi/'.$total_pages) ?>">&gt;&gt;</a></li>
 	<?php endif; ?>
 	</ul>
 	<?php endif; ?>
@@ -315,14 +270,14 @@
 					<h3 class="modal-title" id="tName"></h3> 
 				</div>
 				<div class="modal-body">
-					<form action="<?php echo base_url() ?>piano/ha-noi" method="POST" role="form">
+					<form action="<?php echo base_url() ?>thanhnhac/ha-noi" method="POST" role="form">
 						<div class="form-group">
 							<input type="text" name="fullname" class="form-control mailing-info" placeholder="Tên đầy đủ của bạn" required="required">
 							<p><?php echo form_error('fullname') ?></p>
 						</div>
 						<div class="form-group">
 							<input type="text" name="tel" class="form-control mailing-info" placeholder="Số điện thoại" required="required">
-							<p><?php echo form_error('tel') ?></p>
+							<?php echo form_error('tel') ?>
 						</div>
 						<div class="form-group">
 							<label>Bạn muốn học tại: </label>
@@ -342,7 +297,7 @@
 						</div>
 						<div class="form-group">
 							<input type="hidden" name="teacher" id="chosen-teacher" class="form-control">
-							<input type="hidden" name="subject" value="piano">
+							<input type="hidden" name="subject" value="thanh nhạc">
 							<input type="hidden" name="city" value="Hà Nội">
 						</div>
 						<div class="modal-footer">
@@ -402,15 +357,8 @@
                 </div>
             </div>
         </div>
-
     </footer><!--FOOTER-->
 </div>
-
-<div id="copyright" class="text-center">
-   <a href="https://www.hocgiday.com/dieu-khoan-su-dung/">Điều khoản sử dụng</a><br>
-    2017 Copyright Học gì đây? All rights reversed
-</div>
-
 
 <script src="<?php echo themevender('')?>jquery-3.2.0.min.js"></script>
 <!-- JQuery UI -->
@@ -427,6 +375,8 @@
 
 <!-- MY script -->
 <script src="<?php echo clientjs('app.js') ?>" type="text/javascript" charset="utf-8"></script>
+
+
 
 </body>
 </html>
