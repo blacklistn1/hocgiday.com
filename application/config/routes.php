@@ -51,9 +51,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['default_controller'] = 'home';
-$route['404_override'] = '';
+$route['404_override'] = 'error404';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['ve-chung-toi'] = 'home/aboutus';
 $route['guitar/(:any)'] = 'guitar/city/$1/1';
 $route['guitar/(:any)/(:num)'] = 'guitar/city/$1/$2';
 $route['piano/(:any)'] = 'piano/city/$1/1';
@@ -64,3 +65,4 @@ $route['dieu-khoan-su-dung'] = 'home/terms';
 $route['bai-viet'] = 'baiviet';
 $route['bai-viet/(:any)'] = 'baiviet/news_detail/$1';
 $route['bai-viet/chuyen-muc/(:any)'] = 'baiviet/news_category/$1';
+$route['bai-viet/test'] = 'baiviet/test';

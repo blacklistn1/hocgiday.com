@@ -18,7 +18,7 @@ $tags = explode(', ', $rec->tags);
 	<link rel="stylesheet" href="<?php echo themevender('')?>normalize.min.css" media="screen" >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="<?php echo themeimg('')?>logo.png">
-
+    <meta name="description" content="<?php echo $rec->mo_ta_ngan ?>">
 	<!--CSS-->
 	<link rel="stylesheet" href="<?php echo themevender('')?>bootstrap.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
@@ -37,7 +37,7 @@ $tags = explode(', ', $rec->tags);
 			list-style-type: circle;
 			list-style-position: inside;
 		}
-        .post a {
+		.post a {
             text-decoration: none;
             color: #f87311;
         }
@@ -83,9 +83,9 @@ $tags = explode(', ', $rec->tags);
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Hà Nội</a></li>
-                            <li><a href="#">Đà Nẵng</a></li>
-                            <li><a href="#">Sài Gòn</a></li>
+                            <li><a href="<?php echo base_url() ?>guitar/ha-noi">Guitar</a></li>
+                            <li><a href="<?php echo base_url() ?>piano/ha-noi">Piano</a></li>
+                            <li><a href="<?php echo base_url() ?>thanhnhac/ha-noi">Thanh nhạc</a></li>
                         </ul>
                     </li>
                     <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
@@ -153,7 +153,7 @@ $tags = explode(', ', $rec->tags);
                 </div>
             <?php endforeach; ?>
                 
-                <div class="pagination">
+<!--                 <div class="pagination">
                     <ul>
                         <li class="first direction"><i class="fa fa-angle-double-left" aria-hidden="true"></i></li>
                         <li class="prev direction"><i class="fa fa-angle-left" aria-hidden="true"></i></li>
@@ -168,7 +168,7 @@ $tags = explode(', ', $rec->tags);
                         <li class="next appear direction" ><i class="fa fa-angle-right" aria-hidden="true"></i></li>
                         <li class="last appear direction"><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div><!--#NEWS-->
     </div><!--#BODY-->
@@ -178,15 +178,15 @@ $tags = explode(', ', $rec->tags);
         <footer class="frame layout">
             <div class="items30">
                 <h3>HƯỚNG DẪN</h3>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn học sinh </a>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn phụ huynh </a>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn giáo viên </a>
+                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn học viên </a>
+                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn phụ huynh </a>
+                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn giáo viên </a>
             </div>
             <div class="items30">
-                <h3>Tìm hiểu thêm</h3>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Về chúng tôi</a>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Bài viết</a>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Câu hỏi thường gặp</a>
+                <h3>TÌM HIỂU THÊM</h3>
+                <a href="<?php echo base_url() ?>ve-chung-toi"><i class="fa fa-caret-right" aria-hidden="true"></i> Về chúng tôi</a>
+                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Bài viết</a>
+                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Câu hỏi thường gặp</a>
             </div>
             <div class="items30">
                 <h3>GIẢNG DẠY CÙNG CHÚNG TÔI</h3>
@@ -195,23 +195,23 @@ $tags = explode(', ', $rec->tags);
                 <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
                 <div id="social" class="layout">
                     <div class="social facebook">
-                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/hocgiday/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </div>
                     <div class="social youtube">
-                        <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/channel/UCzOtVvQZ4dLakqa-Y0lLHwg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                     </div>
                     <div class="social google">
-                        <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="https://plus.google.com/110506048934264272362"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
 
         </footer><!--FOOTER-->
-    </div><!--#FOOTER-->
+    </div>
     
     
     <div id="copyright" class="text-center">
-       <a href="https://www.hocgiday.com/dieu-khoan-su-dung/">Điều khoản sử dụng</a><br>
+       <a href="<?php echo base_url() ?>dieu-khoan-su-dung">Điều khoản sử dụng</a><br>
         2017 Copyright Học gì đây? All rights reversed
     </div>
     

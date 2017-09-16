@@ -37,64 +37,62 @@
 <body ontouchstart="">
     <div id="header">
         <div class="line1 layout frame0">
-        <div class="phone">
-            <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
-        </div>
-        <div class="log">
-            <span><a href=""><b>Bạn là giáo viên?</b></a></span>
-        </div>
-    </div>
-        <div class="line2">
-        <nav class="navbar navbar-default frame0" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo%20full.png') ?>" class="logo" alt=""></a>
+            <div class="phone">
+                <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
             </div>
+            <div class="log">
+                <span><a href=""><b>Bạn là giáo viên?</b></a></span>
+            </div>
+        </div>
+        <div class="line2">
+            <nav class="navbar navbar-default frame0" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo%20full.png') ?>" class="logo" alt=""></a>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                </ul>
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo base_url() ?>">TRANG CHỦ</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?php echo base_url() ?>guitar/ha-noi">Guitar</a></li>
-                            <li><a href="<?php echo base_url() ?>piano/ha-noi">Piano</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
-                    <li class="request"><a href="<?php echo base_url() ?>yeucaugiaovien" title=""><span><b>YÊU CẦU GIÁO VIÊN</b></span></a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </nav>
-        
-
-
-    </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="<?php echo base_url() ?>">TRANG CHỦ</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<?php echo base_url() ?>guitar/ha-noi">Guitar</a></li>
+                                <li><a href="<?php echo base_url() ?>piano/ha-noi">Piano</a></li>
+                                <li><a href="<?php echo base_url() ?>thanhnhac/ha-noi">Thanh nhạc</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
+                        <li class="request"><a href="<?php echo base_url() ?>yeucaugiaovien" title=""><span><b>YÊU CẦU GIÁO VIÊN</b></span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
         <div class="line3 layout frame0 scroll">
-        <div class="phone">
-            <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
+            <div class="phone">
+                <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
+            </div>
+            <div class="logo">
+                <a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>
+            </div>
+            <div class="request">
+                <a href="<?php echo base_url() ?>yeucaugiaovien"><span><b>YÊU CẦU GIÁO VIÊN</b></span></a>
+            </div>
         </div>
-        <div class="logo">
-            <a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>
-        </div>
-        <div class="request">
-            <a href="<?php echo base_url() ?>yeucaugiaovien"><span><b>YÊU CẦU GIÁO VIÊN</b></span></a>
-        </div>
-    </div>
     </div><!--#MENU-->
 
     <div id="body">
@@ -306,9 +304,9 @@
             </div>
             <div class="items30">
                 <h3>TÌM HIỂU THÊM</h3>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Về chúng tôi</a>
+                <a href="<?php echo base_url() ?>ve-chung-toi"><i class="fa fa-caret-right" aria-hidden="true"></i> Về chúng tôi</a>
                 <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Bài viết</a>
-                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Câu hỏi thường gặp</a>
+                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Câu hỏi thường gặp</a>
             </div>
             <div class="items30">
                 <h3>GIẢNG DẠY CÙNG CHÚNG TÔI</h3>
@@ -323,7 +321,7 @@
                         <a href="https://www.youtube.com/channel/UCzOtVvQZ4dLakqa-Y0lLHwg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                     </div>
                     <div class="social google">
-                        <a href="https://plus.google.com/u/1/b/110506048934264272362/?hl=vi"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="https://plus.google.com/110506048934264272362"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -332,7 +330,7 @@
     </div>
     
     <div id="copyright" class="text-center">
-       <a href="https://www.hocgiday.com/dieu-khoan-su-dung/">Điều khoản sử dụng</a><br>
+       <a href="<?php echo base_url() ?>dieu-khoan-su-dung">Điều khoản sử dụng</a><br>
         2017 Copyright Học gì đây? All rights reversed
     </div>
     

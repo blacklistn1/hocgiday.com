@@ -66,9 +66,9 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Hà Nội</a></li>
-							<li><a href="#">Đà Nẵng</a></li>
-							<li><a href="#">Sài Gòn</a></li>
+						    <li><a href="<?php echo base_url() ?>guitar/ha-noi">Guitar</a></li>
+						    <li><a href="<?php echo base_url() ?>piano/ha-noi">Piano</a></li>
+						    <li><a href="<?php echo base_url() ?>thanhnhac/ha-noi">Thanh nhạc</a></li>
 						</ul>
 					</li>
 					<li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
@@ -173,7 +173,7 @@
 				</div>
 			<?php endforeach; ?>
 				
-				<div class="pagination">
+<!-- 				<div class="pagination">
 					<ul>
 						<li class="first direction"><i class="fa fa-angle-double-left" aria-hidden="true"></i></li>
 						<li class="prev direction"><i class="fa fa-angle-left" aria-hidden="true"></i></li>
@@ -188,10 +188,11 @@
 						<li class="next appear direction" ><i class="fa fa-angle-right" aria-hidden="true"></i></li>
 						<li class="last appear direction"><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 	    </div>
-	   
+
+	    
 	    <?php if (isset($docs)) {?>
 	    <div id="document" class="frame text-center">
 		   <h1><b>BẮT ĐẦU VỚI NHỮNG TÀI LIỆU MIỄN PHÍ SAU</b></h1>
@@ -267,15 +268,15 @@
 		<footer class="frame layout">
 			<div class="items30">
 				<h3>HƯỚNG DẪN</h3>
-				<a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn học sinh </a>
-				<a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn phụ huynh </a>
-				<a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn giáo viên </a>
+				<a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn học sinh </a>
+				<a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn phụ huynh </a>
+				<a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn giáo viên </a>
 			</div>
 			<div class="items30">
-				<h3>Tìm hiểu thêm</h3>
-				<a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Về chúng tôi</a>
-				<a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Bài viết</a>
-				<a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Câu hỏi thường gặp</a>
+				<h3>TÌM HIỂU THÊM</h3>
+				<a href="<?php echo base_url() ?>ve-chung-toi"><i class="fa fa-caret-right" aria-hidden="true"></i> Về chúng tôi</a>
+				<a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Bài viết</a>
+				<a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Câu hỏi thường gặp</a>
 			</div>
 			<div class="items30">
 				<h3>GIẢNG DẠY CÙNG CHÚNG TÔI</h3>
@@ -284,13 +285,13 @@
 				<h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
 				<div id="social" class="layout">
 					<div class="social facebook">
-						<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/hocgiday/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 					</div>
 					<div class="social youtube">
-						<a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+						<a href="https://www.youtube.com/channel/UCzOtVvQZ4dLakqa-Y0lLHwg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 					</div>
 					<div class="social google">
-						<a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="https://plus.google.com/110506048934264272362"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 					</div>
 				</div>
 			</div>
@@ -300,7 +301,7 @@
 	
 	
 	<div id="copyright" class="text-center">
-	   <a href="https://www.hocgiday.com/dieu-khoan-su-dung/">Điều khoản sử dụng</a><br>
+	   <a href="<?php echo base_url() ?>dieu-khoan-su-dung">Điều khoản sử dụng</a><br>
 		2017 Copyright Học gì đây? All rights reversed
 	</div>
 	

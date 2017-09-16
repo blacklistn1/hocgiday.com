@@ -71,4 +71,17 @@ class Baiviet extends CI_Controller {
     $recent_news = $this->m_news->read_data($field);
     return $recent_news;
   }
+
+  function recent_news_ajax($page = '1')
+  {
+    $offset = ($page - 1) * 3;
+    $per_page = 3;
+    $cond['order_by'] = 'ngay_dang DESC';
+    $cond['limit'] = array($per_page, $offset);
+    $where = array('status' => 1);
+    $field = 'ten_bai_viet, slug, ngay_dang, thumbnail, thumbnail_alt, mo_ta_ngan';
+    $result = $this->m_news->read_data($field, array(1=>1), $cond);
+    $data['result'] = $result;
+    echo json_encode($result);
+  }
 }

@@ -226,8 +226,8 @@
 </p>
 <p>Nếu có bất kỳ thắc măc gì liên quan đến Thỏa thuận này, hãy liên hệ với chúng tôi qua số điện thoại 094 485 23 66.
 </p>
-<p>TÔI ĐÃ ĐỌC VÀ ĐỒNG Ý VỚI TẤT CẢ NHỮNG QUY ĐỊNH ĐƯỢC NÊU RA TRONG THỎA THUẬN NÀY
-</p>
+<a href="<?php echo base_url() ?>">TÔI ĐÃ ĐỌC VÀ ĐỒNG Ý VỚI TẤT CẢ NHỮNG QUY ĐỊNH ĐƯỢC NÊU RA TRONG THỎA THUẬN NÀY
+</a>
 </body>
 </html>
 

@@ -42,10 +42,10 @@
         <div class="phone">
             <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
         </div>
-        <div class="log">
+<!--         <div class="log">
             <span><a href=""><b>Bạn là giáo viên?</b></a></span>
         </div>
-	</div>
+ -->	</div>
     <div class="line2">
         <nav class="navbar navbar-default frame0" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -67,16 +67,6 @@
                     </div>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo base_url() ?>">TRANG CHỦ</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Hà Nội</a></li>
-                            <li><a href="#">Đà Nẵng</a></li>
-                            <li><a href="#">Sài Gòn</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
                     <li class="request"><a href="<?php echo base_url() ?>yeucaugiaovien" title=""><span><b>YÊU CẦU GIÁO VIÊN</b></span></a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -130,12 +120,12 @@
 					<h3 id="rating">Đánh Giá</h3>
 					<div class="rating-star-box">
 						<span>
-						<?php for ($i = 1; $i <= $rec->rating; $i++) {?>
+						<?php for ($i = 1; $i <= 5; $i++) {?>
+							<?php if ($i <= $rec->rating) {?>
 							<i class="fa fa-star" aria-hidden="true"></i>
-						<?php } ?>
-						<?php $rating_fill = 4 - $rec->rating ?>
-						<?php for ($k = 0; $k <= $rating_fill; $k++) {?>
+							<?php } else { ?>
 							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<?php } ?>
 						<?php } ?>
 						</span>
 						<span class="num-of-rates"><?php echo $rec->so_nguoi_danh_gia ?></span>
@@ -325,40 +315,6 @@
 </div>
 
 </div> <!-- End Profile list -->
-
-<div id="footer">
-    <footer class="frame layout">
-        <div class="items30">
-            <h3>HƯỚNG DẪN</h3>
-            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn học sinh </a>
-            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn phụ huynh </a>
-            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn giáo viên </a>
-        </div>
-        <div class="items30">
-            <h3>Tìm hiểu thêm</h3>
-            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Về chúng tôi</a>
-            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Bài viết</a>
-            <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Câu hỏi thường gặp</a>
-        </div>
-        <div class="items30">
-            <h3>GIẢNG DẠY CÙNG CHÚNG TÔI</h3>
-            <p>Để lại thông tin để chúng tôi giúp bạn</p>
-            <button class="text-center">DÀNH CHO GIÁO VIÊN</button>
-            <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
-            <div id="social" class="layout">
-                <div class="social facebook">
-                    <a href="https://www.facebook.com/hocgiday/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </div>
-                <div class="social youtube">
-                    <a href="https://www.youtube.com/channel/UCzOtVvQZ4dLakqa-Y0lLHwg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                </div>
-                <div class="social google">
-                    <a href="https://plus.google.com/u/1/b/110506048934264272362/?hl=vi"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer><!--FOOTER-->
-</div>
 
 <script src="<?php echo themevender('')?>jquery-3.2.0.min.js"></script>
 <!-- JQuery UI -->
