@@ -17,6 +17,33 @@ class Baiviet extends CI_Controller {
     $this->load->view('client/baiviet', $data);
   }
 
+  public function news_list($page = '1')
+  {
+
+    $per_page = 10;
+    $num_of_links = 2;
+    $min_page = $page - $num_of_links;
+    $max_page = $page + $num_of_links;
+    $offset = ($page - 1) * $per_page;
+
+    $cond['order_by'] = 'ngay_dang DESC';
+    $cond['limit'] = array($per_page, $offset);
+    $where = array(1=>1);
+    $field = 'ten_bai_viet, ngay_dang, nguoi_dang, slug, mo_ta_ngan, tags';
+    $data['result'] = $this->m_news->read_data($field, $where, $cond);
+
+    $total_pages = $this->count_pages($field, $where, $per_page);
+    if ($min_page < 1) {$min_page = 1;}
+    if ($max_page > $total_pages) {$max_page = $total_pages;}
+    $data['total_pages'] = $total_pages;
+    $data['min_page'] = $min_page;
+    $data['max_page'] = $max_page;
+    $data['cur_page'] = $page;
+    
+    $data['title'] = 'Danh sách bài viết';
+    $this->load->view('client/news_list', $data);
+  }
+
   public function news_detail($slug = '')
   {
     if (!$slug)
@@ -83,5 +110,12 @@ class Baiviet extends CI_Controller {
     $result = $this->m_news->read_data($field, array(1=>1), $cond);
     $data['result'] = $result;
     echo json_encode($result);
+  }
+
+  function count_pages($field, $where, $per_page)
+  {
+    $res = count($this->m_news->read_data($field, $where));
+    $total_pages = ceil((float)$res / (float)$per_page);
+    return $total_pages;
   }
 }

@@ -2,7 +2,7 @@
 $black : #040707;
 $orange : #f87311;
 $gray: #959697;
-
+$lightorange: #ee8930;
 
 //---------DETAIL
 
@@ -557,3 +557,121 @@ $gray: #959697;
 
 
 
+//---------LANDING
+
+
+#header2{
+    color: white;
+    background: url(../images/banner/Bia%201440%20logo-01.jpg) no-repeat center center;
+    background-size: cover !important;
+    h2{
+        font-size: 50px;
+        margin-top: 140px;
+        line-height: 60px;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+}//#header2
+
+#why{
+    h1{
+        margin-bottom: 50px;
+    }
+    #step{
+        color: black;
+        
+        .steps{
+            .heading{
+                margin-bottom: 20px;
+                margin-top: 0;
+                line-height: 35px;
+                .number{
+                    color: white;
+                    height: 35px;
+                    width: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    background: $orange;
+                    display: inline-block;
+                    border-radius: 50%;
+                }
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}//#why
+
+
+#howitwork{
+    border-top: 2px solid #7f7f7f;
+    h4{
+        font-weight: 600;
+    }
+}//#howitwork
+
+#teachers{
+    border-top: 2px solid #7f7f7f;
+    h2{
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    .teachers{
+        .itemspx{
+            width: 200px;
+            .avatar{
+                margin: 0 auto;
+                height: 100px;
+                width:100px;
+                margin-bottom: 10px;
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+            
+            .content{
+                span{
+                    font-size: 16px;
+                    display: block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .stars{
+                    width: 200px;
+                    display: flex;
+                    justify-content: space-around;
+                    span{
+                        color: #ffdd17;
+                        display: inline;
+                        font-size: 34px;
+                    }
+                }
+                .more{
+                    color: $orange;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+#bottom{
+    background: #253444;
+    text-align: center;
+    color: white;
+    justify-content: center !important;
+    padding: 40px 0;
+    h1{
+        font-size: 30px;
+    }
+    button{
+        transform: scale(0.8);
+    }
+}
+
+//---------LANDING

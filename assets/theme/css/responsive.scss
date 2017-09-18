@@ -34,7 +34,7 @@ a:hover{
         padding-left: 60px ;
         padding-right: 60px ;
     }
-    .frame0{
+    .frame0,.frame1,.frame2{
         padding-left: 60px ;
         padding-right: 60px ;
     }
@@ -74,7 +74,7 @@ a:hover{
             }
         }
     }
-    .frame{
+    .frame,.frame1,.frame2{
         padding: 40px 15px ;
     }
     .frame0{
@@ -142,6 +142,19 @@ a:hover{
     }
 }
 @media only screen and (max-width:600px){
+    #header2{
+        background: url(../images/banner/Bia%20600%20logo-01.jpg) no-repeat center center;
+        padding: 30px 15px;
+        h3{
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        h2{
+            font-size: 40px;
+            margin-top: 20px;
+            line-height: 50px;
+        }
+    }
     #myInstrument{
         height: 300px;
         .background{
@@ -163,6 +176,26 @@ a:hover{
 }
 
 @media only screen and (max-width:480px){
+    #header2{
+        background: url(../images/banner/Bia%20480%20logo-01.jpg) no-repeat center center;
+    }
+    #why{
+        #step{
+            .steps{
+                display: flex;
+                flex-wrap: inherit;
+                img{
+                    order: 3;
+                }
+            }
+        }
+    }
+    #why,#howitwork,#teachers{
+        .layout{
+            justify-content: space-around !important;
+        }
+    }
+    
     #footer{
         footer{
             .items30{
@@ -286,6 +319,18 @@ a:hover{
 }
 
 @media only screen and (max-width:360px){
+    #header2{
+        background: url(../images/banner/Bia%20320%20logo-01.jpg) no-repeat center center;
+        h2{
+            font-size: 30px;
+            margin-top: 20px;
+            line-height: 35px;
+        }
+        h3{
+            font-size: 18px;
+        }
+    }
+    
     h1{
         font-size: 25px !important;
     }

@@ -28,99 +28,90 @@
 <body ontouchstart="">
 	<div id="header">
 		<div class="line1 layout frame0">
-		<div class="phone">
-			<a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png')?>" alt=""> 094 485 23 66</a>
-		</div>
-		<div class="log">
-			<span><a href=""><b>Bạn là giáo viên?</b></a></span>
-		</div>
-	</div>
-		<div class="line2">
-		<nav class="navbar navbar-default frame0" role="navigation">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo%20full.png')?>" class="logo" alt=""></a>
+			<div class="phone">
+				<a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png')?>" alt=""> 094 485 23 66</a>
 			</div>
+			<div class="log">
+				<span><a href="<?php echo base_url() ?>tro-thanh-giao-vien"><b>Bạn là giáo viên?</b></a></span>
+			</div>
+		</div>
+		<div class="line2">
+			<nav class="navbar navbar-default frame0" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo%20full.png')?>" class="logo" alt=""></a>
+				</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-<!--
-					<li class="active"><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
--->
-				</ul>
-				<form class="navbar-form navbar-left" role="search">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					</div>
-				</form>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="<?php echo base_url() ?>">TRANG CHỦ</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-						    <li><a href="<?php echo base_url() ?>guitar/ha-noi">Guitar</a></li>
-						    <li><a href="<?php echo base_url() ?>piano/ha-noi">Piano</a></li>
-						    <li><a href="<?php echo base_url() ?>thanhnhac/ha-noi">Thanh nhạc</a></li>
-						</ul>
-					</li>
-					<li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
-					<li class="request"><span><a href="<?php echo base_url() ?>yeucaugiaovien">YÊU CẦU GIÁO VIÊN</a></span></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</nav>
-		
-
-
-	</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="<?php echo base_url() ?>">TRANG CHỦ</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+							    <li><a href="<?php echo base_url() ?>guitar/ha-noi">Guitar</a></li>
+							    <li><a href="<?php echo base_url() ?>piano/ha-noi">Piano</a></li>
+							    <li><a href="<?php echo base_url() ?>thanhnhac/ha-noi">Thanh nhạc</a></li>
+							</ul>
+						</li>
+						<li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
+						<li class="request"><span><a href="<?php echo base_url() ?>yeucaugiaovien">YÊU CẦU GIÁO VIÊN</a></span></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
 		<div class="line3 layout frame0 scroll">
-		<div class="phone">
-			<a href=""><img src="<?php echo themeimg('icons/phone.png')?>" alt=""> 094 485 23 66</a>
+			<div class="phone">
+				<a href=""><img src="<?php echo themeimg('icons/phone.png')?>" alt=""> 094 485 23 66</a>
+			</div>
+			<div class="logo">
+				<a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo_only.jpg')?>" alt=""></a>
+			</div>
+			<div class="request">
+				<span><a href="<?php echo base_url() ?>yeucaugiaovien"><b>YÊU CẦU GIÁO VIÊN</b></a></span>
+			</div>
 		</div>
-		<div class="logo">
-			<a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo_only.jpg')?>" alt=""></a>
-		</div>
-		<div class="request">
-			<span><a href="<?php echo base_url() ?>yeucaugiaovien"><b>YÊU CẦU GIÁO VIÊN</b></a></span>
-		</div>
-	</div>
 	</div><!--#MENU-->
 
 	<div id="body">
-	   <div id="useful" class="text-center frame">
-		   <h1><b>NHỮNG BÀI VIẾT HỮU ÍCH</b></h1>
-		   <div class="usefulItems layout">
-			   <div class="items30">
-				   <a href="<?php echo base_url() ?>bai-viet/chuyen-muc/danh-cho-hoc-vien"><h1>DÀNH CHO HỌC VIÊN</h1></a>
-				   <img src="<?php echo themeimg('icons/student.png')?>" alt="" class="icon student">
-				   <p>Làm thế nào để học nhạc cụ hiệu quả nhất, dễ dàng nhất, và hài lòng nhất?</p>
-				   <a href="<?php echo base_url() ?>chuyen-muc/danh-cho-hoc-vien"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Xem các bài viết</a>
-			   </div>
+		<div id="useful" class="text-center frame">
+			<h1><b>NHỮNG BÀI VIẾT HỮU ÍCH</b></h1>
+			<div class="usefulItems layout">
+				<div class="items30">
+					<a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet"><h1>DÀNH CHO HỌC VIÊN</h1></a>
+					<img src="<?php echo themeimg('icons/student.png')?>" alt="" class="icon student">
+					<p>Làm thế nào để học nhạc cụ hiệu quả nhất, dễ dàng nhất, và hài lòng nhất?</p>
+					<a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Xem các bài viết</a>
+				</div>
 			   
-			   <div class="items30">
-				   <a href="<?php echo base_url() ?>bai-viet/chuyen-muc/danh-cho-phu-huynh"><h1>DÀNH CHO PHỤ HUYNH</h1></a>
-				   <img src="<?php echo themeimg('icons/parent.png')?>" alt="" class="icon parents">
-				   <p>Cách giúp con bạn có hứng thú với việc học nhạc hơn và tìm ra đam mê của mình</p>
-				   <a href="<?php echo base_url() ?>chuyen-muc/danh-cho-phu-huynh"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Xem các bài viết</a>
-			   </div>
+				<div class="items30">
+					<a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet"><h1>DÀNH CHO PHỤ HUYNH</h1></a>
+					<img src="<?php echo themeimg('icons/parent.png')?>" alt="" class="icon parents">
+					<p>Cách giúp con bạn có hứng thú với việc học nhạc hơn và tìm ra đam mê của mình</p>
+					<a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Xem các bài viết</a>
+				</div>
 			   
-			   <div class="items30">
-				   <a href="<?php echo base_url() ?>bai-viet/chuyen-muc/danh-cho-giao-vien"><h1>DÀNH CHO GIÁO VIÊN</h1></a>
-				   <img src="<?php echo themeimg('icons/teacher.png')?>" alt="" class="icon teacher">
-				   <p>Tổng hợp các bí quyết giảng dạy từ những giáo viên thành công trong ngành.</p>
-				   <a href="<?php echo base_url() ?>chuyen-muc/danh-cho-giao-vien"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Xem các bài viết</a>
-			   </div>
-		   </div>
-	   </div><!--#USEFUL-->
+				<div class="items30">
+					<a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet"><h1>DÀNH CHO GIÁO VIÊN</h1></a>
+					<img src="<?php echo themeimg('icons/teacher.png')?>" alt="" class="icon teacher">
+					<p>Tổng hợp các bí quyết giảng dạy từ những giáo viên thành công trong ngành.</p>
+					<a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Xem các bài viết</a>
+				</div>
+			</div>
+		</div><!--#USEFUL-->
 	   
-	   <div id="popular" class="frame layout">
+		<div id="popular" class="frame layout">
 			<div class="items65 popular">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
@@ -157,7 +148,7 @@
 			
 	   </div><!--#POPULAR-->
 	   
-	   <div id="news" class=" frame">
+		<div id="news" class=" frame">
 			<h1 class="text-center"><b>BÀI VIẾT MỚI NHẤT</b></h1>
 			<div class="box layout">
 			<?php foreach ($recent_news as $recent_new): ?>
@@ -173,7 +164,7 @@
 				</div>
 			<?php endforeach; ?>
 				
-<!-- 				<div class="pagination">
+				<!-- <div class="pagination">
 					<ul>
 						<li class="first direction"><i class="fa fa-angle-double-left" aria-hidden="true"></i></li>
 						<li class="prev direction"><i class="fa fa-angle-left" aria-hidden="true"></i></li>
@@ -193,9 +184,9 @@
 	    </div>
 
 	    
-	    <?php if (isset($docs)) {?>
-	    <div id="document" class="frame text-center">
-		   <h1><b>BẮT ĐẦU VỚI NHỮNG TÀI LIỆU MIỄN PHÍ SAU</b></h1>
+		<?php if (isset($docs)) {?>
+		<div id="document" class="frame text-center">
+			<h1><b>BẮT ĐẦU VỚI NHỮNG TÀI LIỆU MIỄN PHÍ SAU</b></h1>
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
@@ -251,15 +242,14 @@
 							<button type="submit" class="btn btn-default">Tải ngay</button>
 						</div>
 					</div>
-					
-
 				</div>
 			</div><!--swiper-container-->
+			
 			<!-- Add Arrows -->
 			<div class="swiper-button-next"></div>
 			<div class="swiper-button-prev"></div>
-	    </div><!--DOCUMENT-->
-	    <?php } ?>
+		</div><!--DOCUMENT-->
+		<?php } ?>
 		
 	</div><!--#BODY-->
 	
@@ -281,7 +271,7 @@
 			<div class="items30">
 				<h3>GIẢNG DẠY CÙNG CHÚNG TÔI</h3>
 				<p>Để lại thông tin để chúng tôi giúp bạn</p>
-				<button class="text-center">DÀNH CHO GIÁO VIÊN</button>
+				<button class="text-center"><a href="<?php echo base_url() ?>tro-thanh-giao-vien" title="">DÀNH CHO GIÁO VIÊN</a></button>
 				<h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
 				<div id="social" class="layout">
 					<div class="social facebook">
@@ -301,7 +291,7 @@
 	
 	
 	<div id="copyright" class="text-center">
-	   <a href="<?php echo base_url() ?>dieu-khoan-su-dung">Điều khoản sử dụng</a><br>
+		<a href="<?php echo base_url() ?>dieu-khoan-su-dung">Điều khoản sử dụng</a><br>
 		2017 Copyright Học gì đây? All rights reversed
 	</div>
 	

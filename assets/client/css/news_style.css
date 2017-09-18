@@ -1,0 +1,149 @@
+/* line 4, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view {
+  margin: 37px auto;
+}
+
+/* line 6, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 11, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .list-view-item {
+  margin: 20px auto;
+}
+
+/* line 14, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .title {
+  text-transform: uppercase;
+}
+
+/* line 17, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .metadata {
+  color: #777;
+}
+
+/* line 21, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .news-tags {
+  width: 100%;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-top: 1px solid #f3f3f3;
+  margin-top: 30px;
+}
+
+/* line 27, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .news-tags ul {
+  margin-bottom: 0 !important;
+}
+
+/* line 29, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .news-tags ul li {
+  display: inline-block;
+  padding: 1px 7px 1px 18px;
+  background: #f87311;
+  margin-right: 5px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+/* line 36, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .news-tags ul li a {
+  color: white;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+/* line 42, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .news-tags ul :before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 16px solid white;
+  border-right: 16px solid transparent;
+  top: 0;
+  left: 0;
+}
+
+/* line 52, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .news-tags ul :after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-bottom: 16px solid white;
+  border-right: 16px solid transparent;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 62, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .news-tags ul li:hover {
+  background: #ff0200;
+}
+
+/* line 69, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.pagination {
+  width: 100%;
+}
+
+/* line 71, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.pagination ul {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 75, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.pagination ul li {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background: #e8e9ea;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+/* line 87, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.pagination ul li.number {
+  display: none;
+}
+
+/* line 90, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.pagination ul li.active, .pagination ul li:hover {
+  background: #f87311;
+}
+
+/* line 92, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.pagination ul li.active a, .pagination ul li:hover a {
+  color: white;
+}
+
+/* line 96, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.pagination ul li.direction {
+  visibility: hidden;
+  display: inline-block;
+}
+
+/* line 100, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.pagination ul li.direction i {
+  visibility: hidden;
+}
+
+/* line 103, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.pagination ul li.appear {
+  display: inline-block !important;
+  visibility: visible;
+}
+
+/* line 107, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.pagination ul li.appear i {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=../../../../wamp/www/hocgiday.com/assets/client/css/news_style.map */

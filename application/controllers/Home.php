@@ -25,4 +25,10 @@ class Home extends CI_Controller
 		$data['title'] = 'Về Chúng Tôi';
 		$this->load->view('client/vechungtoi',$data);
 	}
+
+	public function lp_teacher()
+	{
+		$data['title'] = 'Trở thành giáo viên';
+		$this->load->view('client/lp_teacher', $data);
+	}
 }

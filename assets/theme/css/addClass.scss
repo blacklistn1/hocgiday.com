@@ -1,3 +1,5 @@
+$orange : #f87311;
+$lightorange: #ee8930;
 .layout{
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +32,9 @@
 .items30{
     width: 30%;
 }
+.items40{
+    width: 40%;
+}
 .full-width{
     width: 100%;
 }
@@ -55,6 +60,23 @@
     transform: translateY(0px) !important;
     opacity: 1 !important;
 }
+.book{
+    font-weight: 600;
+    background: $lightorange;
+    font-size: 30px;
+    border: none;
+    padding: 17px 25px;
+    border-radius: 7px;
+    a{
+        color: white;
+    }
+}
+.frame1{
+    padding:  40px 220px;
+}
+.frame2{
+    padding: 40px 300px;
+}
 @media only screen and (max-width:1920px){
     .frame0{
         padding-left: 200px;
@@ -76,7 +98,11 @@
     }
 
 }
-@media only screen and (max-width:991px){}
+@media only screen and (max-width:991px){
+    .frame{
+            
+    }
+}
 @media only screen and (max-width:768px){
     
     #body{
@@ -90,6 +116,16 @@
     }
 }
 @media only screen and (max-width:600px){
+    .book{
+        font-size: 20px;
+        padding: 14px 20px;
+    }
+    .itemspx{
+        width :30% !important;
+    }
+    .items40{
+        width: 45%;
+    }
     .line3Appear{
         padding-bottom: 5px !important;
         padding-top: 5px !important;
@@ -140,8 +176,19 @@
 
 }
 @media only screen and (max-width:480px){
+    #howitwork{
+        .items30{
+            width: 70%;
+        }
+    }
+    .items40{
+        width: 70%;
+    }
+    .itemspx{
+        width :70% !important;
+    }
     .items25{
-        w: 100%;
+        width: 100%;
     }
     .items65{
         width: 100%;
@@ -162,5 +209,18 @@
     }
 }
 @media only screen and (max-width:360px){
-    
+    .book{
+        font-size: 17px;
+    }
+    #howitwork{
+        .items30{
+            width: 85%;
+        }
+    }
+    .items40{
+        width: 85%;
+    }
+    .itemspx{
+        width :85% !important;
+    }
 }

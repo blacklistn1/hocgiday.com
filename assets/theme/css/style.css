@@ -383,3 +383,96 @@
   background: url(../images/icons/squareCheckbox.jpg);
   background-size: cover;
   border: none; }
+
+#header2 {
+  color: white;
+  background: url(../images/banner/Bia%201440%20logo-01.jpg) no-repeat center center;
+  background-size: cover !important; }
+  #header2 h2 {
+    font-size: 50px;
+    margin-top: 140px;
+    line-height: 60px; }
+  #header2 h3 {
+    font-size: 28px;
+    margin-bottom: 35px; }
+
+#why h1 {
+  margin-bottom: 50px; }
+
+#why #step {
+  color: black; }
+  #why #step .steps .heading {
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: 35px; }
+    #why #step .steps .heading .number {
+      color: white;
+      height: 35px;
+      width: 35px;
+      line-height: 35px;
+      text-align: center;
+      background: #f87311;
+      display: inline-block;
+      border-radius: 50%; }
+  #why #step .steps img {
+    width: 100%; }
+
+#howitwork {
+  border-top: 2px solid #7f7f7f; }
+  #howitwork h4 {
+    font-weight: 600; }
+
+#teachers {
+  border-top: 2px solid #7f7f7f; }
+  #teachers h2 {
+    margin-bottom: 30px;
+    margin-top: 0; }
+  #teachers .teachers .itemspx {
+    width: 200px; }
+    #teachers .teachers .itemspx .avatar {
+      margin: 0 auto;
+      height: 100px;
+      width: 100px;
+      margin-bottom: 10px; }
+      #teachers .teachers .itemspx .avatar img {
+        width: 100%;
+        border-radius: 50%; }
+    #teachers .teachers .itemspx .content span {
+      font-size: 16px;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis; }
+    #teachers .teachers .itemspx .content .stars {
+      width: 200px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      #teachers .teachers .itemspx .content .stars span {
+        color: #ffdd17;
+        display: inline;
+        font-size: 34px; }
+    #teachers .teachers .itemspx .content .more {
+      color: #f87311;
+      cursor: pointer; }
+
+#bottom {
+  background: #253444;
+  text-align: center;
+  color: white;
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  padding: 40px 0; }
+  #bottom h1 {
+    font-size: 30px; }
+  #bottom button {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8); }

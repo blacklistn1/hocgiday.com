@@ -22,7 +22,7 @@ a:hover {
   .frame {
     padding-left: 60px;
     padding-right: 60px; }
-  .frame0 {
+  .frame0, .frame1, .frame2 {
     padding-left: 60px;
     padding-right: 60px; } }
 
@@ -45,7 +45,7 @@ a:hover {
         padding-left: 15px; }
       #header .line2 .navbar .collapse.in {
         overflow-y: inherit !important; }
-  .frame {
+  .frame, .frame1, .frame2 {
     padding: 40px 15px; }
   .frame0 {
     padding: 0 15px; } }
@@ -73,6 +73,16 @@ a:hover {
     margin-top: 0; } }
 
 @media only screen and (max-width: 600px) {
+  #header2 {
+    background: url(../images/banner/Bia%20600%20logo-01.jpg) no-repeat center center;
+    padding: 30px 15px; }
+    #header2 h3 {
+      font-size: 20px;
+      margin-bottom: 25px; }
+    #header2 h2 {
+      font-size: 40px;
+      margin-top: 20px;
+      line-height: 50px; }
   #myInstrument {
     height: 300px; }
     #myInstrument .background {
@@ -84,6 +94,25 @@ a:hover {
     display: none; } }
 
 @media only screen and (max-width: 480px) {
+  #header2 {
+    background: url(../images/banner/Bia%20480%20logo-01.jpg) no-repeat center center; }
+  #why #step .steps {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: inherit;
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit; }
+    #why #step .steps img {
+      -webkit-box-ordinal-group: 4;
+      -webkit-order: 3;
+      -ms-flex-order: 3;
+      order: 3; }
+  #why .layout, #howitwork .layout, #teachers .layout {
+    -webkit-justify-content: space-around !important;
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important; }
   #footer footer .items30 {
     border-bottom: 1px solid #f87311; }
   #footer footer .items30:last-child {
@@ -146,6 +175,14 @@ a:hover {
     display: inherit; } }
 
 @media only screen and (max-width: 360px) {
+  #header2 {
+    background: url(../images/banner/Bia%20320%20logo-01.jpg) no-repeat center center; }
+    #header2 h2 {
+      font-size: 30px;
+      margin-top: 20px;
+      line-height: 35px; }
+    #header2 h3 {
+      font-size: 18px; }
   h1 {
     font-size: 25px !important; }
   .phone a {

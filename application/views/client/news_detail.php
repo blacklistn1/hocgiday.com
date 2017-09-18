@@ -55,7 +55,7 @@ $tags = explode(', ', $rec->tags);
             <a href="tel:+84944852366"><img src="<?php echo themeimg('')?>icons/phone.png" alt=""> 094 485 23 66</a>
         </div>
         <div class="log">
-            <span><a href=""><b>Bạn là giáo viên?</b></a></span>
+            <span><a href="<?php echo base_url() ?>tro-thanh-giao-vien"><b>Bạn là giáo viên?</b></a></span>
         </div>
     </div>
         <div class="line2">
@@ -131,9 +131,9 @@ $tags = explode(', ', $rec->tags);
             </div>
             <div class="catogory">
                 <h2><b>CHUYÊN MỤC CÁC BÀI VIẾT</b></h2>
-                <a href="<?php echo base_url() ?>bai-viet/chuyen-muc/danh-cho-hoc-vien">Dành cho Học sinh (<span class="amount">3</span> bài)</a>
-                <a href="<?php echo base_url() ?>bai-viet/chuyen-muc/danh-cho-phu-huynh">Dành cho Phụ huynh (<span class="amount">4</span> bài)</a>
-                <a href="<?php echo base_url() ?>bai-viet/chuyen-muc/danh-cho-giao-vien">Dành cho Giáo viên (<span class="amount">6</span> bài)</a>
+                <a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet">Dành cho Học sinh (<span class="amount">3</span> bài)</a>
+                <a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet">Dành cho Phụ huynh (<span class="amount">4</span> bài)</a>
+                <a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet">Dành cho Giáo viên (<span class="amount">6</span> bài)</a>
             </div>
         </div><!--#POST-->
         
@@ -191,7 +191,7 @@ $tags = explode(', ', $rec->tags);
             <div class="items30">
                 <h3>GIẢNG DẠY CÙNG CHÚNG TÔI</h3>
                 <p>Để lại thông tin để chúng tôi giúp bạn</p>
-                <button class="text-center">DÀNH CHO GIÁO VIÊN</button>
+                <button class="text-center"><a href="<?php echo base_url() ?>tro-thanh-giao-vien" title="">DÀNH CHO GIÁO VIÊN</a></button>
                 <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
                 <div id="social" class="layout">
                     <div class="social facebook">
