@@ -25,7 +25,17 @@
   color: #777;
 }
 
-/* line 21, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 22, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .find-out-more a {
+  color: #ff0200;
+}
+
+/* line 24, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+.list-view .find-out-more a:hover {
+  color: #f87311;
+}
+
+/* line 30, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .list-view .news-tags {
   width: 100%;
   padding-top: 10px !important;
@@ -34,12 +44,12 @@
   margin-top: 30px;
 }
 
-/* line 27, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 36, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .list-view .news-tags ul {
   margin-bottom: 0 !important;
 }
 
-/* line 29, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 38, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .list-view .news-tags ul li {
   display: inline-block;
   padding: 1px 7px 1px 18px;
@@ -49,14 +59,14 @@
   margin-bottom: 5px;
 }
 
-/* line 36, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 45, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .list-view .news-tags ul li a {
   color: white;
   line-height: 20px;
   font-size: 12px;
 }
 
-/* line 42, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 51, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .list-view .news-tags ul :before {
   content: "";
   position: absolute;
@@ -68,7 +78,7 @@
   left: 0;
 }
 
-/* line 52, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 61, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .list-view .news-tags ul :after {
   content: "";
   position: absolute;
@@ -80,23 +90,23 @@
   left: 0;
 }
 
-/* line 62, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 71, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .list-view .news-tags ul li:hover {
   background: #ff0200;
 }
 
-/* line 69, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 78, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .pagination {
   width: 100%;
 }
 
-/* line 71, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 80, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .pagination ul {
   width: 100%;
   text-align: center;
 }
 
-/* line 75, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 84, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .pagination ul li {
   width: 40px;
   height: 40px;
@@ -109,39 +119,39 @@
   margin: 0 15px;
 }
 
-/* line 87, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 96, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .pagination ul li.number {
   display: none;
 }
 
-/* line 90, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 99, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .pagination ul li.active, .pagination ul li:hover {
   background: #f87311;
 }
 
-/* line 92, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 101, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .pagination ul li.active a, .pagination ul li:hover a {
   color: white;
 }
 
-/* line 96, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 105, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .pagination ul li.direction {
   visibility: hidden;
   display: inline-block;
 }
 
-/* line 100, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 109, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .pagination ul li.direction i {
   visibility: hidden;
 }
 
-/* line 103, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 112, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .pagination ul li.appear {
   display: inline-block !important;
   visibility: visible;
 }
 
-/* line 107, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
+/* line 116, C:/Users/VuongPhoenixBep/Desktop/style/news_style.scss */
 .pagination ul li.appear i {
   visibility: visible;
 }

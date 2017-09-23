@@ -6,7 +6,9 @@ $lightorange: #ee8930;
 
 //---------DETAIL
 
-
+img{
+    object-fit: cover ;
+}
 #body{
     #post{
         border-top: 1px solid #ccc;
@@ -223,6 +225,12 @@ $lightorange: #ee8930;
                     font-size: 13px;
                 }
             }
+            a{
+                img{
+                    max-height: 250px;
+                    min-height: 250px;
+                }
+            }
         }
         .sent{
             background: #f9fafa;
@@ -280,6 +288,12 @@ $lightorange: #ee8930;
         .box{
             justify-content: space-around;
             .items25{
+                a{
+                    img{
+                        max-height: 200px;
+                        min-height: 200px;
+                    }
+                }
                 .content{
                     span{
                         font-size: 16px;
@@ -356,6 +370,9 @@ $lightorange: #ee8930;
             .swiper-slide{
                 .content{
                     padding: 0 30px;
+                    img{
+                        max-height: 340px;
+                    }
                     button{
                         background: $orange;
                         color: white;
@@ -563,7 +580,7 @@ $lightorange: #ee8930;
 #header2{
     color: white;
     background: url(../images/banner/Bia%201440%20logo-01.jpg) no-repeat center center;
-    background-size: cover !important;
+    background-size: 100% 100% !important;
     h2{
         font-size: 50px;
         margin-top: 140px;
@@ -576,6 +593,9 @@ $lightorange: #ee8930;
 }//#header2
 
 #why{
+    img{
+        object-fit: scale-down;
+    }
     h1{
         margin-bottom: 50px;
     }
@@ -608,20 +628,28 @@ $lightorange: #ee8930;
 
 #howitwork{
     border-top: 2px solid #7f7f7f;
+    h2{
+        margin-bottom: 40px;
+    }
     h4{
         font-weight: 600;
+    }
+    .items30{
+        img{
+            margin-bottom: 30px;
+        }
     }
 }//#howitwork
 
 #teachers{
     border-top: 2px solid #7f7f7f;
     h2{
-        margin-bottom: 30px;
         margin-top: 0;
+        margin-bottom: 40px;
     }
     .teachers{
         .itemspx{
-            width: 200px;
+            width: 190px;
             .avatar{
                 margin: 0 auto;
                 height: 100px;
@@ -642,9 +670,10 @@ $lightorange: #ee8930;
                     text-overflow: ellipsis;
                 }
                 .stars{
-                    width: 200px;
+                    width: 190px;
                     display: flex;
                     justify-content: space-around;
+                    margin: 0 auto;
                     span{
                         color: #ffdd17;
                         display: inline;

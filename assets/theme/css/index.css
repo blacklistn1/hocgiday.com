@@ -96,9 +96,9 @@ body {
   left: 0;
   color: white;
   padding: 10px;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 #body #options #instruments .items30 .insider a.link {

@@ -32,8 +32,8 @@ $lightorange: #ee8930;
 .items30{
     width: 30%;
 }
-.items40{
-    width: 40%;
+.itemspx2{
+    width: 400px;
 }
 .full-width{
     width: 100%;
@@ -71,6 +71,12 @@ $lightorange: #ee8930;
         color: white;
     }
 }
+.book:hover{
+    background: #ff0200;
+    a{
+        color: white;
+    }
+}
 .frame1{
     padding:  40px 220px;
 }
@@ -104,6 +110,9 @@ $lightorange: #ee8930;
     }
 }
 @media only screen and (max-width:768px){
+    .itemspx2{
+        width: 350px;
+    }
     
     #body{
         #banner{
@@ -116,8 +125,11 @@ $lightorange: #ee8930;
     }
 }
 @media only screen and (max-width:600px){
+    .itemspx2{
+        width: 270px;
+    }
     .book{
-        font-size: 20px;
+        font-size: 18px;
         padding: 14px 20px;
     }
     .itemspx{
@@ -181,7 +193,7 @@ $lightorange: #ee8930;
             width: 70%;
         }
     }
-    .items40{
+    .itemspx2{
         width: 70%;
     }
     .itemspx{
@@ -211,16 +223,20 @@ $lightorange: #ee8930;
 @media only screen and (max-width:360px){
     .book{
         font-size: 17px;
+        padding: 10px 15px;
     }
     #howitwork{
         .items30{
             width: 85%;
         }
     }
-    .items40{
+    .itemspx2{
         width: 85%;
     }
     .itemspx{
         width :85% !important;
     }
+}
+@media only screen and (max-width:320px){
+    
 }

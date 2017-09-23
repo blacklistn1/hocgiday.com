@@ -27,6 +27,12 @@ a:hover {
     padding-right: 60px; } }
 
 @media only screen and (max-width: 991px) {
+  #body #news .box .items25 a img {
+    min-height: 160px;
+    max-height: 160px; }
+  #body #document .swiper-container .swiper-slide .content img {
+    min-height: 250px;
+    max-height: 250px; }
   #header .navbar-toggle {
     margin-top: 11px;
     margin-bottom: 0;
@@ -73,16 +79,19 @@ a:hover {
     margin-top: 0; } }
 
 @media only screen and (max-width: 600px) {
+  #teachers .teachers .itemspx .content .stars span {
+    font-size: 28px; }
   #header2 {
     background: url(../images/banner/Bia%20600%20logo-01.jpg) no-repeat center center;
     padding: 30px 15px; }
     #header2 h3 {
       font-size: 20px;
-      margin-bottom: 25px; }
+      margin-bottom: 15px;
+      margin-top: 10px; }
     #header2 h2 {
-      font-size: 40px;
-      margin-top: 20px;
-      line-height: 50px; }
+      font-size: 30px;
+      margin-top: 15px;
+      line-height: 40px; }
   #myInstrument {
     height: 300px; }
     #myInstrument .background {
@@ -175,8 +184,12 @@ a:hover {
     display: inherit; } }
 
 @media only screen and (max-width: 360px) {
+  #body #document .swiper-container .swiper-slide .content img {
+    min-height: 340px;
+    max-height: 340px; }
   #header2 {
-    background: url(../images/banner/Bia%20320%20logo-01.jpg) no-repeat center center; }
+    background: url(../images/banner/Bia%20320%20logo-01.jpg) no-repeat center center;
+    padding: 20px 15px; }
     #header2 h2 {
       font-size: 30px;
       margin-top: 20px;
@@ -190,4 +203,6 @@ a:hover {
 
 @media only screen and (max-width: 320px) {
   #contact h4 {
-    font-size: 17px !important; } }
+    font-size: 17px !important; }
+  #header2 h2 {
+    margin-top: 0; } }

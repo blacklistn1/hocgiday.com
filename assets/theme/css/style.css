@@ -1,3 +1,7 @@
+img {
+  -o-object-fit: cover;
+  object-fit: cover; }
+
 #body #post {
   border-top: 1px solid #ccc;
   padding-top: 0 !important;
@@ -148,6 +152,9 @@
     #body #popular .popular p span {
       color: #3d3e3d;
       font-size: 13px; }
+  #body #popular .popular a img {
+    max-height: 250px;
+    min-height: 250px; }
   #body #popular .sent {
     background: #f9fafa;
     border: 1px solid #959697;
@@ -197,6 +204,9 @@
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
+  #body #news .box .items25 a img {
+    max-height: 200px;
+    min-height: 200px; }
   #body #news .box .items25 .content span {
     font-size: 16px;
     display: block;
@@ -253,6 +263,8 @@
     height: 100%; }
     #body #document .swiper-container .swiper-slide .content {
       padding: 0 30px; }
+      #body #document .swiper-container .swiper-slide .content img {
+        max-height: 340px; }
       #body #document .swiper-container .swiper-slide .content button {
         background: #f87311;
         color: white;
@@ -387,7 +399,7 @@
 #header2 {
   color: white;
   background: url(../images/banner/Bia%201440%20logo-01.jpg) no-repeat center center;
-  background-size: cover !important; }
+  background-size: 100% 100% !important; }
   #header2 h2 {
     font-size: 50px;
     margin-top: 140px;
@@ -395,6 +407,10 @@
   #header2 h3 {
     font-size: 28px;
     margin-bottom: 35px; }
+
+#why img {
+  -o-object-fit: scale-down;
+  object-fit: scale-down; }
 
 #why h1 {
   margin-bottom: 50px; }
@@ -419,16 +435,20 @@
 
 #howitwork {
   border-top: 2px solid #7f7f7f; }
+  #howitwork h2 {
+    margin-bottom: 40px; }
   #howitwork h4 {
     font-weight: 600; }
+  #howitwork .items30 img {
+    margin-bottom: 30px; }
 
 #teachers {
   border-top: 2px solid #7f7f7f; }
   #teachers h2 {
-    margin-bottom: 30px;
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 40px; }
   #teachers .teachers .itemspx {
-    width: 200px; }
+    width: 190px; }
     #teachers .teachers .itemspx .avatar {
       margin: 0 auto;
       height: 100px;
@@ -445,14 +465,15 @@
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis; }
     #teachers .teachers .itemspx .content .stars {
-      width: 200px;
+      width: 190px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+      margin: 0 auto; }
       #teachers .teachers .itemspx .content .stars span {
         color: #ffdd17;
         display: inline;

@@ -96,7 +96,8 @@
 			<?php $d = date_create($rec->ngay_dang) ?>
 			<?php $date = date_format($d, "d/m/y") ?>
 			<small><span class="metadata">Đăng ngày: <?php echo $date ?> | Người đăng: <?php echo $rec->nguoi_dang ?></span></small><br>&nbsp;
-			<p><?php echo $rec->mo_ta_ngan ?> <a href="<?php echo base_url('bai-viet/'.$rec->slug) ?>">&gt;&gt; Tìm hiểu thêm</a></p>
+			<p><?php echo $rec->mo_ta_ngan ?></p>
+			<span class="find-out-more"><a href="<?php echo base_url('bai-viet/'.$rec->slug) ?>">&gt;&gt; Tìm hiểu thêm</a></span>
 			<div class="news-tags">
 			<?php $tags = explode(', ', $rec->tags) ?>
 				<ul>

@@ -4,7 +4,6 @@
 <head>
     
     <meta charset="utf-8" lang="vi" http-equiv="content-type">
-    <link rel="stylesheet" href="vender/normalize.min.css" media="screen" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="<?php echo themeimg('logo.png') ?>">
 
@@ -13,6 +12,7 @@
     <link rel="alternate" hreflang="vi" href="https://hocgiday.vn/" />
     <!--CSS-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--FONT-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Monteserrat:500,700" rel="stylesheet">
     
@@ -35,21 +35,19 @@
 <body ontouchstart="">
    
     <div id="header2" class="frame">
-        <div class="logo"><a href=""><img src="<?php echo themeimg('') ?>Logo%20moi-01.png" alt=""></a></div>
+        <div class="logo"><a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('') ?>Logo%20moi-01.png" alt=""></a></div>
         <div class="content">
             <h2>DẠY NHỮNG GÌ<br>BẠN ĐAM MÊ</h2>
             <h3>Đặt học phí và lịch dạy của riêng bạn</h3>
         </div>
-        <button type="button" class="btn btn-default book"><a href="">BẮT ĐẦU GIẢNG DẠY</a></button>
-
+        <button type="button" class="btn btn-default book"><a href="<?php echo base_url() ?>dangkygiangday">BẮT ĐẦU GIẢNG DẠY</a></button>
     </div>
     
     <div id="why" class="frame1">
-        <h1 class="text-center"><center>VÌ SAO BẠN NÊN GIẢNG DẠY CÙNG HỌC GÌ ĐÂY?</center></h1>
-        
+        <h1 class="text-center">VÌ SAO BẠN NÊN GIẢNG DẠY CÙNG HỌC GÌ ĐÂY?</h1>      
         <div id="step" class="layout">
            
-            <div class="steps items40">
+            <div class="steps itemspx2">
                 <div class="heading">
                     <h3><span class="number">1</span> Giáo trình tự chọn</h3>
                 </div>
@@ -59,7 +57,7 @@
                 <img src="<?php echo themeimg('') ?>thumb/Icon-01.png" alt="">
             </div>
             
-            <div class="steps items40">
+            <div class="steps itemspx2">
                 <img src="<?php echo themeimg('') ?>thumb/Icon-02.png" alt="">
                 <div class="heading">
                     <h3><span class="number">2</span> Học phí tự do</h3>
@@ -69,7 +67,7 @@
                 </div>
             </div>
             
-            <div class="steps items40">
+            <div class="steps itemspx2">
                 <div class="heading">
                     <h3><span class="number">3</span> Thời gian linh hoạt</h3>
                 </div>
@@ -79,7 +77,7 @@
                 <img src="<?php echo themeimg('') ?>thumb/Icon-03.png" alt="">
             </div>
             
-            <div class="steps items40">
+            <div class="steps itemspx2">
                 <img src="<?php echo themeimg('') ?>thumb/Icon-04.png" alt="">
                 <div class="heading">
                     <h3><span class="number">4</span> Địa điểm tự chọn</h3>
@@ -93,7 +91,7 @@
     
     
     <div id="howitwork" class="frame1">
-        <center><h2 class="text-center">CÁCH DẠY NHẠC CÙNG HỌC GÌ ĐÂY?</h2></center>
+        <h2 class="text-center">CÁCH DẠY NHẠC CÙNG HỌC GÌ ĐÂY?</h2>
         <div class="howitwork layout text-center">
             <div class="items30">
                 <img src="<?php echo themeimg('') ?>icons/credit.png" alt="">
@@ -112,7 +110,7 @@
             </div>
             
             <div class="items30">
-                <img src="<?php echo themeimg('') ?>icons/credit.png" alt="">
+                <img src="<?php echo themeimg('') ?>icons/atm.png" alt="">
                 <div class="content">
                     <h4>Nhận thanh toán và phản hồi</h4>
                     <p>Nhận thanh toán vào thứ 4 hàng tuần và đánh giá công khai từ học sinh sau một số buổi</p>
@@ -127,7 +125,7 @@
         <div class="teachers layout">
             <div class="itemspx">
                 <div class="avatar text-center">
-                    <img src="<?php echo themeimg('') ?>icons/girls.jpg" alt="">
+                    <img src="<?php echo imgsrc('') ?>teachers/guitar/hoc_guitar_voi_vuhoang.jpg" alt="">
                 </div>
                 <div class="content">
                     <div class="stars">
@@ -137,14 +135,14 @@
                         <span class="fa fa-star" aria-hidden="true"></span>
                         <span class="fa fa-star" aria-hidden="true"></span>
                     </div>
-                    <h4><a href=""><b>Tên giáo viên</b></a></h4>
-                    <span class="reviews">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ab, ullam consectetur quibusdam </span><span class="more">Xem thêm</span>
+                    <h4><b>Hoàng Vũ</b></h4>
+                    <span class="reviews">" Từ khi sử dụng công cụ của Học Gì Đây? Tôi có thể tập trung dành hết tâm huyết để truyền đạt kiến thức cho học sinh, mọi thứ khác học sinh sẽ lo giúp "</span><span class="more">Xem thêm</span>
                 </div>
             </div>
             
             <div class="itemspx">
                 <div class="avatar text-center">
-                    <img src="<?php echo themeimg('') ?>icons/girls.jpg" alt="">
+                    <img src="<?php echo imgsrc('') ?>teachers/guitar/hoc_guitar_voi_lyhai.jpg" alt="">
                 </div>
                 <div class="content">
                     <div class="stars">
@@ -154,14 +152,14 @@
                         <span class="fa fa-star" aria-hidden="true"></span>
                         <span class="fa fa-star" aria-hidden="true"></span>
                     </div>
-                    <h4><a href=""><b>Tên giáo viên</b></a></h4>
-                    <span class="reviews">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ab, ullam consectetur quibusdam </span><span class="more">Xem thêm</span>
+                    <h4><b>Lý Trung Hải</b></h4>
+                    <span class="reviews">" Cảm ơn Học Gì Đây đã giúp tôi rất nhiều "</span><span class="more">Xem thêm</span>
                 </div>
             </div>
             
             <div class="itemspx">
                 <div class="avatar text-center">
-                    <img src="<?php echo themeimg('') ?>icons/girls.jpg" alt="">
+                    <img src="<?php echo imgsrc('') ?>teachers/guitar/hoc_guitar_voi_phanthithuphuong.jpg" alt="">
                 </div>
                 <div class="content">
                     <div class="stars">
@@ -171,8 +169,8 @@
                         <span class="fa fa-star" aria-hidden="true"></span>
                         <span class="fa fa-star" aria-hidden="true"></span>
                     </div>
-                    <h4><a href=""><b>Tên giáo viên</b></a></h4>
-                    <span class="reviews">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ab, ullam consectetur quibusdam </span><span class="more">Xem thêm</span>
+                    <h4><b>Phan Thị Thu Phương</b></h4>
+                    <span class="reviews">" Học Gì Đây giúp mình tiếp cận với học sinh dễ dàng hơn rất nhiều "</span><span class="more">Xem thêm</span>
                 </div>
             </div>
         </div>
@@ -183,7 +181,7 @@
         
     <div id="bottom" class="layout">
         <h1>BẠN SẴN SÀNG THAM GIA VỚI CHÚNG TÔI?</h1>
-        <button type="button" class="btn btn-default book"><a href="">BẮT ĐẦU GIẢNG DẠY</a></button>
+        <button type="button" class="btn btn-default book"><a href="<?php echo base_url() ?>dangkygiangday">BẮT ĐẦU GIẢNG DẠY</a></button>
     </div>
     
     <!--Vender-->

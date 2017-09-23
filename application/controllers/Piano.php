@@ -70,6 +70,7 @@ class Piano extends CI_Controller {
 			{
 				$this->email->from('no-reply@cusomter.com');
 				$this->email->to('ndwuong@hocgiday.vn');
+				// $this->email->cc(array('tungbach.hocgiday@gmail.com', 'ndwuong4@gmail.com'));
 
 				$fullname = $this->input->post('fullname');
 				$tel = $this->input->post('tel');

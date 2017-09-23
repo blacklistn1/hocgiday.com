@@ -17,7 +17,7 @@
     <link rel="icon" type="image/x-icon" href="<?php echo themeimg('logo.png') ?>">
 
     <!--CSS-->
-    <link rel="stylesheet" href="<?php echo themevender('bootstrap.min.css') ?>">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
     <!--FONT-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Monteserrat:500,700" rel="stylesheet">
@@ -341,7 +341,8 @@
     <script src="<?php echo themevender('')?>jquery-3.2.0.min.js"></script>
     <script src="<?php echo themevender('')?>bootstrap.min.js"></script>
     <script src="<?php echo themevender('')?>wow.min.js"></script>
-    <script src="<?php echo themevender('')?>swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="<?php echo themevender('')?>ion.rangeSlider.min.js"></script>
     <!-- Javascipt -->
     <script src="<?php echo themejs('')?>index.js"></script>
     <script src="<?php echo themejs('')?>function.js"></script>

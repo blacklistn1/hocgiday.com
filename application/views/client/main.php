@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php $this->load->view('modules/header') ?>
+    <?php $this->load->view('modules/header') ?>
 </head>
 <body>
 
