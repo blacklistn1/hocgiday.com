@@ -49,7 +49,7 @@ line1 = $('#header .line1').innerHeight();
 line2 = $('#header .line2').innerHeight();
 line3=line1 + line2;
 $(window).scroll(function() {
-	if ($('body').scrollTop() >= line3) {
+	if ($('html,body').scrollTop() >= line3) {
 		$('#header .line3').addClass('line3Appear');
 	}else{
 		$('#header .line3').removeClass('line3Appear');

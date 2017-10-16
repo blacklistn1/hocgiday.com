@@ -4,31 +4,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
 * 
 */
-class Test extends CI_Controller
+class Test extends MY_Controller
 {	
+	
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('m_news');
+		$this->metadata = $this->_get_metadata($this->uri);
 	}
 
 	function index()
 	{
-		$this->load->view('client/test');
-	}
-
-	function recent_news_ajax()
-	{
-		$page = ($this->input->get('page')) ? $this->input->get('page') : 1;
-		$offset = ($page - 1) * 3;
-		$per_page = 3;
-		$cond['order_by'] = 'ngay_dang DESC';
-		$cond['limit'] = array($per_page, $offset);
-		$where = array('status' => 1);
-		$field = 'ten_bai_viet, slug, ngay_dang, thumbnail, thumbnail_alt, mo_ta_ngan';
-		$result = $this->m_news->read_data($field, array(1=>1), $cond);
-
-		echo json_encode($result);
+		$cur_page = ($this->input->get('p')) ? $this->input->get('p') : 1;
+		$mon_hoc = ($this->input->get('s')) ? $this->input->get('s') : 'guitar';
+		$per_page = 5;
+		$sql['field'] = 'full_name, dia_chi_nha, vi_tri';
+		$sql['where'] = array('mon_hoc' => $mon_hoc, 'citytag' => 'hanoi');
+		$sql['cond']['order_by'] = 'vi_tri ASC';
+		$res = $this->paginate_item($cur_page, $per_page, $sql);
+		var_dump($res['rec']);
+		var_dump($this->uri);
+		var_dump($this->metadata);
+		// $this->load->view('client/test');
 	}
 }
 

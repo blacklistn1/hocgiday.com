@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller
+class Home extends MY_Controller
 {
 	public function __construct()
 	{
@@ -10,25 +10,23 @@ class Home extends CI_Controller
 	
 	public function index()
 	{
-		$data['title'] = 'Học Gì Đây? | Tìm giáo viên nhạc dễ hơn hẳn';
-		$this->load->view('client/home', $data);
+		$this->data = $this->metadata;
+		$this->load->view('client/main', $this->data);
 	}
 
 	public function terms()
 	{
-		$data['title'] = 'Điều khoản sử dụng';
-		$this->load->view('client/dieukhoan', $data);
+		$this->load->view('client/dieukhoan');
 	}
 
 	public function aboutus()
 	{
-		$data['title'] = 'Về Chúng Tôi';
-		$this->load->view('client/vechungtoi',$data);
+		$this->load->view('client/vechungtoi');
 	}
 
 	public function lp_teacher()
 	{
 		$data['title'] = 'Trở thành giáo viên';
-		$this->load->view('client/lp_teacher', $data);
+		$this->load->view('client/landing_pages/lp_teacher', $data);
 	}
 }

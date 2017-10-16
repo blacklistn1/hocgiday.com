@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-	<title><?php echo $title ?> | Học Gì Đây?</title>
+	<title>Về Chúng Tôi | Học Gì Đây?</title>
 	<meta charset="utf-8" lang="vi" http-equiv="content-type">
 	<link rel="stylesheet" href="<?php echo themevender('normalize.min.css') ?>" media="screen" >
 	<link rel="alternate" hreflang="vi" href="https://hocgiday.vn/" />

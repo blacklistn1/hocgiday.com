@@ -85,13 +85,20 @@ class MY_Model extends CI_Model {
 	}
 
 	// Read a row
-	public function read_row($field = '*', $where = array())
+	public function read_row($field = '*', $where = array(1=>1), $is_array = FALSE)
 	{
 		$this->db->where($where)
 				->select($field);
 		if ($row = $this->db->get($this->table))
 		{
-			return $row->row();
+			if ($is_array === FALSE)
+			{
+				return $row->row();
+			}
+			else
+			{
+				return $row->row_array();
+			}
 		}
 		else
 		{

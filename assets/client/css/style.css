@@ -28,11 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* End sticky */
 
-#contact {
-  top: 0;
-  margin-bottom: 8pt;
-}
-
 .yeucaugiaovien-text {
   font-size: 112.5%;
   font-weight: bold;
@@ -202,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 .hgd-profile-detail {
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  padding-top: 10px;
+  padding: 10px 0;
 }
 
 .wrapper {
@@ -261,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Also applied for all error messages */
-.error {
+.form-error {
   font-size: 110%;
   color: red;
 }
@@ -269,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 /******* Yeucaugiaovien CSS ********/
 
 .reg-box {
-  position: relative;
+  /* position: relative; */
   border: 1px solid grey;
   border-radius: 7px;
   margin-bottom: 2%;
@@ -304,6 +299,185 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /****** /.Yeucaugiaovien CSS *******/
+
+/********* News Detail CSS *********/
+
+.list li, .list-o li {
+  list-style-position: inside;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.list li, .list li > ul li > ul li > ul li {
+  list-style-type: circle;
+}
+.list li > ul li, .list li > ul li > ul li > ul li > ul li {
+  list-style-type: square;
+}
+.list li > ul li > ul li, .list li > ul li > ul li > ul li > ul li > ul li {
+  list-style-type: disc;
+}
+.list-o li, .list-o li > ol li > ol li > ol li {
+  list-style-type: decimal;
+}
+.list-o li > ol li, .list-o li > ol li > ol li > ol li > ol li {
+  list-style-type: lower-alpha;
+}
+.list-o li > ol li > ol li, .list-o li > ol li > ol li > ol li > ol li > ol li {
+   list-style-type: lower-roman;
+}
+.post a {
+  text-decoration: none;
+  color: #f87311;
+}
+.post a:hover {
+  text-decoration: underline;
+}
+.red-text {
+  color: red;
+}
+.cap {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+/* /.News Detail CSS./ */
+
+/********** News list CSS **********/
+.list-view {
+  margin: 37px auto;
+}
+
+.list-view h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list-view .list-view-item {
+  margin: 20px auto;
+}
+
+.list-view .title {
+  text-transform: uppercase;
+}
+
+.list-view .metadata {
+  color: #777;
+}
+
+.list-view .find-out-more a {
+  color: #f81011;
+}
+
+.list-view .find-out-more a:hover {
+  color: #f87311;
+}
+
+.list-view .news-tags {
+  width: 100%;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-top: 1px solid #f3f3f3;
+  margin-top: 30px;
+}
+
+.list-view .news-tags ul {
+  margin-bottom: 0 !important;
+}
+
+.list-view .news-tags ul li {
+  display: inline-block;
+  padding: 1px 7px 1px 18px;
+  background: #f87311;
+  margin-right: 5px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.list-view .news-tags ul li a {
+  color: white;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.list-view .news-tags ul :before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 16px solid white;
+  border-right: 16px solid transparent;
+  top: 0;
+  left: 0;
+}
+
+.list-view .news-tags ul :after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-bottom: 16px solid white;
+  border-right: 16px solid transparent;
+  bottom: 0;
+  left: 0;
+}
+
+.list-view .news-tags ul li:hover {
+  background: #ff0200;
+}
+
+.pagination {
+  width: 100%;
+}
+
+.pagination ul {
+  width: 100%;
+  text-align: center;
+}
+
+.pagination ul li {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background: #e8e9ea;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.pagination ul li.number {
+  display: none;
+}
+
+.pagination ul li.active, .pagination ul li:hover {
+  background: #f87311;
+}
+
+.pagination ul li.active a, .pagination ul li:hover a {
+  color: white;
+}
+
+.pagination ul li.direction {
+  visibility: hidden;
+  display: inline-block;
+}
+
+.pagination ul li.direction i {
+  visibility: hidden;
+}
+
+.pagination ul li.appear {
+  display: inline-block !important;
+  visibility: visible;
+}
+
+.pagination ul li.appear i {
+  visibility: visible;
+}
+
+/* /News list */
 
 /****** Scaling for responsive ******/
 @media screen and (min-width: 320px) {

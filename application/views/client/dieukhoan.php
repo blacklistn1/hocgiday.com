@@ -19,7 +19,7 @@
     	}
     </style>
 
-    <title><?php echo $title ?></title>
+    <title>Điều Khoản Sử Dụng</title>
 </head>
 <body>
 <center><h1>ĐIỀU KHOẢN SỬ DỤNG HỌC GÌ ĐÂY?</h1></center>

@@ -1,40 +1,52 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Yeucaugiaovien extends CI_Controller {
+class Yeucaugiaovien extends MY_Controller {
 	function __construct()
 	{
 		parent::__construct();
 		$this->load->library('email');
+		$this->lang->load('form_validation', 'vietnamese');
 	}
 
 	public function index()
 	{
+		$this->data = $this->metadata;
 		$rules = array(
 			array(
 				'field' => 'subject',
 				'label' => 'Môn học',
 				'rules' => 'required',
 				'errors' => array(
-					'required' => 'Vui lòng chọn ít nhất 1 môn học'
+					'required' => $this->lang->line('form_validation_required')
 				)
 			),
 			array(
 				'field' => 'fullname',
 				'label' => 'Họ và tên',
-				'rules' => 'trim|strip_tags|htmlspecialchars|min_length[6]|required'
+				'rules' => 'trim|strip_tags|htmlspecialchars|min_length[6]|required',
+				'errors' => array(
+					'required' => $this->lang->line('form_validation_required'),
+					'min_length' => $this->lang->line('form_validation_min_length')
+				)
 			),
 			array(
-				'field' => 'tel',
-				'label' => 'Số điện thoại',
-				'rules' => 'trim|strip_tags|htmlspecialchars|required|numeric|min_length[10]'
+			    'field' => 'tel',
+			    'label' => 'Số điện thoại',
+			    'rules' => 'trim|required|numeric|min_length[10]|max_length[13]|regex_match[/((\+84)|(0(43)*))\d{7}\d?\d?\d?/]',
+			    'errors' => array(
+			        'required' => $this->lang->line('form_validation_required'),
+			        'numeric' => $this->lang->line('form_validation_is_numeric'),
+			        'max_length' => $this->lang->line('form_validation_max_length'),
+			        'min_length' => $this->lang->line('form_validation_min_length'),
+			        'regex_match' => $this->lang->line('form_validation_regex_match')
+			    )
 			)
 		);
 		$this->form_validation->set_rules($rules);
 		if ($this->form_validation->run() === FALSE)
 		{
-			$data['title'] = 'Yêu cầu giáo viên';
-			$this->load->view('client/yeucaugiaovien', $data);
+			$this->load->view('client/main', $this->data);
 		}
 		else
 		{
@@ -63,21 +75,15 @@ class Yeucaugiaovien extends CI_Controller {
 			$alt_mess = "Họ và tên: $fullname. Đăng ký học môn: $subject. Số điện thoại: $tel.";
 			if ($learn_at)
 			{
-				$mess .= "<br>Học: $learn_at[0]";
-				$alt_mess .= " Học: $learn_at[0]";
-				for ($i = 1; $i < count($learn_at);$i++) {
-					$mess .= ", $learn_at[$i]";
-					$alt_mess .= ", $learn_at[$i]";
-				}
+				$learn_at = implode(', ', $learn_at);
+				$mess .= "<br>Học: $learn_at";
+				$alt_mess .= " Học: $learn_at";
 			}
 			if ($time)
 			{
-				$mess .= "<br>Học vào: $time[0]";
-				$alt_mess .= ". Học vào: $time[0]";
-				for ($j = 1; $j < count($time); $j++) {
-					$mess .= ", $time[$j]";
-					$alt_mess .= ", $time[$j]";
-				}
+				$time = implode(', ', $time);
+				$mess .= "<br>Học vào: $time";
+				$alt_mess .= ". Học vào: $time";
 			}
 			if ($price)
 			{
@@ -86,31 +92,29 @@ class Yeucaugiaovien extends CI_Controller {
 			}
 			if ($gender)
 			{
-				$mess .= "<br>Giới tính giáo viên: $gender[0]";
-				$alt_mess .= ". Giới tính giáo viên: $gender[0]";
-				for ($k = 1; $k < count($gender); $k++) {
-					$mess .= ", $gender[$k]";
-					$alt_mess .= ", $gender[$k]";
-				}
+				$gender = implode(', ', $gender);
+				$mess .= "<br>Giới tính giáo viên: $gender";
+				$alt_mess .= ". Giới tính giáo viên: $gender";
 			}
 			if ($level)
 			{
-				$mess .= "<br>Trình độ giáo viên: $level[0]";
-				$alt_mess .= ". Trình độ giáo viên: $level[0]";
-				for ($l = 1; $l < count($level); $l++) {
-					$mess .= ", $level[$l]";
-					$alt_mess .= ", $level[$l]";
-				}
+				$level = implode(', ', $level);
+				$mess .= "<br>Trình độ giáo viên: $level";
+				$alt_mess .= ". Trình độ giáo viên: $level";
 			}
 
 			$this->email->message($mess);
 			$this->email->set_alt_message($alt_mess);
 
-			if ($this->email->send()) {
-				$data['title'] = 'Cảm ơn bạn';
-				$data['anchor'] = $subject;
-				$this->load->view('client/registersuccess', $data);
+			if ($this->email->send())
+			{
+				$this->load->view('client/end_action/yeucaugiaovien_success', $this->data);
 			}
-		}		
+			else
+			{
+			    $data['error'] = $this->email->print_debugger();
+			    $this->load->view('client/end_action/sendmailerror',$data);
+			}
+		}
 	}
 }

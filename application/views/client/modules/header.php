@@ -1,4 +1,5 @@
-<body ontouchstart="">
+
+    <?php if (isset($has_header) && ($has_header == 1)) {?>
     <div id="header">
         <div class="line1 layout frame0">
             <div class="phone">
@@ -8,6 +9,7 @@
                 <span><a href="<?php echo base_url() ?>tro-thanh-giao-vien"><b>Bạn là giáo viên?</b></a></span>
             </div>
         </div>
+        
         <div class="line2">
             <nav class="navbar navbar-default frame0" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,7 +22,7 @@
                     </button>
                     <a class="navbar-brand" href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo%20full.png') ?>" class="logo" alt=""></a>
                 </div>
-
+                
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
@@ -31,6 +33,7 @@
                         </div>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
+                        <?php if (isset($has_menu) && ($has_menu == 1)) {?>
                         <li><a href="<?php echo base_url() ?>">TRANG CHỦ</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
@@ -41,11 +44,13 @@
                             </ul>
                         </li>
                         <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
+                        <?php } ?>
                         <li class="request"><a href="<?php echo base_url() ?>yeucaugiaovien" title=""><span><b>YÊU CẦU GIÁO VIÊN</b></span></a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav>
         </div>
+        
         <div class="line3 layout frame0 scroll">
             <div class="phone">
                 <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
@@ -58,3 +63,4 @@
             </div>
         </div>
     </div><!--#MENU-->
+    <?php } ?>

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Baiviet extends CI_Controller {
+class Baiviet extends MY_Controller {
 
   function __construct()
   {
@@ -11,37 +11,44 @@ class Baiviet extends CI_Controller {
 
   public function index()
   {
-    $data['hot_news'] = $this->hot_news();
-    $data['recent_news'] = $this->recent_news();
-    $data['title'] = 'Bài viết';
-    $this->load->view('client/baiviet', $data);
+    if ($this->metadata)
+    {
+      $this->data = $this->metadata;
+    }
+    $this->data['hot_news'] = $this->hot_news();
+    $this->data['recent_news'] = $this->recent_news();
+    $this->data['page_title'] = 'Bài viết';
+    $this->load->view('client/main', $this->data);
   }
 
-  public function news_list($page = '1')
+  public function news_list()
   {
-
+    if ($this->metadata)
+    {
+      $this->data = $this->metadata;
+    }
+    
+    // Required properties
     $per_page = 10;
     $num_of_links = 2;
-    $min_page = $page - $num_of_links;
-    $max_page = $page + $num_of_links;
-    $offset = ($page - 1) * $per_page;
+    $cur_page = ($this->input->get('p')) ? $this->input->get('p') : 1;
+    $min_page = $cur_page - $num_of_links;
+    $max_page = $cur_page + $num_of_links;
 
-    $cond['order_by'] = 'ngay_dang DESC';
-    $cond['limit'] = array($per_page, $offset);
-    $where = array(1=>1);
-    $field = 'ten_bai_viet, ngay_dang, nguoi_dang, slug, mo_ta_ngan, tags';
-    $data['result'] = $this->m_news->read_data($field, $where, $cond);
-
-    $total_pages = $this->count_pages($field, $where, $per_page);
+    // Pagination controller
+    $sql['model'] = 'm_news';
+    $sql['cond']['order_by'] = 'ngay_dang DESC';
+    $sql['where'] = array(1=>1);
+    $sql['field'] = 'ten_bai_viet, ngay_dang, nguoi_dang, slug, mo_ta_ngan, tags';
+    $result = $this->paginate_item($cur_page, $per_page, $sql);
     if ($min_page < 1) {$min_page = 1;}
-    if ($max_page > $total_pages) {$max_page = $total_pages;}
-    $data['total_pages'] = $total_pages;
-    $data['min_page'] = $min_page;
-    $data['max_page'] = $max_page;
-    $data['cur_page'] = $page;
-    
-    $data['title'] = 'Danh sách bài viết';
-    $this->load->view('client/news_list', $data);
+    if ($max_page > $result['total_pages']) {$max_page = $result['total_pages'];}
+    $this->data['result'] = $result['record'];
+    $this->data['total_pages'] = $result['total_pages'];
+    $this->data['min_page'] = $min_page;
+    $this->data['max_page'] = $max_page;
+    $this->data['cur_page'] = $cur_page;
+    $this->load->view('client/main', $this->data);
   }
 
   public function news_detail($slug = '')
@@ -56,27 +63,22 @@ class Baiviet extends CI_Controller {
       $result = $this->m_news->read_row('*',$where);
       if ($result)
       {
-        $data['title'] = $result->ten_bai_viet;
-        $data['recent_news'] = $this->recent_news();
-        $data['rec'] = $result;
-        $this->load->view('client/news_detail', $data);
+        $this->data['page_title'] = $result->ten_bai_viet;
+        $this->data['meta_desc'] = $result->mo_ta_ngan;
+        $this->data['thumbnail'] = $result->thumbnail;
+        $this->data['tags'] = explode(", ", $result->tags);
+        $this->data['recent_news'] = $this->recent_news();
+        $this->data['rec'] = $result;
+        $this->data['view_body'] = 'news_detail';
+        $this->data['has_header'] = 1;
+        $this->data['has_menu'] = 1;
+        $this->data['has_footer'] = 1;
+        $this->load->view('client/main', $this->data);
       }
       else
       {
         $this->index();
       }
-    }
-  }
-
-  public function news_category($slug = '')
-  {
-    if (!$slug)
-    {
-      redirect('/');
-    }
-    else
-    {
-      
     }
   }
 
@@ -110,12 +112,5 @@ class Baiviet extends CI_Controller {
     $result = $this->m_news->read_data($field, array(1=>1), $cond);
     $data['result'] = $result;
     echo json_encode($result);
-  }
-
-  function count_pages($field, $where, $per_page)
-  {
-    $res = count($this->m_news->read_data($field, $where));
-    $total_pages = ceil((float)$res / (float)$per_page);
-    return $total_pages;
   }
 }
