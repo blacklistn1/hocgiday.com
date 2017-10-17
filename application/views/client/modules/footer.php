@@ -32,8 +32,10 @@
                     </div>
                 </div>
                 &nbsp;
-                <p>Số điện thoại chăm sóc khách hàng:<br>
-                <a href="tel:+84944852366">094 458 23 66</a><a href="tel:+84984431914">098 443 19 14</a><a href="+84902298105" title="">090 229 81 05</a></p>
+                <h3>LIÊN HỆ:</h3>
+                <a href="tel:+84944852366">094 458 23 66</a>
+                <a href="tel:+84984431914">098 443 19 14</a>
+                <a href="tel:+84902298105">090 229 81 05</a>
             </div>
         </footer><!--FOOTER-->
     </div>
