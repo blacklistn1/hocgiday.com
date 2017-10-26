@@ -9,7 +9,7 @@
 <!-- Profile List -->
 <div class="container hgd-container">
 
-	<?php foreach($rec as $row) {?>
+	<?php foreach($result as $row) {?>
 
 	<!-- Profile row -->
 	<?php $tuition = ($row->hoc_phi_tai_nha != 0) ? $row->hoc_phi_tai_nha : $row->hoc_phi_tai_lop ?>
@@ -21,16 +21,16 @@
 				</div>
 			</div>
 			<div class="d-flex align-self-stretch profile-column">
-				<div class="col-xs-4 col-sm-5 col-md-5 hgd-profile-info ">
-				<h3 id="<?php echo $row->nametag ?>" class="heading-small"><?php echo $row->full_name ?></h3>
-				<p class="teacher-address">Địa chỉ: <?php echo $row->dia_chi_nha ?></p>
+				<div class="col-xs-4 col-sm-6 col-md-6 col-lg-6 hgd-profile-info ">
+				<h3 id="<?php echo $row->nametag ?>"><?php echo $row->full_name ?></h3>
+				<p>Địa chỉ: <?php echo $row->dia_chi_nha ?></p>
 				</div>
 			</div>
 			<div class="d-flex align-self-stretch profile-column">
-				<div class="col-xs-4 col-sm-4 col-md-3 hgd-profile-info ">
-					<h3 id="unit-price" class="heading-small">Học phí</h3>
+				<div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 hgd-profile-info ">
+					<h3 id="unit-price">Học phí</h3>
 					<p class="unit-price"><?php echo $tuition ?>.000 đ/ <?php echo $row->duration ?> phút</p>
-					<h3 id="rating" class="heading-small">Đánh Giá</h3>
+					<h3 id="rating">Đánh Giá</h3>
 					<div class="rating-star-box">
 						<span>
 						<?php for ($i = 1; $i <= 5; $i++) {?>
@@ -125,7 +125,7 @@
 				</div>
 				<div class="row">
 					<h4>Lịch giảng dạy của giáo viên</h4>
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 teacher-schedule">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<?php echo $row->lich_giang_day ?>
 					<span class="legend"></span> : Những buổi giáo viên có thể giảng dạy 	
 					</div>
@@ -177,7 +177,7 @@
 						<h3 class="modal-title" id="tName"></h3> 
 					</div>
 					<div class="modal-body">
-						<form action="<?php echo base_url($uri) ?>" method="POST" role="form">
+						<form action="<?php echo base_url() ?>piano/ha-noi" method="POST" role="form">
 							<div class="form-group">
 								<input type="text" name="fullname" class="form-control mailing-info" placeholder="Tên đầy đủ của bạn" required="required">
 								<span class="form-error"><?php echo form_error('fullname') ?></span>

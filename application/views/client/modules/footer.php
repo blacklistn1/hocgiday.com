@@ -53,6 +53,7 @@
     <script src="<?php echo themevender('swiper.min.js') ?>"></script>
     <script src="<?php echo themevender('ion.rangeSlider.min.js') ?>" type="text/javascript" charset="utf-8" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pin/1.0.1/jquery.pin.min.js"></script>
     <!-- Javascipt -->
     <script src="<?php echo themejs('')?>index.js"></script>
     <script src="<?php echo themejs('')?>function.js"></script>

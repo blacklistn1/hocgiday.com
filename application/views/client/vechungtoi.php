@@ -86,7 +86,7 @@
 	                        </ul>
 	                    </li>
 	                    <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
-	                    <li class="request"><a href="<?php echo base_url() ?>yeucaugiaovien" title=""><span><b>YÊU CẦU GIÁO VIÊN</b></span></a></li>
+	                    <li><span class="btn-anchor"><a href="<?php echo base_url() ?>yeucaugiaovien" class="anchor-text">YÊU CẦU GIÁO VIÊN</a></span></li>
 	                </ul>
 	            </div><!-- /.navbar-collapse -->
 	        </nav>
@@ -99,14 +99,14 @@
 	            <a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>
 	        </div>
 	        <div class="request">
-	            <a href="<?php echo base_url() ?>yeucaugiaovien"><span><b>YÊU CẦU GIÁO VIÊN</b></span></a>
+	            <span class="btn-anchor"><a href="<?php echo base_url() ?>yeucaugiaovien" class="anchor-text">YÊU CẦU GIÁO VIÊN</a></span>
 	        </div>
 	    </div>
 	</div><!--#MENU-->
 
 	<div class="container main-content">
-		<p>Chúng tôi yêu âm nhạc!!</p>
-		<p>Chúng tôi làm cho việc tìm kiếm giáo viên nhạc Dễ Hơn Hẳn!!</p>
+		<center><h1>Chúng tôi yêu âm nhạc!!</h1></center>
+		<center><h2>Chúng tôi làm cho việc tìm kiếm giáo viên nhạc Dễ Hơn Hẳn!!</h2></center>
 		<p>Sau hơn 1 năm thành lập, xây dựng và phát triển hệ thống. Chúng tôi nhận ra rằng việc giúp kết nối những người có nhu cầu học nhạc và dạy nhạc lại với nhau tạo cho chúng tôi niềm cảm hứng bất tận.</p>
 		<p>Chúng tôi biết rằng hiện nay thật khó để tìm được một chỗ học nhạc phù hợp với nhu cầu, giá cả hợp lý, đa dạng chuyên môn… và nhiều vấn đề khác nữa. Nhiệm vụ của chúng tôi là giúp khách hàng tìm được đúng người thầy dạy nhạc một cách dễ dàng nhất.</p>
 		<p>Chúng tôi cũng giúp những người nghệ sĩ có thể trang trải 1 phần cuộc sống bằng nghề dạy nhạc. Chúng tôi giúp họ xứng đạng nhận được những gì họ đã bỏ ra. 

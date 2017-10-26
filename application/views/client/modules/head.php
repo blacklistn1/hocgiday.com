@@ -25,9 +25,19 @@
     <meta property="og:image" content="<?php echo $thumbnail ?>">
     <?php } ?>
     <meta property="og:type" content="website">
-    <meta property="og:url" content="content">
+    <?php if (isset($uri)) {?>
+    <meta property="og:url" content="<?php echo base_url($uri) ?>">
+    <?php } ?>
     <meta property="og:locale" content="en-US">
     <link rel="icon" type="image/x-icon" href="<?php echo themeimg('logo.png') ?>">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KL4T6GD');</script>
+    <!-- End Google Tag Manager -->
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">

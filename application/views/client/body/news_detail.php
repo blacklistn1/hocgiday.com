@@ -46,3 +46,68 @@
             </div>
         </div><!--#NEWS-->
     </div><!--#BODY-->
+
+    <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">      
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">                  
+                        <h3 class="modal-title" id="tName"></h3> 
+                    </div>
+                    <div class="modal-body">
+                        <form action="<?php echo base_url('bai-viet/'.$rec->slug.'/') ?>" method="POST" role="form">
+                            <div class="form-group">
+                                <input type="text" name="fullname" class="form-control mailing-info" placeholder="Tên đầy đủ của bạn" value="<?php echo set_value('fullname') ?>">
+                                <span class="form-error"><?php echo form_error('fullname') ?></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="tel" class="form-control mailing-info" placeholder="Số điện thoại" value="<?php echo set_value('tel') ?>">
+                                <span class="form-error"><?php echo form_error('tel') ?></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Bạn muốn học tại: </label>
+                                <label class="checkbox-inline"><input type="checkbox" name="learn-at[]" class="" checked="checked" value="Tại nhà"> Tại nhà</label>
+                                <label class="checkbox-inline"><input type="checkbox" name="learn-at[]" class="" checked="checked" value="Tại lớp"> Tại lớp</label>
+                                <span class="form-error"><?php echo form_error('learn-at[]') ?></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Vào thời gian: </label><br>
+                                <label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T2"> T2</label>
+                                <label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T3"> T3</label>
+                                <label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T4"> T4</label>
+                                <label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T5"> T5</label>
+                                <label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T6"> T6</label>
+                                <label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="T7"> T7</label>
+                                <label class="checkbox-inline"><input type="checkbox" name="learn-day[]" class="" checked="checked" value="CN"> CN</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="hidden" name="teacher" id="chosen-teacher" class="form-control">
+                                <input type="hidden" name="subject" value="piano">
+                                <input type="hidden" name="city" value="Hà Nội">
+                            </div>
+                            <div class="modal-footer">
+                                <button name="send" type="submit" class="btn btn-primary btn-submit">Gửi đi</button>
+                            </div>
+                            <div>
+                                <a href="#" class="p-read-more" title="Thanh toán học phí như thế nào">&gt;&gt;&gt;Thanh toán học phí như thế nào?</a>
+                                <p class="p-read-more-content">Ở Học Gì Đây?, chúng tôi giúp bạn tập trung vào việc học tập bằng cách lo liệu cho việc đóng học phí của bạn. Bạn có thể dễ dàng chọn thanh toán trước theo các gói 5 buổi, 10 buổi hoặc 30 buổi học với giáo viên bạn đã lựa chọn.</p>
+                            </div>
+                            <div>
+                                <a href="#" class="p-read-more" title="">&gt;&gt;&gt;Chính sách đảm bảo hài lòng tại Học Gì Đây?</a>
+                                <p class="p-read-more-content">Sau khi học một hoặc một số buổi học, nếu bạn cảm thấy không hài lòng 100%, chúng tôi có thể giúp bạn tìm kiếm một giáo viên khác phù hợp hơn, hoặc hoàn trả lại <strong>TOÀN BỘ</strong> học phí các buổi học bạn đã thanh toán nhưng chưa học.<br>
+                                <strong>*Lưu ý:</strong> Yêu cầu về hoàn trả học phí phải được gửi trước buổi học tiếp theo ít nhất 24 giờ.
+                                </p>
+                            </div>
+                            <div>
+                                <a href="#" class="p-read-more" title="">&gt;&gt;&gt;Chưa tự tin về lựa chọn của mình?</a>
+                                <p class="p-read-more-content">Chúng tôi muốn bạn tự tin về quyết định của mình. Bạn có thể yêu cầu chúng tôi lập một danh sách các giáo viên phù hợp với yêu cầu của bạn và gửi riêng cho bạn vào Email <a href="<?php echo base_url() ?>yeucaugiaovien" title="">tại đây</a>. Hoàn toàn miễn phí.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal form  -->

@@ -128,7 +128,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rating-star-box {
-  text-align: center;
   margin-top: 20pt;
 }
 
@@ -229,6 +228,80 @@ h1, h2, h3, h4, h5, h6 {
   width: 25pt;
   height: 18pt;
   background-color: #f87311;
+}
+
+/****** Profile box small version (for news) ******/
+.profile-section {
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  margin: 10px 0;
+}
+
+.hgd-profile-box-small h3 {
+  font-size: 18px;
+}
+
+.hgd-profile-box-small p {
+  font-size: 12px;
+}
+
+.hgd-profile-box-small .hgd-profile, .hgd-profile-box-small .hgd-profile-info {
+  min-height: 120px;
+}
+
+.hgd-profile-box-small .hgd-profile-avatar {
+  padding: 15px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .hgd-profile-box-small .hgd-profile-avatar {
+    width: 90px;
+  }
+}
+
+.hgd-profile-box-small .unit-price, .hgd-profile-box-small .heading-small {
+  margin-top: 10px;
+  padding-top: 0;
+}
+
+.hgd-profile-box-small .rating-star-box {
+  margin: 0;
+}
+
+.hgd-profile-box-small .fa-star, .hgd-profile-box-small .fa-star-o, .hgd-profile-box-small .num-of-rates, .hgd-profile-box-small .btn-sign-up {
+  font-size: 100%;
+}
+
+.hgd-profile-box-small .hgd-read-more {
+  padding: 12.25px;
+}
+
+@media screen and (min-width: 992px) {
+  .hgd-profile-box-small .hgd-read-more {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (min-width: 1209px) {
+  .hgd-profile-box-small .hgd-read-more {
+    padding: 50px 0;
+  }
+}
+
+.hgd-profile-box-small .read-more {
+  font-size: 0.9em;
+}
+
+.hgd-profile-box-small .t-heading {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hgd-profile-box-small .table th {
+  font-size: 13px;
+}
+
+.hgd-profile-box-small .table th, .hgd-profile-box-small .table td, .hgd-profile-box-small .table td.busy {
+  padding: 5px;
 }
 
 /******** Modal box CSS ********/

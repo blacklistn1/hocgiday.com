@@ -1,3 +1,7 @@
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL4T6GD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <?php if (isset($has_header) && ($has_header == 1)) {?>
     <div id="header">
@@ -45,7 +49,7 @@
                         </li>
                         <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
                         <?php } ?>
-                        <li class="request"><a href="<?php echo base_url() ?>yeucaugiaovien" title=""><span><b>YÊU CẦU GIÁO VIÊN</b></span></a></li>
+                        <li><span class="btn-anchor"><a href="<?php echo base_url() ?>yeucaugiaovien" class="anchor-text">YÊU CẦU GIÁO VIÊN</a></span></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav>
@@ -59,7 +63,7 @@
                 <a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>
             </div>
             <div class="request">
-                <a href="<?php echo base_url() ?>yeucaugiaovien"><span><b>YÊU CẦU GIÁO VIÊN</b></span></a>
+                <span class="btn-anchor"><a href="<?php echo base_url() ?>yeucaugiaovien" class="anchor-text">YÊU CẦU GIÁO VIÊN</a></span>
             </div>
         </div>
     </div><!--#MENU-->
