@@ -25,6 +25,9 @@
                 <a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet">Guitar (<span class="amount">3</span> bài)</a>
                 <a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet">Piano (<span class="amount">4</span> bài)</a>
                 <a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet">Thanh nhạc (<span class="amount">6</span> bài)</a>
+                <div class="banner-container" id="banner-container">
+                    <a href="<?php echo base_url($target_uri) ?>"><img src="<?php echo imgsrc($banner.'.jpg') ?>" class="banner"></a>
+                </div>
             </div>
         </div><!--#POST-->
         
@@ -59,11 +62,11 @@
                     <div class="modal-body">
                         <form action="<?php echo base_url('bai-viet/'.$rec->slug.'/') ?>" method="POST" role="form">
                             <div class="form-group">
-                                <input type="text" name="fullname" class="form-control mailing-info" placeholder="Tên đầy đủ của bạn" value="<?php echo set_value('fullname') ?>">
+                                <input type="text" name="fullname" class="form-control mailing-info" placeholder="Tên đầy đủ của bạn">
                                 <span class="form-error"><?php echo form_error('fullname') ?></span>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="tel" class="form-control mailing-info" placeholder="Số điện thoại" value="<?php echo set_value('tel') ?>">
+                                <input type="text" name="tel" class="form-control mailing-info" placeholder="Số điện thoại">
                                 <span class="form-error"><?php echo form_error('tel') ?></span>
                             </div>
                             <div class="form-group">
@@ -111,3 +114,6 @@
         </div>
     </div>
     <!-- End modal form  -->
+    <script>
+        
+    </script>

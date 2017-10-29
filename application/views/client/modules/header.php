@@ -7,7 +7,9 @@
     <div id="header">
         <div class="line1 layout frame0">
             <div class="phone">
-                <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
+                <?php if ((isset($phone)) and ($active == 1)) {?>
+                <a href="tel:<?php echo $phone ?>"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> <?php echo $phone_label ?></a>
+                <?php } ?>
             </div>
             <div class="log">
                 <span><a href="<?php echo base_url() ?>tro-thanh-giao-vien"><b>Bạn là giáo viên?</b></a></span>
@@ -57,7 +59,9 @@
         
         <div class="line3 layout frame0 scroll">
             <div class="phone">
-                <a href="tel:+84944852366"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> 094 485 23 66</a>
+                <?php if ((isset($phone)) and ($active == 1)) {?>
+                <a href="tel:<?php echo $phone ?>"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> <?php echo $phone_label ?></a>
+                <?php } ?>
             </div>
             <div class="logo">
                 <a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>

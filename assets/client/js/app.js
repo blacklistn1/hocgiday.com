@@ -60,6 +60,10 @@ $(document).ready(function() {
 		$(this).next("p").slideToggle();
 	});
 	fixResponsive();
+	new $.Zebra_Pin($('#banner-container'), {
+		contain: true,
+		z_index: 0
+	});
 });
 
 function filterSystem(minPrice, maxPrice) {

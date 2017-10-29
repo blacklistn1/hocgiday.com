@@ -85,8 +85,12 @@ class MY_Model extends CI_Model {
 	}
 
 	// Read a row
-	public function read_row($field = '*', $where = array(1=>1), $is_array = FALSE)
+	public function read_row($field = '*', $where = array(1=>1), $cond = FALSE, $is_array = FALSE)
 	{
+		if ($cond)
+		{
+			$this->add_filter($cond);
+		}
 		$this->db->where($where)
 				->select($field);
 		if ($row = $this->db->get($this->table))
@@ -196,6 +200,18 @@ class MY_Model extends CI_Model {
 			if ($portion == 'group_by') // $arg MUST be string
 			{
 				$this->db->group_by($arg);
+			}
+			if ($portion == 'join')
+			{
+				if (isset($arg[2]))
+				{
+					$this->db->join($arg[0], $arg[1], $arg[2]);
+				}
+				else
+				{
+					$this->db->join($arg[0], $arg[1]);
+				}
+				
 			}
 		}
 	}

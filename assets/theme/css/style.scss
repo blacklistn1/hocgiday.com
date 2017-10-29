@@ -124,6 +124,14 @@ ul{
                 display: block;
                 font-size: 18px;
             }
+            .banner-container {
+                margin-top: 50px;
+                .banner {
+                    position: relative;
+                    width: 200px;
+                }
+            }
+            
         }
         #tags{
             width: 100%;

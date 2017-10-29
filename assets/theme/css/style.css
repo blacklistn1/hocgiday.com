@@ -135,6 +135,15 @@ img {
     font-size: 18px;
 }
 
+#body #post .category .banner-container {
+    margin-top: 50px;
+}
+
+#body #post .category .banner {
+    width: 200px;
+    position: relative;
+}
+
 #body #post #tags {
     width: 100%;
     padding-top: 10px !important;

@@ -156,7 +156,7 @@ class Mon_hoc extends MY_Controller
             $this->data['subject'] = $subject;
             $this->data['subject_vn'] = ($this->lang->line($subject)) ? $this->lang->line($subject) : $subject;
             $this->data['is_page_mon_hoc'] = TRUE;
-            $this->load->view('client/main', $this->data);
+            $this->load->view('client/inbound/teachers_list', $this->data);
         }
         else
         {

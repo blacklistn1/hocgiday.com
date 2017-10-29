@@ -14,6 +14,7 @@ class MY_Controller extends CI_Controller
     {
         parent::__construct();
         $this->load->model('m_metadata');
+        $this->load->model('m_contacts');
         $this->uri = uri_string();
         $this->metadata = $this->_get_metadata($this->uri);
     }
@@ -22,7 +23,8 @@ class MY_Controller extends CI_Controller
     {
         if ($uri == '') {$uri = "/";}
         $where = array('uri' => $uri);
-        $row = $this->m_metadata->read_row('*', $where, TRUE);
+        $cond['join'] = array('contacts', 'contacts.id = metadata.contact_id');
+        $row = $this->m_metadata->read_row('*', $where, $cond, TRUE);
         return $row;
     }
 
