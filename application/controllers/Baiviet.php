@@ -97,7 +97,7 @@ class Baiviet extends MY_Controller {
         if ($this->form_validation->run() === FALSE)
         {
           $this->data['phone'] = $contact->phone;
-          $this->data['active'] = $contact->active;
+          $this->data['contact_active'] = $contact->contact_active;
           $this->data['phone_label'] = $contact->phone_label;
           $this->data['page_title'] = $result->ten_bai_viet;
           $this->data['meta_desc'] = $result->mo_ta_ngan;
@@ -105,12 +105,12 @@ class Baiviet extends MY_Controller {
           if (preg_match('/guitar/', $result->tags))
           {
             $this->data['banner'] = 'banner-guitar';
-            $this->data['target_uri'] = 'guitar/ha-noi/';
+            $this->data['target_uri'] = 'guitar';
           }
           elseif (preg_match('/piano/', $result->tags))
           {
             $this->data['banner'] = 'banner-piano';
-            $this->data['target_uri'] = 'piano/ha-noi/';
+            $this->data['target_uri'] = 'piano';
           }
           $this->data['tags'] = explode(", ", $result->tags);
           $this->data['recent_news'] = $this->recent_news();

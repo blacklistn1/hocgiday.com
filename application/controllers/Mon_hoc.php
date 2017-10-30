@@ -125,18 +125,43 @@ class Mon_hoc extends MY_Controller
         }
     }
     
-    public function lp($subject, $city = 'ha-noi')
+    public function lp($subject, $city)
     {
         $this->data = $this->metadata;
-        $rules = array();
+        $rules = array(
+            array(
+                'field' => 'fullname',
+                'label' => 'Tên đầy đủ',
+                'rules' => 'trim|strip_tags|htmlspecialchars|required',
+                'errors' => array(
+                    'required' => $this->lang->line('form_validation_required'),
+                )
+            ),
+            array(
+                'field' => 'tel',
+                'label' => 'Số điện thoại',
+                'rules' => 'trim|required|numeric|min_length[10]|max_length[13]|regex_match[/((\+84)|(0(43)*))\d{7}\d?\d?\d?/]',
+                'errors' => array(
+                    'required' => $this->lang->line('form_validation_required'),
+                    'numeric' => $this->lang->line('form_validation_is_numeric'),
+                    'max_length' => $this->lang->line('form_validation_max_length'),
+                    'min_length' => $this->lang->line('form_validation_min_length'),
+                    'regex_match' => 'Số điện thoại bạn vừa nhập không hợp lệ'
+                )
+            ),
+            array(
+                'field' => 'learn-at[]',
+                'label' => 'learn-at[]',
+                'rules' => 'required',
+                'errors' => array('required' => 'Vui lòng chọn ít nhất 1 mục')
+            )
+        );
         $this->form_validation->set_rules($rules);
         if ($this->form_validation->run() === FALSE)
         {
-            
             $city = preg_replace('/-/','',$city);
-
             $cur_page = ($this->input->get('p')) ? $this->input->get('p') : 1;
-            $num_of_links = 2;
+            $num_of_links = 3;
             $per_page = 8;
             $min_page = $cur_page - $num_of_links;
             $max_page = $cur_page + $num_of_links;
@@ -155,6 +180,7 @@ class Mon_hoc extends MY_Controller
             $this->data['max_page'] = $max_page;
             $this->data['subject'] = $subject;
             $this->data['subject_vn'] = ($this->lang->line($subject)) ? $this->lang->line($subject) : $subject;
+            $this->data['city_vn'] = $this->lang->line($city);
             $this->data['is_page_mon_hoc'] = TRUE;
             $this->load->view('client/inbound/teachers_list', $this->data);
         }
@@ -171,8 +197,9 @@ class Mon_hoc extends MY_Controller
             $mess = "Họ và tên: $fullname".
                 "<br>Số điện thoại: $tel".
                 "<br>Đăng ký học môn: $subject".
-                "<br>Với giáo viên: $teacher";
-            $alt_mess = "Họ và tên: $fullname, Đăng ký học môn: $subject, Với giáo viên: $teacher";
+                "<br>Với giáo viên: $teacher".
+                "<br>Tại thành phố: ".$this->data['city_vn'];
+            $alt_mess = "Họ và tên: $fullname, Đăng ký học môn: $subject, Với giáo viên: $teacher,Tại thành phố: ".$this->data['city_vn'];
             if ($this->input->post('learn-at[]'))
             {
                 $learn_at = implode(', ', $this->input->post('learn-at'));
@@ -185,14 +212,14 @@ class Mon_hoc extends MY_Controller
                 $mess .= "<br>Vào: $learn_day";
                 $alt_mess .= ", Vào: $learn_day";
             }
-            $mess .= "<br>Tại landing page: ".$this->data['page_title'];
+            $mess .= "<br>Tại inbound page: ".$this->data['page_title'];
             $this->email->message($mess);
             $this->email->set_alt_message($alt_mess);
             if ($this->email->send())
             {
-                $data['teacher'] = $teacher;
-                $data['subject'] = $subject;
-                $this->load->view('client/end_action/dangkyngay_success',$data);
+                $this->data['teacher'] = $teacher;
+                $this->data['subject'] = $subject;
+                $this->load->view('client/end_action/dangkyngay_success',$this->data);
             }
             else
             {
@@ -200,5 +227,11 @@ class Mon_hoc extends MY_Controller
                 $this->load->view('client/end_action/sendmailerror',$data);
             }
         }
+    }
+
+    public function choose_city($subject)
+    {
+        $data['subject'] = $subject;
+        $this->load->view('client/choose_city', $data);
     }
 }

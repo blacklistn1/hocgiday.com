@@ -7,9 +7,9 @@
     <div id="header">
         <div class="line1 layout frame0">
             <div class="phone">
-                <?php if ((isset($phone)) and ($active == 1)) {?>
+                <?php if ((isset($phone)) && ($contact_active == 1)) : ?>
                 <a href="tel:<?php echo $phone ?>"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> <?php echo $phone_label ?></a>
-                <?php } ?>
+                <?php endif; ?>
             </div>
             <div class="log">
                 <span><a href="<?php echo base_url() ?>tro-thanh-giao-vien"><b>Bạn là giáo viên?</b></a></span>
@@ -44,8 +44,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo base_url() ?>guitar/ha-noi">Guitar</a></li>
-                                <li><a href="<?php echo base_url() ?>piano/ha-noi">Piano</a></li>
+                                <li><a href="<?php echo base_url() ?>guitar">Guitar</a></li>
+                                <li><a href="<?php echo base_url() ?>piano">Piano</a></li>
                                 <li><a href="<?php echo base_url() ?>thanhnhac/ha-noi">Thanh nhạc</a></li>
                             </ul>
                         </li>
@@ -59,9 +59,9 @@
         
         <div class="line3 layout frame0 scroll">
             <div class="phone">
-                <?php if ((isset($phone)) and ($active == 1)) {?>
+                <?php if ((isset($phone)) && ($contact_active == 1)) : ?>
                 <a href="tel:<?php echo $phone ?>"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> <?php echo $phone_label ?></a>
-                <?php } ?>
+                <?php endif; ?>
             </div>
             <div class="logo">
                 <a href="<?php echo base_url() ?>"><img src="<?php echo themeimg('logo_only.jpg') ?>" alt=""></a>

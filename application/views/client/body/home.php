@@ -23,7 +23,7 @@
                     <div class="insider">
                         <a href="<?php echo base_url() ?>guitar/ha-noi" class="link"></a>
                         <div class="content">
-                            <a href="<?php echo base_url() ?>guitar/ha-noi/"><p>GUITAR</p></a>
+                            <a href="<?php echo base_url() ?>guitar"><p>GUITAR</p></a>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                     <div class="insider">
                         <a href="<?php echo base_url() ?>piano/ha-noi" class="link"></a>
                         <div class="content">
-                            <a href="<?php echo base_url() ?>piano/ha-noi/"><p>PIANO</p></a>
+                            <a href="<?php echo base_url() ?>piano"><p>PIANO</p></a>
                         </div>
                     </div>
                 </div>

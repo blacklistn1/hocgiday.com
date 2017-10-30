@@ -8,6 +8,10 @@
 		body {
 			font-family: sans-serif;
 		}
+		.button-block {
+			display: block;
+			margin: 50px 0;
+		}
 		a {
 			padding: 15px;
 			background-color: #f87311;
@@ -26,7 +30,7 @@
 </head>
 <body>
 <center><h1>Cảm ơn bạn đã đăng ký học với giáo viên <?php echo $teacher ?></h1></center>
-<center><h3><a href="<?php echo base_url($subject) ?>/ha-noi" title="">Tiếp tục tìm kiếm</a></h3></center>
+<div class="button-block"><center><h3><a href="<?php echo base_url($uri) ?>">Tiếp tục tìm kiếm</a></h3></div></center>
 </body>
 </html>
 

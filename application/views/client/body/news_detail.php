@@ -21,10 +21,6 @@
                 </div>
             </div>
             <div class="category">
-                <h2><b>CHUYÊN MỤC CÁC BÀI VIẾT</b></h2>
-                <a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet">Guitar (<span class="amount">3</span> bài)</a>
-                <a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet">Piano (<span class="amount">4</span> bài)</a>
-                <a href="<?php echo base_url() ?>bai-viet/danh-sach-bai-viet">Thanh nhạc (<span class="amount">6</span> bài)</a>
                 <div class="banner-container" id="banner-container">
                     <a href="<?php echo base_url($target_uri) ?>"><img src="<?php echo imgsrc($banner.'.jpg') ?>" class="banner"></a>
                 </div>
@@ -114,6 +110,3 @@
         </div>
     </div>
     <!-- End modal form  -->
-    <script>
-        
-    </script>

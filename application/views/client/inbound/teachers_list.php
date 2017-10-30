@@ -42,6 +42,24 @@
     })(window,document,'script','dataLayer','GTM-KL4T6GD');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '496460187398641');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=496460187398641&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -83,7 +101,7 @@
 	<div id="header">
 	    <div class="line1 layout frame0">
 	        <div class="phone">
-	            <?php if ((isset($phone)) and ($active == 1)) {?>
+	            <?php if ((isset($phone)) and ($contact_active == 1)) {?>
 	            <a href="tel:<?php echo $phone ?>"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> <?php echo $phone_label ?></a>
 	            <?php } ?>
 	        </div>
@@ -132,7 +150,7 @@
 	    
 	    <div class="line3 layout frame0 scroll">
 	        <div class="phone">
-	            <?php if ((isset($phone)) and ($active == 1)) {?>
+	            <?php if ((isset($phone)) and ($contact_active == 1)) {?>
 	            <a href="tel:<?php echo $phone ?>"><img src="<?php echo themeimg('icons/phone.png') ?>" alt=""> <?php echo $phone_label ?></a>
 	            <?php } ?>
 	        </div>
@@ -149,7 +167,7 @@
 <div class="container-fluid hgd-header">
 	<div class="text-center hgd-header">
 		<h1 id="h1" style="text-transform:uppercase">BẠN MUỐN HỌC <?php echo $subject_vn ?>?</h1>
-		<h3 id="h3" style="text-transform:uppercase">LỰA CHỌN GIỮA HÀNG CHỤC GIÁO VIÊN <?php echo $subject_vn ?> TẠI HÀ NỘI</h3>
+		<h3 id="h3" style="text-transform:uppercase">LỰA CHỌN GIỮA HÀNG CHỤC GIÁO VIÊN <?php echo $subject_vn ?> TẠI <?php echo $city_vn ?></h3>
 	</div>
 </div>
 
