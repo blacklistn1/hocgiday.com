@@ -21,7 +21,7 @@
                 <div class="items30 wow fadeInDown" data-wow-offset="100">
                     <img src="<?php echo themeimg('thumb/Guitar-01.jpg') ?>" alt="hoc-guitar" class="full-width">
                     <div class="insider">
-                        <a href="<?php echo base_url() ?>guitar/ha-noi" class="link"></a>
+                        <a href="<?php echo base_url() ?>guitar" class="link"></a>
                         <div class="content">
                             <a href="<?php echo base_url() ?>guitar"><p>GUITAR</p></a>
                         </div>
@@ -30,7 +30,7 @@
                 <div class="items30 wow fadeInDown" data-wow-offset="100">
                     <img src="<?php echo themeimg('thumb/Piano-01.jpg') ?>" alt="hoc-piano" class="full-width">
                     <div class="insider">
-                        <a href="<?php echo base_url() ?>piano/ha-noi" class="link"></a>
+                        <a href="<?php echo base_url() ?>piano" class="link"></a>
                         <div class="content">
                             <a href="<?php echo base_url() ?>piano"><p>PIANO</p></a>
                         </div>

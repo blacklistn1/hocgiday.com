@@ -20,9 +20,14 @@ class Mon_hoc extends MY_Controller
         if ($city == 'hanoi')
         {
             $city = 'ha-noi';
-            redirect('/'.$subject.'/'.$city.'/');
+            redirect('/'.$subject.'/'.$city);
         }
         $this->data = $this->metadata;
+        $city = preg_replace('/-/','',$city);
+        $city_vn = ($this->lang->line($city)) ? $this->lang->line($city) : $city;
+        $this->data['city_vn'] = $city_vn;
+        $this->data['subject'] = $subject;
+        $this->data['subject_vn'] = ($this->lang->line($subject)) ? $this->lang->line($subject) : $subject;
         $rules = array(
             array(
                 'field' => 'fullname',
@@ -54,8 +59,6 @@ class Mon_hoc extends MY_Controller
         $this->form_validation->set_rules($rules);
         if ($this->form_validation->run() === FALSE)
         {
-            $city = preg_replace('/-/','',$city);
-
             // Required variables
             $cur_page = ($this->input->get('p')) ? $this->input->get('p') : 1; // Current page
             $num_of_links = 2;
@@ -69,16 +72,16 @@ class Mon_hoc extends MY_Controller
             $sql['cond']['order_by'] = 'vi_tri ASC';
             $result = $this->paginate_item($cur_page, $per_page, $sql); // Runs query
             if ($min_page < 1) {$min_page = 1;}
-            if ($max_page > $result['total_pages']) {$max_page = $result['total_pages'];}        
+            if ($max_page > $result['total_pages']) {$max_page = $result['total_pages'];}
+            
             $this->data['total_pages'] = $result['total_pages'];
-            $this->data['rec'] = $result['record'];
+            $this->data['result'] = $result['record'];
             $this->data['cur_page'] = $cur_page;
             $this->data['min_page'] = $min_page;
             $this->data['max_page'] = $max_page;
-            $this->data['subject'] = $subject;
-            $this->data['subject_vn'] = ($this->lang->line($subject)) ? $this->lang->line($subject) : $subject;
+
             $this->data['is_page_mon_hoc'] = true;
-            $this->load->view('client/main', $this->data);
+            $this->load->view('client/inbound/teachers_list', $this->data);
         }
         else
         {
@@ -93,8 +96,9 @@ class Mon_hoc extends MY_Controller
             $mess = "Họ và tên: $fullname".
                 "<br>Số điện thoại: $tel".
                 "<br>Đăng ký học môn: $subject".
-                "<br>Với giáo viên: $teacher";
-            $alt_mess = "Họ và tên: $fullname, Đăng ký học môn: $subject, Với giáo viên: $teacher";
+                "<br>Với giáo viên: $teacher".
+                "<br>Tại thành phố: ".$city_vn;
+            $alt_mess = "Họ và tên: $fullname, Đăng ký học môn: $subject, Với giáo viên: $teacher, Tại thành phố: ".$city_vn;
             if ($this->input->post('learn-at[]'))
             {
                 $learn_at = implode(', ', $this->input->post('learn-at'));
@@ -128,6 +132,11 @@ class Mon_hoc extends MY_Controller
     public function lp($subject, $city)
     {
         $this->data = $this->metadata;
+        $city = preg_replace('/-/','',$city);
+        $city_vn = $this->lang->line($city);
+        $this->data['subject'] = $subject;
+        $this->data['subject_vn'] = ($this->lang->line($subject)) ? $this->lang->line($subject) : $subject;
+        $this->data['city_vn'] = $city_vn;
         $rules = array(
             array(
                 'field' => 'fullname',
@@ -159,7 +168,6 @@ class Mon_hoc extends MY_Controller
         $this->form_validation->set_rules($rules);
         if ($this->form_validation->run() === FALSE)
         {
-            $city = preg_replace('/-/','',$city);
             $cur_page = ($this->input->get('p')) ? $this->input->get('p') : 1;
             $num_of_links = 3;
             $per_page = 8;
@@ -172,17 +180,16 @@ class Mon_hoc extends MY_Controller
             $sql['cond']['order_by'] = 'vi_tri ASC';
             $result = $this->paginate_item($cur_page, $per_page, $sql); // Runs query
             if ($min_page < 1) {$min_page = 1;}
-            if ($max_page > $result['total_pages']) {$max_page = $result['total_pages'];}        
+            if ($max_page > $result['total_pages']) {$max_page = $result['total_pages'];}
+            
             $this->data['total_pages'] = $result['total_pages'];
             $this->data['result'] = $result['record'];
             $this->data['cur_page'] = $cur_page;
             $this->data['min_page'] = $min_page;
             $this->data['max_page'] = $max_page;
-            $this->data['subject'] = $subject;
-            $this->data['subject_vn'] = ($this->lang->line($subject)) ? $this->lang->line($subject) : $subject;
-            $this->data['city_vn'] = $this->lang->line($city);
+
             $this->data['is_page_mon_hoc'] = TRUE;
-            $this->load->view('client/inbound/teachers_list', $this->data);
+            $this->load->view('client/main', $this->data);
         }
         else
         {
@@ -198,8 +205,8 @@ class Mon_hoc extends MY_Controller
                 "<br>Số điện thoại: $tel".
                 "<br>Đăng ký học môn: $subject".
                 "<br>Với giáo viên: $teacher".
-                "<br>Tại thành phố: ".$this->data['city_vn'];
-            $alt_mess = "Họ và tên: $fullname, Đăng ký học môn: $subject, Với giáo viên: $teacher,Tại thành phố: ".$this->data['city_vn'];
+                "<br>Tại thành phố: ".$city_vn;
+            $alt_mess = "Họ và tên: $fullname, Đăng ký học môn: $subject, Với giáo viên: $teacher,Tại thành phố: ".$city_vn;
             if ($this->input->post('learn-at[]'))
             {
                 $learn_at = implode(', ', $this->input->post('learn-at'));

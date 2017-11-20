@@ -552,6 +552,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* /News list */
 
+/* Hotro CSS */
+#body .hotro-post {
+  background-color: #eee;
+}
+
+.hotro-post p, .hotro-post .list li, .hotro-post .list-o li {
+  font-size: 14px;
+}
+
+/* #.Hotro CSS */
+
 /****** Scaling for responsive ******/
 @media screen and (min-width: 320px) {
 /*   .hgd-heading-highlight {

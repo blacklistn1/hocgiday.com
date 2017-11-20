@@ -142,6 +142,13 @@ img {
 #body #post .category .banner {
     width: 200px;
     position: relative;
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    #body #post .category .banner {
+        display: block;
+    }
 }
 
 #body #post #tags {

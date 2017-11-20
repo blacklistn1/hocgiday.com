@@ -15,7 +15,25 @@
         ga('send', 'pageview'); 
     </script>
     <!-- End Google analytics tracking code -->
-    
+    <!-- Event snippet for Gửi đi conversion page
+        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+        <script>
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+              'send_to': 'AW-872148788/JLKcCIiXhXkQtN7vnwM',
+              'transaction_id': '',
+              'event_callback': callback
+          });
+          return false;
+        }
+        </script>
+    <!-- END Event snippet for Gửi đi conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <?php if (isset($meta_desc) && ($meta_desc != NULL)) {?>
     <meta name="description" content="<?php echo $meta_desc ?>">
     <meta property="og:description" content="<?php echo $meta_desc ?>">
@@ -41,6 +59,16 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KL4T6GD');</script>
     <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google AdWords: 872148788 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-872148788"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'AW-872148788');
+    </script>
+     <!-- End Global site tag (gtag.js) - Google AdWords: 872148788 -->
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -89,13 +117,26 @@
     <link rel="stylesheet" href="<?php echo themevender('ion.rangeSlider.css') ?>" media="screen" >
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo clientcss('style.css') ?>">
+    
     <title><?php echo $page_title; ?></title>
 </head>
+
 <body ontouchstart="">
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL4T6GD"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
+	<!-- Mouseflow Tracking code -->
+    <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function() {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.async = true;
+            mf.src = "//cdn.mouseflow.com/projects/ad340e7b-7451-4a4c-b161-c580e9865916.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>
+    <!--End Mouseflow Tracking code -->
 
 	<?php if (isset($has_header) && ($has_header == 1)) {?>
 	<div id="header">
@@ -369,11 +410,11 @@
 							</div>
 							<div class="form-group">
 								<input type="hidden" name="teacher" id="chosen-teacher" class="form-control">
-								<input type="hidden" name="subject" value="piano">
-								<input type="hidden" name="city" value="Hà Nội">
+								<input type="hidden" name="subject" value="<?php echo $subject_vn ?>">
+								<input type="hidden" name="city" value="<?php echo $city_vn ?>">
 							</div>
 							<div class="modal-footer">
-								<button name="send" type="submit" class="btn btn-primary btn-submit">Gửi đi</button>
+								<button name="send" type="submit" class="btn btn-primary btn-submit" onclick="return gtag_report_conversion()" >Gửi đi</button>
 							</div>
 							<div>
 								<a href="#" class="p-read-more" title="Thanh toán học phí như thế nào">&gt;&gt;&gt;Thanh toán học phí như thế nào?</a>
@@ -389,6 +430,7 @@
 								<a href="#" class="p-read-more" title="">&gt;&gt;&gt;Chưa tự tin về lựa chọn của mình?</a>
 								<p class="p-read-more-content">Chúng tôi muốn bạn tự tin về quyết định của mình. Bạn có thể yêu cầu chúng tôi lập một danh sách các giáo viên phù hợp với yêu cầu của bạn và gửi riêng cho bạn vào Email <a href="<?php echo base_url() ?>yeucaugiaovien" title="">tại đây</a>. Hoàn toàn miễn phí.</p>
 							</div>
+							
 						</form>
 					</div>
 				</div>
@@ -401,41 +443,36 @@
 <?php if ((isset($has_footer)) && ($has_footer == 1)) {?>
     <div id="footer">
         <footer class="frame layout">
-            <div class="items30">
-                <h3>HƯỚNG DẪN</h3>
-                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn học viên </a>
-                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn phụ huynh </a>
-                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Hướng dẫn giáo viên </a>
+            
+            <div class="container-fluid">
+            
+            <div class="row">
+                <h3>CÁC CÂU HỎI THƯỜNG GẶP</h3>
+                <div>
+				    <a class="p-read-more" title="Thanh toán học phí như thế nào">&gt;&gt;&gt;Thanh toán học phí như thế nào?</a>
+					<p class="p-read-more-content">Ở Học Gì Đây?, chúng tôi giúp bạn tập trung vào việc học tập bằng cách lo liệu cho việc đóng học phí của bạn. Bạn có thể dễ dàng chọn thanh toán trước theo các gói 5 buổi, 10 buổi hoặc 30 buổi học với giáo viên bạn đã lựa chọn.</p>
+	    	    </div>
+		    	<div>
+				    	<a class="p-read-more" title="">&gt;&gt;&gt;Chính sách đảm bảo hài lòng tại Học Gì Đây?</a>
+			    		<p class="p-read-more-content">Sau khi học một hoặc một số buổi học, nếu bạn cảm thấy không hài lòng 100%, chúng tôi có thể giúp bạn tìm kiếm một giáo viên khác phù hợp hơn, hoặc hoàn trả lại <strong>TOÀN BỘ</strong> học phí các buổi học bạn đã thanh toán nhưng chưa học.<br>
+			    		<strong>*Lưu ý:</strong> Yêu cầu về hoàn trả học phí phải được gửi trước buổi học tiếp theo ít nhất 24 giờ.
+				    	</p>
+		    	</div>
+				<div>
+					<a class="p-read-more" title="">&gt;&gt;&gt;Chưa tự tin về lựa chọn của mình?</a>
+					<p class="p-read-more-content">Chúng tôi muốn bạn tự tin về quyết định của mình. Bạn có thể yêu cầu chúng tôi lập một danh sách các giáo viên phù hợp với yêu cầu của bạn và gửi riêng cho bạn vào Email <a href="<?php echo base_url() ?>yeucaugiaovien" title="">tại đây</a>. Hoàn toàn miễn phí.</p>
+				</div>
+			</div>
+            <div class="row">
+                <h3>ĐỊA CHỈ</h3>
+                <p>Tầng 5 tòa nhà LP20 ngõ 219 Trung Kính, quận Cầu Giấy, Hà Nội</p>
+            </div>
             </div>
             <div class="items30">
-                <h3>TÌM HIỂU THÊM</h3>
-                <a href="<?php echo base_url() ?>ve-chung-toi"><i class="fa fa-caret-right" aria-hidden="true"></i> Về chúng tôi</a>
-                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Bài viết</a>
-                <a href="<?php echo base_url() ?>bai-viet"><i class="fa fa-caret-right" aria-hidden="true"></i> Câu hỏi thường gặp</a>
             </div>
             <div class="items30">
-                <h3>GIẢNG DẠY CÙNG CHÚNG TÔI</h3>
-                <p>Để lại thông tin để chúng tôi giúp bạn</p>
-                <form action="<?php echo base_url() ?>tro-thanh-giao-vien" method="POST" accept-charset="utf-8">
-                <button class="text-center">DÀNH CHO GIÁO VIÊN</button>
-                </form>
-                <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
-                <div id="social" class="layout">
-                    <div class="social facebook">
-                        <a href="https://www.facebook.com/hocgiday/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="social youtube">
-                        <a href="https://www.youtube.com/channel/UCzOtVvQZ4dLakqa-Y0lLHwg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="social google">
-                        <a href="https://plus.google.com/110506048934264272362"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                    </div>
-                </div>
+            </div>
                 &nbsp;
-                <h3>LIÊN HỆ:</h3>
-                <a href="tel:+84944852366">094 458 23 66</a>
-                <a href="tel:+84984431914">098 443 19 14</a>
-                <a href="tel:+84902298105">090 229 81 05</a>
             </div>
         </footer><!--FOOTER-->
     </div>

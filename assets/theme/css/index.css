@@ -1,13 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif !important;
+}
+
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
   font-weight: 700;
 }
 
@@ -69,8 +71,6 @@ body {
 
 #header .line2 .navbar .navbar-header a.navbar-brand img.logo {
   display: inline;
-  -webkit-transform: translateY(-2px);
-  -ms-transform: translateY(-2px);
   transform: translateY(-2px);
   height: 34px;
 }
@@ -101,18 +101,13 @@ body {
 
 #header .line3 {
   height: 0;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   position: fixed !important;
   top: 0;
   z-index: -1;
   background: white;
   width: 100%;
-  -webkit-box-shadow: 0px 1px 3px 0px #382727;
   box-shadow: 0px 1px 3px 0px #382727;
-  -webkit-transform: translateY(-4px);
-  -ms-transform: translateY(-4px);
   transform: translateY(-4px);
   opacity: 0;
 }
@@ -127,8 +122,6 @@ body {
 }
 
 #header .line3 .logo {
-  -webkit-transform: translate(17px, -3.5px);
-  -ms-transform: translate(17px, -3.5px);
   transform: translate(17px, -3.5px);
 }
 
@@ -163,9 +156,6 @@ footer button:hover {
 }
 
 footer #social {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -202,20 +192,20 @@ footer #social .social a {
   color: #f87311;
 }
 
-#body #banner {
+#body #banner, .main-content #banner {
   position: relative;
 }
 
-#body #banner .background .small {
+#body #banner .background .small, .main-content #banner .background .small {
   display: none;
 }
 
-#body #banner .insider {
+#body #banner .insider, .main-content #banner .insider {
   bottom: -20px;
   width: 100%;
 }
 
-#body #banner .insider h1 {
+#body #banner .insider h1, .main-content #banner .insider h1 {
   font-weight: 600;
   color: white;
   margin-bottom: 20px;
@@ -224,7 +214,7 @@ footer #social .social a {
   margin-bottom: 3%;
 }
 
-#body #banner .insider .instrument {
+#body #banner .insider .instrument, .main-content #banner .insider .instrument {
   border: 1px solid white;
   color: white;
   background: #f87311;
@@ -235,21 +225,20 @@ footer #social .social a {
   margin-bottom: 2%;
 }
 
-#body #banner .insider .instrument:hover {
+#body #banner .insider .instrument:hover, .main-content #banner .insider .instrument:hover {
   background: #ff0200;
 }
 
-#body #banner .insider .instrument:focus {
+#body #banner .insider .instrument:focus, .main-content #banner .insider .instrument:focus {
   background: #DB0707 !important;
 }
 
-#body #banner .search {
+#body #banner .search, .main-content #banner .search {
   margin-bottom: 2%;
 }
 
-#body #banner .search input[type=text] {
+#body #banner .search input[type=text], .main-content #banner .search input[type=text] {
   width: 130px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 15px;
@@ -260,184 +249,159 @@ footer #social .social a {
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
   -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
-#body #banner .search input[type=text]:focus {
+#body #banner .search input[type=text]:focus, .main-content #banner .search input[type=text]:focus {
   width: 60%;
 }
 
-#body #options {
+#body #options, .main-content #options {
   margin-top: 60px;
   margin-bottom: 50px;
 }
 
-#body #options #instruments .items30 {
+#body #options #instruments .items30, .main-content #options #instruments .items30 {
   position: relative;
 }
 
-#body #options #instruments .items30 .insider {
+#body #options #instruments .items30 .insider, .main-content #options #instruments .items30 .insider {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   color: white;
   padding: 10px;
-  -webkit-transition: all 0.7s;
-  -o-transition: all 0.7s;
   transition: all 0.7s;
 }
 
-#body #options #instruments .items30 .insider a.link {
+#body #options #instruments .items30 .insider a.link, .main-content #options #instruments .items30 .insider a.link {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  -webkit-transition: all 0 !important;
-  -o-transition: all 0 !important;
   transition: all 0 !important;
 }
 
-#body #options #instruments .items30 .insider .content {
+#body #options #instruments .items30 .insider .content, .main-content #options #instruments .items30 .insider .content {
   opacity: 0;
   width: 100%;
   margin-bottom: 0;
   height: 100%;
   border: 1px solid white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
 }
 
-#body #options #instruments .items30 .insider .content a {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
+#body #options #instruments .items30 .insider .content a, .main-content #options #instruments .items30 .insider .content a {
   align-self: center;
 }
 
-#body #options #instruments .items30 .insider .content a p {
+#body #options #instruments .items30 .insider .content a p, .main-content #options #instruments .items30 .insider .content a p {
   color: white;
   font-size: 50px;
 }
 
-#body #options #instruments .items30 .insider:hover, #body #options #instruments .items30 .insider:active {
+#body #options #instruments .items30 .insider:hover, #body #options #instruments .items30 .insider:active, .main-content #options #instruments .items30 .insider:hover, .main-content #options #instruments .items30 .insider:active {
   background: rgba(0, 0, 0, 0.37);
 }
 
-#body #options #instruments .items30 .insider:hover .content, #body #options #instruments .items30 .insider:active .content {
+#body #options #instruments .items30 .insider:hover .content, #body #options #instruments .items30 .insider:active .content, .main-content #options #instruments .items30 .insider:hover .content, .main-content #options #instruments .items30 .insider:active .content {
   opacity: 1;
 }
 
-#body #steps {
+#body #steps, .main-content #steps {
   background: #f0f1f1;
 }
 
-#body #steps h1 {
+#body #steps h1, .main-content #steps h1 {
   font-size: 34px;
   margin-top: 0;
 }
 
-#body #steps .box {
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
+#body #steps .box, .main-content #steps .box {
   justify-content: space-around;
 }
 
-#body #steps .box .steps h2 {
+#body #steps .box .steps h2, .main-content #steps .box .steps h2 {
   font-size: 19px;
 }
 
-#body #steps .box .steps p {
+#body #steps .box .steps p, .main-content #steps .box .steps p {
   padding: 0 12%;
   font-weight: 600;
 }
 
-#body #steps .box .steps .picture {
+#body #steps .box .steps .picture, .main-content #steps .box .steps .picture {
   border-radius: 10px;
   margin: 0 22%;
   overflow: hidden;
 }
 
-#body #why {
+#body #why, .main-content #why {
   position: relative;
   background: url(../images/banner/Anh-office-02.jpg) no-repeat no-repeat;
   background-size: cover;
   padding-top: 50px;
 }
 
-#body #why .content {
+#body #why .content, .main-content #why .content {
   z-index: 3;
   color: white;
 }
 
-#body #why .content h1 {
+#body #why .content h1, .main-content #why .content h1 {
   margin-top: 0;
   padding-bottom: 40px;
 }
 
-#body #why .content .box {
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
+#body #why .content .box, .main-content #why .content .box {
   justify-content: space-around;
 }
 
-#body #why .content .box h4 {
+#body #why .content .box h4, .main-content #why .content .box h4 {
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-#body #why .content .box p {
+#body #why .content .box p, .main-content #why .content .box p {
   font-weight: 300;
 }
 
-#body #reviews .box {
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
+#body #reviews .box, .main-content #reviews .box {
   justify-content: space-around;
   padding-top: 30px;
 }
 
-#body #reviews .box .stars {
+#body #reviews .box .stars, .main-content #reviews .box .stars {
   padding-bottom: 30px;
 }
 
-#body #reviews .box .stars span {
+#body #reviews .box .stars span, .main-content #reviews .box .stars span {
   color: #ffdd17;
 }
 
-#body #reviews .box .content span {
+#body #reviews .box .content span, .main-content #reviews .box .content span {
   font-size: 16px;
   display: block;
   white-space: nowrap;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
-#body #reviews .box .content .more {
+#body #reviews .box .content .more, .main-content #reviews .box .content .more {
   color: #f87311;
   cursor: pointer;
 }
 
-#body #reviews .box .students {
+#body #reviews .box .students, .main-content #reviews .box .students {
   padding-top: 40px;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-#body #reviews .box .students img {
+#body #reviews .box .students img, .main-content #reviews .box .students img {
   width: 25%;
   border-radius: 100%;
   overflow: hidden;
@@ -445,53 +409,49 @@ footer #social .social a {
   margin-right: 10px;
 }
 
-#body #reviews .box .students .info {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
+#body #reviews .box .students .info, .main-content #reviews .box .students .info {
   align-self: center;
   width: 70%;
 }
 
-#body #reviews .box .students .info h4 {
+#body #reviews .box .students .info h4, .main-content #reviews .box .students .info h4 {
   font-family: 'Open Sans', sans-serif !important;
 }
 
-#body #count {
+#body #count, .main-content #count {
   background: #f0f1f1;
 }
 
-#body #myInstrument {
+#body #myInstrument, .main-content #myInstrument {
   position: relative;
 }
 
-#body #myInstrument .insider {
+#body #myInstrument .insider, .main-content #myInstrument .insider {
   width: 100%;
   top: 0;
   color: white;
 }
 
-#body #myInstrument .insider h1 {
+#body #myInstrument .insider h1, .main-content #myInstrument .insider h1 {
   letter-spacing: 2px;
   padding-top: 40px;
   margin-bottom: 0;
 }
 
-#body #myInstrument .insider p {
+#body #myInstrument .insider p, .main-content #myInstrument .insider p {
   font-weight: 300;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 17px;
 }
 
-#body #myInstrument .insider .instrument {
+#body #myInstrument .insider .instrument, .main-content #myInstrument .insider .instrument {
   border: 2px solid white;
   background: #f87311;
   font-size: 20px;
   font-weight: 500;
   padding: 17px 20px;
   border-radius: 7px;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
   transition: 0.3s all;
   background: #f05329;
   /* Old browsers */
@@ -499,36 +459,40 @@ footer #social .social a {
   /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #f05329 0%, #f6931e 100%, #f6931e 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#f05329), color-stop(100%, #f6931e), to(#f6931e));
-  background: -o-linear-gradient(left, #f05329 0%, #f6931e 100%, #f6931e 100%);
   background: linear-gradient(to right, #f05329 0%, #f6931e 100%, #f6931e 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-#body #myInstrument .insider .instrument:hover {
+#body #myInstrument .insider .instrument:hover, .main-content #myInstrument .insider .instrument:hover {
   background: #f05329;
   /* Old browsers */
   background: -moz-linear-gradient(top, #f05329 0%, #f6931e 100%, #f6931e 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #f05329 0%, #f6931e 100%, #f6931e 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#f05329), color-stop(100%, #f6931e), to(#f6931e));
-  background: -o-linear-gradient(top, #f05329 0%, #f6931e 100%, #f6931e 100%);
   background: linear-gradient(to bottom, #f05329 0%, #f6931e 100%, #f6931e 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-#body #contact {
+#body #contact, .main-content #contact {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-#body #contact h4, #body #contact h3 {
+#body #contact h4, #body #contact h3, .main-content #contact h4, .main-content #contact h3 {
   margin: 0;
 }
 
-#body #contact h4 {
+#body #contact h4, .main-content #contact h4 {
   margin-top: 3px;
+}
+
+.main-content #why {
+  background: none;
+}
+
+.main-content #why .content {
+  color: black;
 }
 
 .post a {
@@ -575,7 +539,7 @@ footer #social .social a {
   color: white;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 19px;
   line-height: 34px;
 }

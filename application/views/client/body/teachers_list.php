@@ -2,14 +2,14 @@
 <div class="container-fluid hgd-header">
 	<div class="text-center hgd-header">
 		<h1 id="h1" style="text-transform:uppercase">BẠN MUỐN HỌC <?php echo $subject_vn ?>?</h1>
-		<h3 id="h3" style="text-transform:uppercase">LỰA CHỌN GIỮA HÀNG CHỤC GIÁO VIÊN <?php echo $subject_vn ?> TẠI HÀ NỘI</h3>
+		<h3 id="h3" style="text-transform:uppercase">LỰA CHỌN GIỮA HÀNG CHỤC GIÁO VIÊN <?php echo $subject_vn ?> TẠI <?php echo $city_vn ?></h3>
 	</div>
 </div>
 
 <!-- Profile List -->
 <div class="container hgd-container">
 
-	<?php foreach($rec as $row) {?>
+	<?php foreach($result as $row) {?>
 
 	<!-- Profile row -->
 	<?php $tuition = ($row->hoc_phi_tai_nha != 0) ? $row->hoc_phi_tai_nha : $row->hoc_phi_tai_lop ?>
@@ -204,8 +204,8 @@
 							</div>
 							<div class="form-group">
 								<input type="hidden" name="teacher" id="chosen-teacher" class="form-control">
-								<input type="hidden" name="subject" value="piano">
-								<input type="hidden" name="city" value="Hà Nội">
+								<input type="hidden" name="subject" value="<?php  echo $subject_vn ?>">
+								<input type="hidden" name="city" value="<?php echo $city_vn ?>">
 							</div>
 							<div class="modal-footer">
 								<button name="send" type="submit" class="btn btn-primary btn-submit">Gửi đi</button>

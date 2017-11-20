@@ -184,7 +184,7 @@ footer{
     }
 }
    
-#body{
+#body, .main-content {
     #banner{
         position: relative;
         .background{
@@ -441,6 +441,15 @@ footer{
     }//#contact
     
 }//#body
+
+.main-content {
+    #why {
+        background: none;
+        .content {
+            color: black;
+        }
+    }
+}
 
  .post a {
     text-decoration: none !important;

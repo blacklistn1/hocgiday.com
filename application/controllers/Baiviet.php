@@ -7,6 +7,7 @@ class Baiviet extends MY_Controller {
   {
     parent::__construct();
     $this->load->model('m_news');
+    $this->lang->load('content', 'vietnamese');
   }
 
   public function index()
@@ -119,6 +120,7 @@ class Baiviet extends MY_Controller {
           $this->data['has_header'] = 1;
           $this->data['has_menu'] = 1;
           $this->data['has_footer'] = 1;
+          $this->data['is_home'] = 0;
           $this->load->view('client/main', $this->data);
         }
         else

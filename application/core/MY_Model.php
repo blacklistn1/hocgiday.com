@@ -182,9 +182,19 @@ class MY_Model extends CI_Model {
 	{
 		foreach ($cond as $portion => $arg)
 		{
-			if ($portion == 'order_by') // $arg MUST be string
+			if ($portion == 'order_by') // $arg type varies on $portion
 			{
-				$this->db->order_by($arg);
+				if (gettype($arg) == 'string')
+				{
+					$this->db->order_by($arg);
+				}
+				elseif (gettype($arg) == 'array')
+				{
+					foreach($arg as $col => $val)
+					{
+						$this->db->order_by($col, $val);
+					}
+				}
 			}
 			if ($portion == 'limit') // $arg type varies on $portion
 			{
