@@ -1,6 +1,30 @@
 <?php if (isset($is_home) && ($is_home == 0)) {$page_title .= " | Học Gì Đây?";} ?>
 <meta name="msvalidate.01" content="DE0BBF8600D036194F3CDE2080B8EC4C" />
 <meta charset="UTF-8" lang="vi" http-equiv="content-type">
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org/",
+  "@type" : "EducationalOrganization",
+  "name" : "Học Gì Đây?",
+  "brand" : {
+  	"@type" : "Brand",
+    "name" : "Học Gì Đây?"
+  },
+  "logo" : "https://hocgiday.vn/assets/theme/images/logo.png",
+  "image" : "https://hocgiday.vn/assets/theme/images/logo.png",
+  "url" : "https://hocgiday.vn",
+  "description" : "Học Guitar, Học Piano Dễ Dàng Với 60+ Giáo Viên Sống Quanh Bạn Tại Hà Nội",
+  "address" : "Tòa nhà LP20 Ngõ 219 Trung Kính",
+  "email" : "cskh@hocgiday.vn",
+  "telephone" : "+84944852366",
+  "aggregateRating" : {
+  	"@type" : "AggregateRating",
+  	"bestRating" : "5",
+    "ratingCount" : "10",
+    "ratingValue" : "4.5"
+  }
+}
+</script>
 
 <!-- Google analytics tracking code -->
 <script>
@@ -113,7 +137,7 @@
     (function() {
         var mf = document.createElement("script");
         mf.type = "text/javascript"; mf.async = true;
-        mf.src = "//cdn.mouseflow.com/projects/ad340e7b-7451-4a4c-b161-c580e9865916.js";
+        mf.src = "//cdn.mouseflow.com/projects/17291d1e-d7af-4e14-bf1c-8453113650a3.js";
         document.getElementsByTagName("head")[0].appendChild(mf);
     })();
 </script>

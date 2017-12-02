@@ -60,6 +60,7 @@ $route['guitar/(:any)/inbound'] = 'mon_hoc/lp/guitar/$1';
 $route['piano/(:any)/inbound'] = 'mon_hoc/lp/piano/$1';
 $route['guitar/ha-noi/(:any)'] = 'adwords/index/guitar/hanoi/$1';
 $route['piano/ha-noi/(:any)'] = 'adwords/index/piano/hanoi/$1';
+$route['thanhnhac/ha-noi/(:any)'] = 'adwords/index/thanhnhac/hanoi/$1';
 $route['guitar/(:any)'] = 'mon_hoc/index/guitar/$1';
 $route['piano/(:any)'] = 'mon_hoc/index/piano/$1';
 $route['thanhnhac/(:any)'] = 'mon_hoc/index/thanhnhac/$1';
@@ -75,5 +76,5 @@ $route['huongdangiaovien'] = 'baiviet/guideline/huongdangiaovien';
 $route['huongdanhocvien'] = 'baiviet/guideline/huongdanhocvien';
 $route['hotro'] = 'ho_tro/index';
 $route['hotro/(:any)'] = 'ho_tro/ho_tro_detail/$1';
-
-
+$route['qrcode/(:any)'] = 'qrcode/index/$1';
+$route['theodoibuoihoc/(:any)/(:any)'] = 'theodoibuoihoc/index/$1/$2';

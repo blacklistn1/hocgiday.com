@@ -1,4 +1,8 @@
-<?php 
+<?php
+    function assets($url = '')
+    {
+        return base_url('assets/'.$url);
+    }
     function adminbs($url)
     {
         return base_url('assets/admin/bootstrap/'.$url);

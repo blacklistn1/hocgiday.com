@@ -52,21 +52,21 @@
         <div id="steps" class="text-center frame">
             <h1><b>3 BƯỚC ĐỂ HỌC NHẠC CỤ DỄ HƠN HẲN</b></h1>
             <div class="box layout">
-                <div class="steps items25  wow fadeInUp"data-wow-offset="100">
+                <div class="steps items25  wow fadeInUp" data-wow-offset="100">
                     <h2><b>Bước 1: Tìm kiếm giáo viên</b></h2>
                     <p>Tìm kiếm giáo viên theo các yếu tố quan trọng với bạn: địa điểm. trình độ, đánh giá...</p>
                     <div class="picture">
                         <img src="<?php echo imgsrc('home/Cac%20buoc%20hoc%20nhac-01.png') ?>" alt="buoc-1-de-hoc-nhac-cu" class="full-width">
                     </div>
                 </div>
-                <div class="steps items25  wow fadeInUp"data-wow-offset="100">
+                <div class="steps items25  wow fadeInUp" data-wow-offset="100">
                     <h2><b>Bước 2: Lựa chọn giáo viên</b></h2>
                     <p>Xem thông tin chi tiết của từng giáo viên để tự tin học với giáo viên bạn thích nhất.</p>
                     <div class="picture">
                         <img src="<?php echo imgsrc('home/Cac%20buoc%20hoc%20nhac-02.png') ?>" alt="buoc-2-de-hoc-nhac-cu" class="full-width">
                     </div>
                 </div>
-                <div class="steps items25  wow fadeInUp"data-wow-offset="100">
+                <div class="steps items25  wow fadeInUp" data-wow-offset="100">
                     <h2><b>Bước 3: Đặt lịch học</b></h2>
                     <p>Dễ dàng thanh toán học phí và đặt lịch học tại lớp của giáo viên dạy nhạc cụ bạn thích nhất.</p>
                     <div class="picture">
@@ -80,19 +80,19 @@
             <div class="content">
                 <h1><b>TẠI SAO BẠN SẼ THÍCH HỌC GÌ ĐÂY?</b></h1>
                 <div class="box layout">
-                    <div class="reasons items25 wow fadeInRight"data-wow-offset="100">
+                    <div class="reasons items25 wow fadeInRight" data-wow-offset="100">
                         <img src="<?php echo themeimg('icons/icon1.png') ?>" alt="danh-rieng-cho-ban">
                         <h4>Dành riêng cho bạn</h4>
                         <p>Giáo viên bạn được học sẽ phù hợp với riêng bạn, về học phí, lịch học, kinh nghiệm giảng dạy, hay lộ trình học</p>
                     </div>
 
-                    <div class="reasons items25 wow fadeInRight"data-wow-offset="100">
+                    <div class="reasons items25 wow fadeInRight" data-wow-offset="100">
                         <img src="<?php echo themeimg('icons/icon2.png') ?>" alt="gan-nha">
                         <h4>Gần nhà</h4>
                         <p>Bạn sẽ được học trực tiếp nhạc cụ với giáo viên gần nhà mình nhất, thoải mái không phải lo nghĩ chuyện đi xa</p>
                     </div>
 
-                    <div class="reasons items25 wow fadeInRight"data-wow-offset="100">
+                    <div class="reasons items25 wow fadeInRight" data-wow-offset="100">
                         <img src="<?php echo themeimg('icons/icon3.png') ?>" alt="dam-bao">
                         <h4>Đảm bảo</h4>
                         <p>Nếu bạn không hài lòng 100%, chúng tôi sẽ giúp bạn tìm kiếm một giáo viên mới, hoặc hoàn trả toàn bộ học phí các buổi bạn chưa học</p>
@@ -104,7 +104,7 @@
         <div id="reviews" class="frame text-center">
             <h1><b>HỌC SINH CŨ KHEN TẶNG</b></h1>
             <div class="box layout">
-                <div class="items20  wow fadeInLeft text-left"data-wow-offset="100">
+                <div class="items20  wow fadeInLeft text-left" data-wow-offset="100">
                     <div class="stars">
                         <span class="fa fa-star" aria-hidden="true"></span>
                         <span class="fa fa-star" aria-hidden="true"></span>
@@ -125,7 +125,7 @@
                     </div>
                 </div>
 
-                <div class="items20  wow fadeInLeft text-left"data-wow-offset="100">
+                <div class="items20  wow fadeInLeft text-left" data-wow-offset="100">
                     <div class="stars">
                         <span class="fa fa-star" aria-hidden="true"></span>
                         <span class="fa fa-star" aria-hidden="true"></span>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
 
-                <div class="items20  wow fadeInLeft text-left"data-wow-offset="100">
+                <div class="items20  wow fadeInLeft text-left" data-wow-offset="100">
                     <div class="stars">
                         <span class="fa fa-star" aria-hidden="true"></span>
                         <span class="fa fa-star" aria-hidden="true"></span>
@@ -186,6 +186,16 @@
             </div>
         </div><!--MYINSTRUMENT-->
         
+        <div id="options" class="text-center frame0">
+        <h3><b>BẠN LÀ GIÁO VIÊN?</b></h3>
+                &nbsp;
+                <p>Tìm hiểu thêm về cách chúng tôi có thể giúp cho công việc giảng dạy của bạn!</p>
+                &nbsp;
+                <form action="<?php echo base_url() ?>tro-thanh-giao-vien" method="POST" accept-charset="utf-8">
+                <div class="text-center"><span class="btn-anchor"><a class=anchor-text href="https://hocgiday.vn/tro-thanh-giao-vien">DÀNH CHO GIÁO VIÊN</a></span></div>
+                </form>
+        </div>
+                
         <div id="contact" class="frame0 layout">
             <div class="left"><h3><b>CÒN THẮC MẮC?</b> <i class="fa fa-hand-o-right" aria-hidden="true"></i></h3></div>
             <div class="right"><h4><i class="fa fa-phone" aria-hidden="true"></i> Gọi cho chúng tôi tại <a href="tel:+84944852366">094 485 23 66</a></h4></div>
