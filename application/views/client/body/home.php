@@ -39,9 +39,9 @@
                 <div class="items30 wow fadeInDown" data-wow-offset="100">
                     <img src="<?php echo themeimg('thumb/Thanh%20nhac-01.jpg') ?>" alt="hoc-thanh-nhac" class="full-width">
                     <div class="insider">
-                        <a href="<?php echo base_url() ?>thanhnhac/ha-noi/" class="link"></a>
+                        <a href="<?php echo base_url() ?>thanhnhac" class="link"></a>
                         <div class="content">
-                            <a href="<?php echo base_url() ?>thanhnhac/ha-noi/"><p>THANH NHẠC</p></a>
+                            <a href="<?php echo base_url() ?>thanhnhac"><p>THANH NHẠC</p></a>
                         </div>
                     </div>
                 </div>

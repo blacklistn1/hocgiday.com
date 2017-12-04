@@ -21,9 +21,11 @@
                 </div>
             </div>
             <div class="category">
+                <?php if (isset($banner) && isset($target_uri)) {?>
                 <div class="banner-container" id="banner-container">
                     <a href="<?php echo base_url($target_uri) ?>"><img src="<?php echo imgsrc($banner.'.jpg') ?>" class="banner"></a>
                 </div>
+                <?php } ?>
             </div>
         </div><!--#POST-->
         

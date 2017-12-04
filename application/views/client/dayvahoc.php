@@ -9,7 +9,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML</title>
+    <meta name="robots" content="noindex">
+    <title>Theo dõi buổi học tại Học Gì Đây?</title>
     <link rel="stylesheet" href="<?php echo themevender('bootstrap-4.min.css') ?>">
     <style type="text/css">
         thead {
@@ -21,6 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
 <body>
 <div class="container">
     <div>
+        <img class="limited center-block" src="https://hocgiday.vn/assets/theme/images/logo%20full.png">
         <h1 class="text-center">Theo dõi buổi học</h1>
         <h3 class="text-center">Giáo viên: <?php echo $giaovien->full_name ?></h3>
         <h3 class="text-center">Học sinh: <?php echo $hocsinh->ten ?></h3>

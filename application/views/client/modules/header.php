@@ -46,7 +46,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo base_url() ?>guitar">Guitar</a></li>
                                 <li><a href="<?php echo base_url() ?>piano">Piano</a></li>
-                                <li><a href="<?php echo base_url() ?>thanhnhac/ha-noi">Thanh nhạc</a></li>
+                                <li><a href="<?php echo base_url() ?>thanhnhac">Thanh nhạc</a></li>
                             </ul>
                         </li>
                         <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>
