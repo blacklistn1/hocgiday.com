@@ -8,6 +8,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 /******** Contact row CSS ********/
@@ -102,9 +103,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Profile box CSS */
 .hgd-profile {
-  border-width: 0;
-  border-style: solid;
-  border-color: grey;
   min-height: 180px;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -131,13 +129,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 20pt;
 }
 
-.fa-star, .fa-star-o {
+.fa-star, .fa-star-o, .fa-star-half-o {
   color: #f87311;
-  font-size: 150%;
+  font-size: 133%;
 }
 
 .num-of-rates {
-  font-size: 150%;
+  font-size: 133%;
 }
 
 @media screen and (max-width: 480px) {
@@ -714,3 +712,99 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Ho so giao vien CSS */
+.profile-box {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .profile-box {
+    max-width: 80%;
+  }
+}
+.profile-row {
+  margin-top: 20px;
+  border-left: 1px solid grey;
+  box-shadow: 0 2px 1px grey;
+}
+.avatar-wrapper {
+  padding-right: 5px;
+  margin-left: 25px;
+  padding-left: 58px;
+}
+.avatar {
+  max-height: 105px;
+}
+.profile-info {
+  border-right: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 130px;
+}
+.profile-info:last-child {
+  border: 0;
+}
+#tname {
+  margin-top: 0;
+}
+.rating {
+  font-size: 1.9rem;
+}
+.profile-detail {
+  margin-top: 20px;
+}
+.profile-detail p, .videowrapper, .lich-giang-day {
+  margin-top: 10px;
+}
+.profile-detail .row {
+  margin: 10px 0;
+}
+.profile-detail .row .col-* {
+  padding-left: 0;
+}
+.videowrapper {
+  padding-right: 0;
+  padding-top: 10px;
+}
+.btn-block {
+  background-color: #f87311;
+  border-color: #f87311;
+  color: white;
+  font-weight: bold;
+}
+.btn-block:hover {
+  color: white;
+  background-color: orange;
+}
+.btn-register {
+  height: 50px;
+  font-size: 2rem;
+  /*padding-top: 9px;*/
+}
+.reviews {
+  margin-top: 20px;
+  border-top: 1px solid grey;
+}
+.review-box {
+  margin: 8px 0;
+}
+.review-item {
+  border-bottom: 1px solid #999;
+  padding-top: 8px;
+}
+.review-item:first-child {
+  padding-top: 0;
+}
+.review-item:last-child {
+  border-bottom: 0;
+}
+.rating-box {
+  margin-bottom: 16px;
+}
+.float-left {
+  float: left;
+  margin-top: 10px;
+}
+.float-right {
+  float: right;
+  margin-top: 10px;
+}

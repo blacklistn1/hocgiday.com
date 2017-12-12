@@ -12,7 +12,10 @@ class Mon_hoc extends MY_Controller
         $this->load->library('email');
         $this->lang->load('content', 'vietnamese');
         $this->lang->load('form_validation', 'vietnamese');
-        $this->load->model('m_teachers');
+        $this->load->model(['m_teachers',
+            'm_nhanxetgiaovien' => 'nhanxet',
+            'm_students' => 'students'
+        ]);
     }
 
     public function index($subject, $city = 'ha-noi')
@@ -236,9 +239,31 @@ class Mon_hoc extends MY_Controller
         }
     }
 
+    public function giaovien()
+    {
+        $this->data = $this->metadata;
+        if ($this->input->get('tid')) $tid = $this->input->get('tid');
+        $result = $this->m_teachers->read_row('*',['nametag' => $tid]);
+        $this->data['result'] = $result;
+        $this->data['page_title'] = 'Hồ sơ giáo viên '.$result->full_name;
+        $this->data['reviews'] = $this->nhanxetgiaovien($tid);
+        $this->load->view('client/main', $this->data);
+    }
+
     public function choose_city($subject)
     {
-        $data['subject'] = $subject;
-        $this->load->view('client/choose_city', $data);
+        $this->data['subject'] = $subject;
+        $this->load->view('client/choose_city', $this->data);
+    }
+
+//    Teacher id is required
+    public function nhanxetgiaovien($tid)
+    {
+        $field = "`students`.`ten` AS ten_hoc_sinh, ngay, diem, chu_de_nhan_xet, noi_dung_nhan_xet";
+        $where = ['ten_giao_vien' => $tid, 'active' => 1];
+        $cond['order_by'] = 'diem DESC, ngay DESC, vi_tri ASC';
+        $cond['join'] = ['students',"`nhan_xet_giao_vien`.`ma_hoc_sinh` = `students`.`ma`"];
+        $reviews = $this->nhanxet->read_data($field, $where, $cond);
+        return $reviews;
     }
 }

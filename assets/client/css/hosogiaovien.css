@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Medium.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src : url("../fonts/Montserrat-MediumItalic.ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Italic.ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-SemiBoldItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+p {
+    font-size: 1.6rem;
+}
+.profile-box {
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .profile-box {
+        max-width: 80%;
+    }
+}
+.profile-row {
+    margin-top: 20px;
+    border-left: 1px solid grey;
+    box-shadow: 3px 2px 1px 1px grey;
+}
+.avatar-wrapper {
+    padding-right: 5px;
+    margin-left: 25px;
+}
+.avatar {
+    max-height: 105px;
+}
+.profile-info {
+    border-right: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 130px;
+}
+.profile-info:last-child {
+    border: 0;
+}
+#tname {
+    margin-top: 0;
+}
+.rating {
+    font-size: 1.9rem;
+}
+.fa-star, .fa-star-o, .fa-star-half-o {
+    color: #f87311;
+}
+.profile-detail {
+    margin-top: 20px;
+}
+.profile-detail p, .profile-detail .row .col-xs-9 {
+    margin-top: 10px;
+}
+.profile-detail .row {
+    margin: 10px 0;
+}
+.videowrapper {
+    padding-right: 0;
+    padding-top: 10px;
+}
+.btn-block {
+    background-color: #f87311;
+    border-color: #f87311;
+    color: white;
+    font-weight: bold;
+}
+.btn-block:hover {
+    color: white;
+    background-color: orange;
+}
+.btn-register {
+    height: 50px;
+    font-size: 2rem;
+    /*padding-top: 9px;*/
+}
+.reviews {
+    margin-top: 20px;
+    border-top: 1px solid grey;
+}
+.review-box {
+    margin: 8px 0;
+}
+.review-item {
+    border-bottom: 1px solid #999;
+    padding-top: 8px;
+}
+.review-item:first-child {
+    padding-top: 0;
+}
+.review-item:last-child {
+    border-bottom: 0;
+}
+.rating-box {
+    margin-bottom: 16px;
+}
+.float-left {
+    float: left;
+    margin-top: 10px;
+}
+.float-right {
+    float: right;
+    margin-top: 10px;
+}

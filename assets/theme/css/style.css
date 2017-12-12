@@ -1,6 +1,73 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../client/fonts/Montserrat-Medium.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../client/fonts/Montserrat-MediumItalic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../client/fonts/Montserrat-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../client/fonts/Montserrat-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../../client/fonts/OpenSans-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../../client/fonts/OpenSans-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../../client/fonts/OpenSans-SemiBold.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../../client/fonts/OpenSans-SemiBoldItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../../client/fonts/OpenSans-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../../client/fonts/OpenSans-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
 img {
-    -o-object-fit: cover;
     object-fit: cover;
+}
+
+ul li {
+    list-style-type: circle !important;
+    list-style-position: inside !important;
 }
 
 .pagination {
@@ -139,14 +206,14 @@ img {
     margin-top: 50px;
 }
 
-#body #post .category .banner {
-    width: 200px;
+#body #post .category .banner-container .banner {
     position: relative;
+    width: 200px;
     display: none;
 }
 
 @media screen and (min-width: 600px) {
-    #body #post .category .banner {
+    #body #post .category .banner-container .banner {
         display: block;
     }
 }
@@ -372,8 +439,6 @@ img {
 }
 
 #body #news .box {
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -387,7 +452,6 @@ img {
     display: block;
     white-space: nowrap;
     overflow: hidden;
-    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
 
@@ -488,16 +552,8 @@ img {
         width: 100%;
     }
     #body #news .box .items25:first-child {
-        display: -webkit-box !important;
-        display: -webkit-flex !important;
-        display: -ms-flexbox !important;
         display: flex !important;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
         justify-content: space-between;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     #body #news .box .items25:first-child a {
@@ -517,8 +573,7 @@ img {
     }
 }
 
-#signIn .form-group input,
-#signIn .form-group button {
+#signIn .form-group input, #signIn .form-group button {
     width: 400px;
     height: 44px;
 }
@@ -535,17 +590,11 @@ img {
     font-weight: 600;
 }
 
-#signIn .form-group .form-control:focus,
-#signIn .form-group button:focus {
+#signIn .form-group .form-control:focus, #signIn .form-group button:focus {
     border-color: transparent;
-    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#3acfd5), to(#3a4ed5));
-    -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-    -o-border-image: -o-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-    border-image: -webkit-gradient(linear, left top, left bottom, from(#3acfd5), to(#3a4ed5));
     border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
     border-radius: 4px;
     border-image-slice: 1;
-    -webkit-box-shadow: none;
     box-shadow: none;
     outline: 0px;
 }
@@ -604,7 +653,6 @@ img {
 }
 
 #why img {
-    -o-object-fit: scale-down;
     object-fit: scale-down;
 }
 
@@ -683,18 +731,12 @@ img {
     display: block;
     white-space: nowrap;
     overflow: hidden;
-    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
 
 #teachers .teachers .itemspx .content .stars {
     width: 190px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 0 auto;
 }
@@ -714,9 +756,6 @@ img {
     background: #253444;
     text-align: center;
     color: white;
-    -webkit-box-pack: center !important;
-    -webkit-justify-content: center !important;
-    -ms-flex-pack: center !important;
     justify-content: center !important;
     padding: 40px 0;
 }
@@ -726,7 +765,5 @@ img {
 }
 
 #bottom button {
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
     transform: scale(0.8);
 }

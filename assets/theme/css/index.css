@@ -1,3 +1,66 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../client/fonts/Montserrat-Medium.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../client/fonts/Montserrat-MediumItalic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../client/fonts/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../client/fonts/Montserrat-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../client/fonts/OpenSans-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../client/fonts/OpenSans-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../client/fonts/OpenSans-SemiBold.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../client/fonts/OpenSans-SemiBoldItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../client/fonts/OpenSans-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../client/fonts/OpenSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
 * {
   margin: 0;
   padding: 0;

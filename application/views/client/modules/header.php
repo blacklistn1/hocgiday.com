@@ -44,9 +44,9 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">TÌM GIÁO VIÊN NHẠC<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo base_url() ?>guitar">Guitar</a></li>
-                                <li><a href="<?php echo base_url() ?>piano">Piano</a></li>
-                                <li><a href="<?php echo base_url() ?>thanhnhac">Thanh nhạc</a></li>
+                                <li class="dropdown-item"><a href="<?php echo base_url() ?>guitar">Guitar</a></li>
+                                <li class="dropdown-item"><a href="<?php echo base_url() ?>piano">Piano</a></li>
+                                <li class="dropdown-item"><a href="<?php echo base_url() ?>thanhnhac">Thanh nhạc</a></li>
                             </ul>
                         </li>
                         <li><a href="<?php echo base_url() ?>bai-viet">BÀI VIẾT</a></li>

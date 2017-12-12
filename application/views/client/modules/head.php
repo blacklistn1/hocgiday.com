@@ -109,7 +109,7 @@
 <link rel="stylesheet" href="<?php echo themevender('bootstrap.min.css') ?>">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <!--FONT-->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Monteserrat:500,700" rel="stylesheet">
+
 
 <link rel="stylesheet" href="<?php echo themecss('index.css') ?>" media="screen" >
 <link rel="stylesheet" href="<?php echo themecss('style.css') ?>" media="screen" >
@@ -118,7 +118,7 @@
 <link rel="stylesheet" href="<?php echo themevender('animate.css') ?>" media="screen" >
 <link rel="stylesheet" href="<?php echo themevender('swiper.min.css') ?>" media="screen" >
 <link rel="stylesheet" href="<?php echo themevender('ion.rangeSlider.css') ?>" media="screen" >
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+
 <link rel="stylesheet" type="text/css" href="<?php echo clientcss('style.css') ?>">
 <!-- Hotjar Tracking Code for https://hocgiday.vn/ -->
 <script>

@@ -308,26 +308,22 @@
 				</div>
 				<div class="row">
 					<h4>Học phí</h4>
+                    <?php if ($row->hoc_phi_tai_nha != NULL) {?>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<p>Tại nhà</p>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-					<?php if ($row->hoc_phi_tai_nha != NULL) {?>
 						<p><?php echo $row->hoc_phi_tai_nha ?>.000 đ/ <?php echo $row->duration ?> phút</p>
-					<?php } else {?>
-					<p></p>
-					<?php } ?>
 					</div>
+                    <?php } ?>
+                    <?php if ($row->hoc_phi_tai_lop != NULL) {?>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<p>Tại lớp</p>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-					<?php if ($row->hoc_phi_tai_lop != NULL) {?>
 						<p><?php echo $row->hoc_phi_tai_lop ?>.000 đ/ <?php echo $row->duration ?> phút</p>
-					<?php } else {?>
-					<p></p>
-					<?php } ?>
 					</div>
+                    <?php } ?>
 				</div>
 				<div class="row">
 					<h4>Lịch giảng dạy của giáo viên</h4>
