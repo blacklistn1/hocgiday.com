@@ -92,11 +92,11 @@
 			<!-- Right column at md and lg -->
 			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5"> 
 				
-				<div class="row">
-					<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-						<h4>Phạm vi đi lại</h4>
-					</div>
-					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+				<div class="row clearfix">
+                    <div class="pull-left">
+                        <h4>Phạm vi đi lại</h4>
+                    </div>
+					<div class="pull-right">
 						<p><?php echo $row->pham_vi_di_lai ?>km</p>
 					</div>
 				</div>

@@ -197,6 +197,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0;
 }
 
+.clearfix .pull-right p {
+  margin-top: 10px;
+  padding-right: 15px;
+}
+
 .wrapper {
   position: relative;
   height: 0;

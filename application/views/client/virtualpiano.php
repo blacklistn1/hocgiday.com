@@ -277,7 +277,7 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
 <div class="container">
     <div class="row">
         <div class="col-xs-6 col-xs-offset-2">
-            
+
         </div>
     </div>
 </div>

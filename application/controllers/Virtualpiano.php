@@ -12,11 +12,11 @@ class Virtualpiano extends CI_Controller
     public function __contruct()
     {
         parent::__construct();
-        if (preg_match('/-/', $this->uri)) $this->uri = perg_replace('/-/','',$this->uri);
     }
 
     public function index()
     {
+
         $this->data['phone'] = '+84944852366';
         $this->data['contact_active'] = 1;
         $this->data['phone_label'] = '094 458 23 66';
