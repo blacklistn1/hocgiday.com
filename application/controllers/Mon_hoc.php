@@ -26,6 +26,7 @@ class Mon_hoc extends MY_Controller
             redirect('/'.$subject.'/'.$city);
         }
         $this->data = $this->metadata;
+        $this->data['uri'] = $this->uri;
         $city = preg_replace('/-/','',$city);
         $city_vn = ($this->lang->line($city)) ? $this->lang->line($city) : $city;
         $this->data['city_vn'] = $city_vn;
@@ -115,14 +116,16 @@ class Mon_hoc extends MY_Controller
                 $alt_mess .= ", Vào: $learn_day";
             }
             $mess .= "<br>Tại trang: ".$this->data['page_title'];
-            $mess .= ", Tại trang: ".$this->data['page_title'];
+            $alt_mess .= ", Tại trang: ".$this->data['page_title'];
             $this->email->message($mess);
             $this->email->set_alt_message($alt_mess);
             if ($this->email->send())
             {
-                $data['teacher'] = $teacher;
-                $data['subject'] = $subject;
-                $this->load->view('client/end_action/dangkyngay_success',$data);
+                $_SESSION['tname'] = $teacher;
+                $_SESSION['form_submitted'] = true;
+                $_SESSION['uri'] = $this->uri;
+                $this->session->mark_as_flash(['tname', 'form_submitted', 'uri']);
+                redirect('dangkythanhcong');
             }
             else
             {
@@ -227,9 +230,11 @@ class Mon_hoc extends MY_Controller
             $this->email->set_alt_message($alt_mess);
             if ($this->email->send())
             {
-                $this->data['teacher'] = $teacher;
-                $this->data['subject'] = $subject;
-                $this->load->view('client/end_action/dangkyngay_success',$this->data);
+                $_SESSION['uri'] = $this->uri;
+                $_SESSION['form_submitted'] = true;
+                $_SESSION['tname'] = $teacher;
+                $this->session->mark_as_flash(['uri', 'form_submitted', 'tname']);
+                redirect('dangkythanhcong');
             }
             else
             {
@@ -265,5 +270,15 @@ class Mon_hoc extends MY_Controller
         $cond['join'] = ['students',"`nhan_xet_giao_vien`.`ma_hoc_sinh` = `students`.`ma`"];
         $reviews = $this->nhanxet->read_data($field, $where, $cond);
         return $reviews;
+    }
+
+//    The Thank you page after submitting the form
+    public function thankyou()
+    {
+        if ($this->session->flashdata('uri') && $this->session->flashdata('form_submitted') && $this->session->flashdata('tname')) {
+            $this->load->view('client/end_action/dangkyngay_success');
+        } else {
+            redirect('/');
+        }
     }
 }

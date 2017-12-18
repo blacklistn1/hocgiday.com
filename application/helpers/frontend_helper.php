@@ -49,3 +49,7 @@
     {
         return base_url('assets/theme/images/'.$url);
     }
+    function font($url = '')
+    {
+        return base_url('assets/client/fonts/'.$url);
+    }

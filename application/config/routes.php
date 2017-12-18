@@ -82,3 +82,4 @@ $route['qrcode/(:any)'] = 'qrcode/index/$1';
 $route['theodoibuoihoc/(:any)/(:any)'] = 'theodoibuoihoc/index/$1/$2';
 $route['giaovien'] = 'mon_hoc/giaovien';
 $route['choi-dan-piano-online'] = 'virtualpiano/index';
+$route['dangkythanhcong'] = 'mon_hoc/thankyou';

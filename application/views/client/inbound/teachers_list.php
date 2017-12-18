@@ -410,7 +410,7 @@
 								<input type="hidden" name="city" value="<?php echo $city_vn ?>">
 							</div>
 							<div class="modal-footer">
-								<button name="send" type="submit" class="btn btn-primary btn-submit" onclick="return gtag_report_conversion()" >Gửi đi</button>
+								<button name="send" type="submit" class="btn btn-primary btn-submit"s>Gửi đi</button>
 							</div>
 							<div>
 								<a href="#" class="p-read-more" title="Thanh toán học phí như thế nào">&gt;&gt;&gt;Thanh toán học phí như thế nào?</a>
